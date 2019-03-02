@@ -1,5 +1,5 @@
 # Game_store_administration_program
-Fatec Cruzeiro Prof. Waldomiro May - Third Semester Project in PHP, JavaScript, html4 and css3.
+Fatec Cruzeiro Prof. Waldomiro May - Third Semester Project in PHP, JavaScript, html5 and css3.
 
 Members:
   Hermany Vieira Oliveira
