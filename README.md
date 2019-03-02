@@ -2,10 +2,10 @@
 Fatec Cruzeiro Prof. Waldomiro May - Third Semester Project in PHP, JavaScript, html5 and css3.
 
 Members:
-  Hermany Vieira Oliveira
-  Marlon Dantas de Albuquerque
-  Ashley Fernanda do Nascimento
-  Matheus Henrique Correa Barbosa
+  Hermany Vieira Oliveira -
+  Marlon Dantas de Albuquerque -
+  Ashley Fernanda do Nascimento -
+  Matheus Henrique Correa Barbosa -
   Fábio Eduardo Ribeiro Costa
 
 Description:
@@ -13,13 +13,13 @@ Description:
   Our mission in this project is develop an functional tool with object orientation, following faithfully
   the order of the client.
   
-Fatec Cruzeiro Prof. Waldomiro May - Third Semester Project in PHP, JavaScript, html4 and css3.
+Fatec Cruzeiro Prof. Waldomiro May - Projeto Terceiro Semestre em PHP, JavaScript, html4 and css3.
 
 Membros:
-  Hermany Vieira Oliveira
-  Marlon Dantas de Albuquerque
-  Ashley Fernanda do Nascimento
-  Matheus Henrique Barbosa
+  Hermany Vieira Oliveira -
+  Marlon Dantas de Albuquerque -
+  Ashley Fernanda do Nascimento -
+  Matheus Henrique Barbosa -
   Fábio Costa
 
 Descrição:
