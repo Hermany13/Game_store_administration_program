@@ -5,8 +5,8 @@ Members:
   Hermany Vieira Oliveira
   Marlon Dantas de Albuquerque
   Ashley Fernanda do Nascimento
-  Matheus Henrique Barbosa
-  Fábio Costa
+  Matheus Henrique Correa Barbosa
+  Fábio Eduardo Ribeiro Costa
 
 Description:
     This project consist in a administration program for an game store with possibility of rent movies too.
