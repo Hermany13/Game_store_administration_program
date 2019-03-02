@@ -13,7 +13,7 @@ Description:
   Our mission in this project is develop an functional tool with object orientation, following faithfully
   the order of the client.
   
-Fatec Cruzeiro Prof. Waldomiro May - Projeto Terceiro Semestre em PHP, JavaScript, html4 and css3.
+Fatec Cruzeiro Prof. Waldomiro May - Projeto Terceiro Semestre em PHP, JavaScript, html4 e css3.
 
 Membros:
   Hermany Vieira Oliveira -
