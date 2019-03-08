@@ -9,7 +9,7 @@
 - Fábio Eduardo Ribeiro Costa
 
 ### Description:
-    This project consist in a administration program for an game store with possibility of rent movies too.
+    This project consist in a administration program for an game store with possibility of rent movies.
   Our mission in this project is develop an functional tool with object orientation, following faithfully
   the order of the client.
   
@@ -23,6 +23,6 @@
 - Fábio Costa
 
 ### Descrição:
-    Este projeto consiste em um programa de administração para uma loja de jogos com possibilidade de alugar
-  filmes também. Nossa missão neste projeto é desenvolver uma ferramenta funcional com orientação a objetos,
+    Este projeto consiste em um programa de administração para uma loja de jogos com possibilidade de alugar filmes.
+  Nossa missão neste projeto é desenvolver uma ferramenta funcional com orientação a objetos,
   seguindo fielmente a ordem do cliente.
