@@ -6,7 +6,7 @@ Members:
   Marlon Dantas de Albuquerque -
   Ashley Fernanda do Nascimento -
   Matheus Henrique Correa Barbosa -
-  Fábio Eduardo Ribeiro Costa
+  Fábio Eduardo Ribeiro Costa -
 
 Description:
     This project consist in a administration program for an game store with possibility of rent movies too.
@@ -20,7 +20,7 @@ Membros:
   Marlon Dantas de Albuquerque -
   Ashley Fernanda do Nascimento -
   Matheus Henrique Barbosa -
-  Fábio Costa
+  Fábio Costa -
 
 Descrição:
     Este projeto consiste em um programa de administração para uma loja de jogos com possibilidade de alugar
