@@ -1,0 +1,1 @@
+Pasta Contendo todos as funções em JAVASCRIPT

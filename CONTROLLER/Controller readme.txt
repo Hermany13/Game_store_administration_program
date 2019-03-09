@@ -1,0 +1,1 @@
+Pasta contendo todas os códigos de interações do usuário.
