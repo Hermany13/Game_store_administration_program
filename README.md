@@ -9,7 +9,7 @@
 - [Fábio Eduardo Ribeiro Costa](https://github.com/fabiocosta88)
 
 ### Description:
-    This project consist in a administration program for an game store with possibility of rent movies.
+    This project consists of an administration program for a game store with the possibility of movie rentle.
   Our mission in this project is develop an functional tool with object orientation, following faithfully
   the order of the client.
   
