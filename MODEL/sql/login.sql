@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 11-Mar-2019 às 12:33
--- Versão do servidor: 10.1.37-MariaDB
--- versão do PHP: 7.2.12
+-- Generation Time: 12-Mar-2019 às 04:18
+-- Versão do servidor: 10.1.35-MariaDB
+-- versão do PHP: 7.2.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -45,7 +45,8 @@ CREATE TABLE `login` (
 --
 ALTER TABLE `login`
   ADD PRIMARY KEY (`ID`),
-  ADD UNIQUE KEY `cod_user` (`cod_user`);
+  ADD UNIQUE KEY `cod_user` (`cod_user`),
+  ADD UNIQUE KEY `user` (`user`);
 
 --
 -- AUTO_INCREMENT for dumped tables
