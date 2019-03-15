@@ -2,28 +2,25 @@
 <html lang="pt-br">
 
     <head>
-    <meta charset="utf-8"/>
-    <title>Site</title>
-        <link rel="stylesheet" href="_css/estilo.css"/>
-
+        <meta charset="utf-8"/>
+        <title>Site</title>
+        <link rel="stylesheet" href="_css/forms.css"/>
+        <link rel="stylesheet" href="_css/variations.css"/>
     </head>
     <body>
-        <div id="login-box">
-            <div id="login-box-interno">
-            <div id="login-box-label">"Foto da logo do site"</div>
-            <form>
-              <input type="text" placeholder="Usuário ou Email" id="inNameUser"/>   
-             
-              <input type="text" placeholder="Senha" id="inSenhaUser"/>   
-               
-              
-                <div><button id="btnLogin" type="submit">Login</button></div>
-                <a id="btnEsqueciSenha">Esqueci minha senha</a>
-                <a id="btnCadastroUser">Cadastrar novo usuário</a> 
-                
-                   
-            
-        </form>
+        <div class="box" id="box1" >
+            <div class="label" id="label1">"Foto da logo do site"</div>
+                <form>
+                    <input type="text" placeholder="Usuário ou Email"/>   
+
+                    <input type="text" placeholder="Senha"/>   
+
+                    <div><button id="Button1" type="submit">Login</button></div>
+
+                    <a  id="Link_EsqueciSenha" href="esqueciMinhaSenha.html">Esqueci minha senha</a>
+
+                    <div id="Link_NaoTemConta">Não tem uma conta?<a id="Link_Crie">Crie!</a></div> 
+                </form>        
         </div>
-    </body>
+        </body>
 </html>

@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+#Link_EsqueciSenha{
+    font:bold 12px sans-serif;
+    font-weight: 200;
+    margin-left: 25px;
+    text-decoration: none;
+    margin-left: 32px;
+    color: blue;
+}
+
+#Link_Crie{
+    color: blue;
+}
+
+#Link_NaoTemConta{
+    margin-left: 32px;
+    margin-top: 30px;
+}
+
+#Button1{
+    float: right;
+    margin-right: 25px;
+    margin-top: 8px;
+    
+}
+
+#box1{
+    margin: 160px auto auto 470px;
+    width:380px;
+    height:240px;
+}
+
+#label1{
+    height: 45px; 
+}
