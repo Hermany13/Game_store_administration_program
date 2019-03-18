@@ -7,7 +7,7 @@ private $pass = "senha";
 // Cria a conexao
 $_conexao = mysqli_connect($servername, $username, $password, $database);
 // Checa a conexao
-if (!$conn) {
+if (!$_conexao) {
     die("A conexao falhou. ERRO: " . mysqli_connect_error());
 }
 echo "Conexão feita com sucesso!";
