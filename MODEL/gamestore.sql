@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 19-Mar-2019 às 12:06
+-- Generation Time: 19-Mar-2019 às 12:26
 -- Versão do servidor: 10.1.37-MariaDB
 -- versão do PHP: 7.2.12
 
@@ -33,7 +33,7 @@ CREATE TABLE `login` (
   `user` varchar(30) NOT NULL,
   `password` varchar(30) NOT NULL,
   `cod_user` varchar(12) NOT NULL,
-  `ni-user` int(1) NOT NULL
+  `ni_user` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
