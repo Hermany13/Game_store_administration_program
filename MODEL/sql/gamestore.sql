@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 12-Mar-2019 às 04:18
--- Versão do servidor: 10.1.35-MariaDB
--- versão do PHP: 7.2.9
+-- Generation Time: 19-Mar-2019 às 12:26
+-- Versão do servidor: 10.1.37-MariaDB
+-- versão do PHP: 7.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -33,7 +33,26 @@ CREATE TABLE `login` (
   `user` varchar(30) NOT NULL,
   `password` varchar(30) NOT NULL,
   `cod_user` varchar(12) NOT NULL,
-  `ni-user` int(1) NOT NULL
+  `ni_user` int(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `usuarios`
+--
+
+CREATE TABLE `usuarios` (
+  `ID` int(11) NOT NULL,
+  `cod_user` varchar(16) NOT NULL,
+  `nome` varchar(200) NOT NULL,
+  `data_nasc` date NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `telefone` varchar(11) NOT NULL,
+  `foto` varchar(50) NOT NULL,
+  `cpf` varchar(11) NOT NULL,
+  `endereco` varchar(200) NOT NULL,
+  `situacao` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -49,6 +68,14 @@ ALTER TABLE `login`
   ADD UNIQUE KEY `user` (`user`);
 
 --
+-- Indexes for table `usuarios`
+--
+ALTER TABLE `usuarios`
+  ADD PRIMARY KEY (`ID`),
+  ADD UNIQUE KEY `cpf` (`cpf`),
+  ADD UNIQUE KEY `cod_user` (`cod_user`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -56,6 +83,12 @@ ALTER TABLE `login`
 -- AUTO_INCREMENT for table `login`
 --
 ALTER TABLE `login`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `usuarios`
+--
+ALTER TABLE `usuarios`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
