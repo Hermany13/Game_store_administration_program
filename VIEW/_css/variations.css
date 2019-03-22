@@ -25,15 +25,20 @@
 }
 
 #input2{    
-    margin: 10px auto -2px 30px;
+    margin: 10px auto -2px 3px;
     padding-left:5px;
 
 }
 
-#input3{    
-    margin: 10px auto -2px 3px;
-    padding-left:5px;
-   
+#textoInput{
+    margin-left: 30px;
+    margin-bottom: -8px;
+    margin-top: 10px;
+}
+
+#block1{
+    margin-top: -300px;
+    margin-left: 355px;
 }
 
 #Button1{
@@ -48,17 +53,64 @@
     margin-top: 15px;
 }
 
+#Button3{
+    float: right;
+    margin-right: 37px;
+    margin-top: 20px;
+}
+
+#Button4{
+    float: right;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
 #box1{
-    margin: 160px auto auto 470px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 170px;
+    position: relative;
     width:380px;
     height:210px;
+    
 }
 
 #box2{
-    margin: 160px auto auto 470px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 170px;
+    position: relative;
     width:380px;
     height:170px;
 }
+
+#box3{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    position: relative;
+    width: 385px;
+    height: 410px;
+}
+
+#box4{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    position: relative;
+    width: 390px;
+    height: 555px;
+}
+
+#box5{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    position: relative;
+    width: 740px;
+    height: 380px;
+}
+
 
 #label1{
     height: 45px; 

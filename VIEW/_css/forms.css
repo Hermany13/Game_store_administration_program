@@ -4,9 +4,6 @@
     src: url("._fonts/font16bit.ttf");
 }
 
-body{
-    background-color:white;
-}
 
 .box{
     background-color:#f4f4f4;
@@ -85,6 +82,10 @@ button:hover{
 a:hover {
     text-decoration: underline;
     cursor:pointer;
+}
+
+p{
+    text-align: justify;
 }
 
 
