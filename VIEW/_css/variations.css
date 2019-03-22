@@ -41,6 +41,11 @@
     margin-left: 355px;
 }
 
+#block2{
+    margin-top: -375px;
+    margin-left: 355px;
+}
+
 #Button1{
     float: right;
     margin-right: 25px;
@@ -111,6 +116,14 @@
     height: 380px;
 }
 
+#box6{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 45px;
+    position: relative;
+    width: 740px;
+    height: 480px;
+}
 
 #label1{
     height: 45px; 
