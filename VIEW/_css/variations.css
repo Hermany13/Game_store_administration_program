@@ -1,12 +1,15 @@
 @charset "UTF-8";
 
+#bodyDif{
+    background: #34495e;
+}
+
 #Link_EsqueciSenha{
     font:bold 12px sans-serif;
     font-weight: 200;
-    margin-left: 25px;
     text-decoration: none;
-    margin-left: 32px;
-    color: blue;
+    margin-left: 85px;
+    color: white;
 }
 
 #Link_Crie{
@@ -28,6 +31,26 @@
     margin: 10px auto -2px 3px;
     padding-left:5px;
 
+}
+
+#inputDif{
+    margin: 20px auto 10px;
+    padding-left:5px;
+    width: 200px;
+    border: 0;
+    background: none;
+    display: block;
+    text-align: center;
+    border: 2px solid #3498db;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+#inputDif:focus{
+    width: 280px;
+    border-color: #2ecc71;
 }
 
 #textoInput{
@@ -71,13 +94,15 @@
 }
 
 #box1{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 170px;
-    position: relative;
     width:380px;
+    padding: 40px;
     height:210px;
-    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #191919;    
+    text-align: center;
 }
 
 #box2{
@@ -127,6 +152,15 @@
 
 #label1{
     height: 45px; 
+}
+
+#loginMsg{    
+    margin-top: -10px;
+    color: white;
+    background: #191919;
+    text-transform: uppercase;
+    font-weight: 500;
+    
 }
 
 #msg1{
