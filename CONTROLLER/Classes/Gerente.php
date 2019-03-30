@@ -7,10 +7,11 @@ class Gerente extends User{
     private $dataNascimento;
     private $email;
     private $talefone;
-    private $foto;
+    private $foto;//Vamos tirar a foto
     //caminho da foto
 
-    function Gerente($cod_user){
+    function __construct(){
+
         $this->nomeCompleto = "";
         $this->dataNascimento = "";
         $this->email = "";
@@ -36,28 +37,29 @@ class Gerente extends User{
 
     function getFoto(){
         return $this->foto;
-        
     }
 
-    function verCaixa(){
-        require("Caixa.php");
-    }
 
-    function verEstoque(){
-        require("Estoque.php");
-        //tela de estoque (Hermany)
-        header("Location: Estoque.php");
-    }
-
-    function CadastrarLoja(){
-        //dados da loja
-        require("Produto.php");
-    }
-
-    function RegistrarFuncionario(){
-        //cadastro 
-        require("Funcionario.php");
-    }
+    //pequenas mudanças aqui tbm
+//    function verCaixa(){
+//        require("Caixa.php");
+//    }
+//
+//    function verEstoque(){
+//        require("Estoque.php");
+//        //tela de estoque (Hermany)
+//        header("Location: Estoque.php");
+//    }
+//
+//    function CadastrarLoja(){
+//        //dados da loja
+//        require("Produto.php");
+//    }
+//
+//    function RegistrarFuncionario(){
+//        //cadastro
+//        require("Funcionario.php");
+//    }
 }
 
 
