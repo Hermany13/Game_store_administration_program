@@ -5,32 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4369d4d0-6e86-4afd-8c65-14280b82914e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MODEL/PHP files/DAOALugel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MODEL/PHP files/DAOCadastroGeral.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MODEL/PHP files/DAOMovimento_Geral.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MODEL/PHP files/DAOProdutos.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MODEL/SQL/gamestore.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CONTROLLER/Controller readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CONTROLLER/Transação/loginTrans.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MODEL/Model readme.txt" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/CONTROLLER/CadastroTeste.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CONTROLLER/Classes/Movimento_S.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CONTROLLER/Transaction/CadastrarClienteTrans.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CONTROLLER/Transaction/CadastrarFuncionarioTrans.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CONTROLLER/Transaction/CadastroGerenteTrans.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CONTROLLER/Transaction/Teste.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CONTROLLER/Classes/Caixa.php" beforeDir="false" afterPath="$PROJECT_DIR$/CONTROLLER/Classes/Caixa.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CONTROLLER/Classes/Cliente.php" beforeDir="false" afterPath="$PROJECT_DIR$/CONTROLLER/Classes/Cliente.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CONTROLLER/Classes/Configuracao.php" beforeDir="false" afterPath="$PROJECT_DIR$/CONTROLLER/Classes/Configuracao.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CONTROLLER/Classes/Estoque.php" beforeDir="false" afterPath="$PROJECT_DIR$/CONTROLLER/Classes/Estoque.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CONTROLLER/Classes/Funcionario.php" beforeDir="false" afterPath="$PROJECT_DIR$/CONTROLLER/Classes/Funcionario.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CONTROLLER/Classes/Gerente.php" beforeDir="false" afterPath="$PROJECT_DIR$/CONTROLLER/Classes/Gerente.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CONTROLLER/Classes/Movimentacao.php" beforeDir="false" afterPath="$PROJECT_DIR$/CONTROLLER/Classes/Movimentacao.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CONTROLLER/Classes/O_detalhes.php" beforeDir="false" afterPath="$PROJECT_DIR$/CONTROLLER/Classes/O_detalhes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CONTROLLER/Classes/Ordens.php" beforeDir="false" afterPath="$PROJECT_DIR$/CONTROLLER/Classes/Ordens.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CONTROLLER/Classes/Produto.php" beforeDir="false" afterPath="$PROJECT_DIR$/CONTROLLER/Classes/Produto.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CONTROLLER/Classes/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/CONTROLLER/Classes/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CONTROLLER/Transaction/loginTrans.php" beforeDir="false" afterPath="$PROJECT_DIR$/CONTROLLER/Transaction/loginTrans.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MODEL/PHP files/DAOLogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/MODEL/PHP files/DAOLogin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MODEL/PHP files/cadastro_geral.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MODEL/PHP files/conn.php" beforeDir="false" afterPath="$PROJECT_DIR$/MODEL/PHP files/conn.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MODEL/PHP files/inLogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/MODEL/PHP files/inLogin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MODEL/gamestore.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MODEL/sql/gamestore.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VIEW/VIEW readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VIEW/_css/variations.css" beforeDir="false" afterPath="$PROJECT_DIR$/VIEW/_css/variations.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VIEW/cadastroCliente.html" beforeDir="false" afterPath="$PROJECT_DIR$/VIEW/cadastroCliente.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VIEW/cadastroFuncionario.html" beforeDir="false" afterPath="$PROJECT_DIR$/VIEW/cadastroFuncionario.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VIEW/cadastroGerente.html" beforeDir="false" afterPath="$PROJECT_DIR$/VIEW/cadastroGerente.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VIEW/cadastroLoja.html" beforeDir="false" afterPath="$PROJECT_DIR$/VIEW/cadastroLoja.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VIEW/cadastroProduto.html" beforeDir="false" afterPath="$PROJECT_DIR$/VIEW/cadastroProduto.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VIEW/esqueciMinhaSenha.html" beforeDir="false" afterPath="$PROJECT_DIR$/VIEW/esqueciMinhaSenha.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VIEW/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/VIEW/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/CSS/Vendor_CSS Readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/JAVASCRIPT/Vendor_javaSCRIPT readme.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,20 +33,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MODEL/PHP files/conn.php">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CONTROLLER/Transaction/loginTrans.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+            <state relative-caret-position="441">
+              <caret line="66" column="1" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MODEL/PHP files/DAOCadastroGeral.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CONTROLLER/Transaction/CadastrarFuncionarioTrans.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="697">
+              <caret line="41" column="8" lean-forward="true" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MODEL/PHP files/DAOLogin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="158" column="2" selection-start-line="158" selection-start-column="2" selection-end-line="158" selection-end-column="2" />
+            <state relative-caret-position="153">
+              <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -74,7 +81,6 @@
         <option value="$PROJECT_DIR$/MODEL/PHP files/inLogin.php" />
         <option value="$PROJECT_DIR$/CONTROLLER/Transação/loginTrans.php" />
         <option value="$PROJECT_DIR$/VIEW/login.html" />
-        <option value="$PROJECT_DIR$/CONTROLLER/Transaction/loginTrans.php" />
         <option value="$PROJECT_DIR$/CONTROLLER/Outros/Logout.php" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/CONTROLLER/Classes/User.php" />
@@ -84,6 +90,7 @@
         <option value="$PROJECT_DIR$/VIEW/cadastroGerente.html" />
         <option value="$PROJECT_DIR$/MODEL/PHP files/conn.php" />
         <option value="$PROJECT_DIR$/MODEL/PHP files/DAOLogin.php" />
+        <option value="$PROJECT_DIR$/CONTROLLER/Transaction/loginTrans.php" />
       </list>
     </option>
   </component>
@@ -117,18 +124,13 @@
             <path>
               <item name="Game_store_administration_program" type="b2602c69:ProjectViewProjectNode" />
               <item name="Game_store_administration_program" type="462c0819:PsiDirectoryNode" />
-              <item name="MODEL" type="462c0819:PsiDirectoryNode" />
+              <item name="CONTROLLER" type="462c0819:PsiDirectoryNode" />
+              <item name="Transaction" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Game_store_administration_program" type="b2602c69:ProjectViewProjectNode" />
               <item name="Game_store_administration_program" type="462c0819:PsiDirectoryNode" />
               <item name="MODEL" type="462c0819:PsiDirectoryNode" />
-              <item name="PHP files" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Game_store_administration_program" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Game_store_administration_program" type="462c0819:PsiDirectoryNode" />
-              <item name="VIEW" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -185,12 +187,12 @@
       <workItem from="1553919235135" duration="2755000" />
       <workItem from="1553922028950" duration="6027000" />
       <workItem from="1554303061762" duration="18000" />
-      <workItem from="1554303161318" duration="199000" />
+      <workItem from="1554303161318" duration="568000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9152000" />
+    <option name="totallyTimeSpent" value="9521000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -311,15 +313,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MODEL/PHP files/DAOALugel.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CONTROLLER/Transaction/loginTrans.php">
+    <entry file="file://$PROJECT_DIR$/MODEL/PHP files/DAOPedidoOnline.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-        </state>
+        <state relative-caret-position="-610" />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MODEL/PHP files/DAOMovimento_Geral.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/MODEL/PHP files/conn.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -328,10 +328,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/MODEL/PHP files/DAOALugel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MODEL/PHP files/DAOCadastroGeral.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/MODEL/PHP files/DAOLogin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="158" column="2" selection-start-line="158" selection-start-column="2" selection-end-line="158" selection-end-column="2" />
+        <state relative-caret-position="153">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CONTROLLER/Transaction/CadastrarFuncionarioTrans.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="8" lean-forward="true" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CONTROLLER/Transaction/loginTrans.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="66" column="1" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
         </state>
       </provider>
     </entry>

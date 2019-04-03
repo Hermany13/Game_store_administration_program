@@ -1,11 +1,11 @@
-<?php 
+<?php
 //Importa as conexao;
 require_once ("../../MODEL/PHP files/DAOLogin.php");
 
 //Pegar as variaveis do html
 
 //Tem que fazer a paradinha contra ataque sql, que tirar as virgulas e pontos que atrapalha o banco de dados...
-$user = $_POST['inpUser'];
+$email = $_POST['inpUser'];
 $senha = $_POST['inpPass'];
 
 //Instancia a Classe, ou deveria ao menos...
@@ -14,15 +14,14 @@ $daoLogin = new DAOLogin();
 
 //Manda os dados para a classe;
 
-$daoLogin->User = $user;
+$daoLogin->Email = $email;
 $daoLogin->Password = $senha;
 
 //Checa se a senha e o usuario estão corretos:
 
 $valido = $daoLogin->checkUserPass();
 
-if($valido==true)
-{
+if($valido==true){
     echo "OMG FUNCIonou <strong>If L24 validade da senha true</strong>";
 
     //verifica o nivel de acesso do usuario;
@@ -32,6 +31,7 @@ if($valido==true)
 
     _redirecionar($nivelDoUsuario['ni_user']);
 }
+
 else
 {
     echo "UEEEE Se chegou aqui tbm é bom <strong>If L24 validade da senha false</strong>";
@@ -60,11 +60,9 @@ function _instanciaSessao($dadosUsuario)
     //Instancia os dados do usuario na sesson
     session_start();
 
-    $_session['user'] = $dadosUsuario['user'];
+    $_session['email'] = $dadosUsuario['user'];
     $_session['password'] = $dadosUsuario['password'];
-    $_session['cod_user'] = $dadosUsuario['cod_user'];//vai ser retirado do projeto
     $_session['ni_user'] = $dadosUsuario['ni_user'];
 
 }
-
 ?>

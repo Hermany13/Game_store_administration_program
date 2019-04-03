@@ -5,9 +5,9 @@ require_once("conn.php");
 class DAOLogin extends Conn{
 //Faz a heranca da conexao...
 
-    private $Email;
-    private $Password;
-    private $Ni_user;
+    public $Email;
+    public $Password;
+    public $Ni_user;
 
     private $sql;
     private $query;
