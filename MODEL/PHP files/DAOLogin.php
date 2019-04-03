@@ -5,9 +5,9 @@ require_once("conn.php");
 class DAOLogin extends Conn{
 //Faz a heranca da conexao...
 
-    private $Email;
-    private $Password;
-    private $Ni_user;
+    public $Email;
+    public $Password;
+    public $Ni_user;
 
     private $sql;
     private $query;
@@ -36,7 +36,7 @@ class DAOLogin extends Conn{
     //consulta o nome do usuario se esta disponivel
     public function checkUserName(){
 
-        $his->sql = sprintf("SELECT `user` FROM `login` WHERE `user` = '$this->Email';");
+        $this->sql = sprintf("SELECT `user` FROM `login` WHERE `user` = '$this->Email';");
 
         $result = $this->cono->query($this->sql);
 
