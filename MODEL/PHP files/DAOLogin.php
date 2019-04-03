@@ -1,74 +1,44 @@
 <?php
 
-require ("conn.php");
+require_once("conn.php");
 
 class DAOLogin extends Conn{
 //Faz a heranca da conexao...
 
-    public $User;
-    public $Password;
-    public $Cod_user;
-    public $Ni_user;
+    private $Email;
+    private $Password;
+    private $Ni_user;
 
     private $sql;
     private $query;
     private $result;
 
-    //Finaliza a requisicao com o banco de dados, mandando a linha sql
-    private function Finalizar()
+    public $classe;
+
+
+    public function carregar()
     {
-        try
-        //tenta fazer os proximos comandos, caso de erro ele cancela
-        {
-            //define que o query privado do objeto vai receber a query do objeto conn
-            $this->query = $this->conexao->query($this->sql);
-
-            //"manda" para o banco, executa
-            $this->result = $this->query;
-
-            //retorna o resultado do banco
-            return $this->result;
-        }
-        catch (Exception $e)
-        {
-            //em caso de erro:
-            echo "Erro Finalizar DAOlogin.php: ".$e;
-        }
+        //pega os dados da classe e instancia eles.
+        $this->Email = $this->classe->Email;
+        $this->Password = $this->classe->Password;
+        $this->Ni_user = $this->classe->Niuser;
     }
+
+    //não pertence a essa classe
 
     //adiciona um usuario no sistema
     public function addUser() {
 
-        $this->sql = sprintf("INSERT INTO 'login' (user, password, cod_user, ni_user) VALUES ('$this->User', '$this->Password', '$this->Cod_user', '$this->Ni_user')");
-//        if (mysqli_query($conn, $this->query)) {
-//            echo "Adicionado com sucesso!";
-//        } else {
-//            echo "Erro: ". mysqli_error($conn);
-//        }
-
-        $result = $this->Finalizar();
+        $this->sql = sprintf("INSERT INTO `login` (user, password, ni_user) VALUES ('$this->Email', '$this->Password', '$this->Ni_user')");
+        $this->result = $this->cono->query($this->sql);
     }
 
     //consulta o nome do usuario se esta disponivel
     public function checkUserName(){
 
-        $this->sql = sprintf("SELECT `user` FROM `login` WHERE `user` = '$this->User';");
+        $this->sql = sprintf("SELECT `user` FROM `login` WHERE `user` = '$this->Email';");
 
-        $result = $this->Finalizar();
-
-        if($result->num_rows > 0) {
-            return true;
-        }else{
-            return false;
-        }
-    }
-
-    //Vamos tira o codigo de usuario, FOI MAL MOSQUEi ass: MARlon o babaca
-    public function checkUserCod(){
-
-        $this->sql =sprintf("SELECT `cod_user` FROM `login` WHERE `cod_user` = '$this->cod_user'");
-
-        $result = $this->Finalizar();
+        $result = $this->cono->query($this->sql);
 
         if($result->num_rows > 0) {
             return true;
@@ -78,19 +48,17 @@ class DAOLogin extends Conn{
     }
 
     //Consulta se a senha do usuario esta compativel com o login
+
     public function checkUserPass(){
 
-        $this->sql ="SELECT * FROM 'login' WHERE 'user'='$this->User' AND 'password'='$this->Password'";
+        $this->sql ="SELECT * FROM `login` WHERE `user`= '$this->Email' AND `password` = '$this->Password'";
 
-        $result = $this->Finalizar();
+        $result = $this->cono->query($this->sql);
 
-//        if (!$result) {
-//           echo "ERRO DOALOGIN L72 if !result ";
-//            exit();
-//        }
+        $count = $result->num_rows ;
 
-        $count = $result->num_rows  ;
         // Se o $user e $password for compativel, o número de linhas será 1
+        
         if($count==1){
             return true;
         } else {
@@ -99,13 +67,14 @@ class DAOLogin extends Conn{
     }
 
     //retorna os dados do usuario
+
     public function readUser(){
 
         if ($this->checkUserPass()){
 
-            $this->sql = sprintf("SELECT * FROM `login` WHERE `user` = '$this->User'");
+            $this->sql = sprintf("SELECT * FROM `login` WHERE `user` = '$this->Email'");
 
-            $result = $this->Finalizar();
+            $result = $this->cono->query($this->sql);
 
             $row = $result->fetch_array(MYSQLI_ASSOC);
 
@@ -124,11 +93,12 @@ class DAOLogin extends Conn{
         if($this->checkUserPass())
         {
 
-        $this->sql = "UPDATE 'login' SET 'password'='$newpassword' WHERE 'user'='$this->User'";
+            $this->sql = "UPDATE `login` SET `password` ='$newpassword' WHERE `email` ='$this->Email'";
 
-        $result = $this->Finalizar();
+                $result = $this->cono->query($this->sql);
 
-        return true;
+            return true;
+
         }
         else
         {
@@ -145,9 +115,9 @@ class DAOLogin extends Conn{
         if ($this->checkUserPass())
         {
 
-        $this->sql ="UPDATE 'login' SET 'user'='$newuser' WHERE 'user'='$this->User'";
+            $this->sql ="UPDATE `login` SET `user` ='$newuser' WHERE `email` ='$this->Email'";
 
-        $result =$this->Finalizar();
+            $result = $this->cono->query($this->sql);
 
         }
         else
@@ -159,12 +129,12 @@ class DAOLogin extends Conn{
     }
 
     //deleta o usuario...
-    public function deleteUser($deletedCod_user){
+    public function deleteUser($deleted_user){
         if ($this->checkUserPass())
         {
-            $this->sql = sprintf("DELETE FROM `login` WHERE `cod_user` = $deletedCod_user;");
+            $this->sql = sprintf("DELETE FROM `login` WHERE `email` = $deleted_user;");
 
-            $result =$this->Finalizar();
+            $result = $this->cono->query($this->sql);
         }
         else
         {
@@ -176,14 +146,14 @@ class DAOLogin extends Conn{
     //checa para ver tem registro no banco de dados
     public function checkNBD(){
 
-        $this->sql = sprintf("SELECT * FROM 'login'");
+        $this->sql = sprintf("SELECT * FROM `login`");
 
-        $result = $this->Finalizar();
+        $result = $this->cono->query($this->sql);
 
         if ($result->num_rows != 0){
             return true;
         }
-        return false;
+            return false;
     }
 }
 ?>

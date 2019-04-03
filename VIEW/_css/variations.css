@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
-#bodyDif{
+.bodyDif{
     background: #34495e;
 }
 
-#Link_EsqueciSenha{
+.Link_EsqueciSenha{
     font:bold 12px sans-serif;
     font-weight: 200;
     text-decoration: none;
@@ -12,28 +12,20 @@
     color: white;
 }
 
-#Link_Crie{
-    color: blue;
-}
 
-#Link_NaoTemConta{
-    margin-left: 32px;
-    margin-top: 30px;
-}
-
-#input1{    
+.input1{    
     margin: 10px auto -2px 30px;
     padding-left:5px;
     
 }
 
-#input2{    
+.input2{    
     margin: 10px auto -2px 3px;
     padding-left:5px;
 
 }
 
-#inputDif{
+.inputDif{
     margin: 20px auto 10px;
     padding-left:5px;
     width: 200px;
@@ -48,52 +40,57 @@
     transition: 0.25s;
 }
 
-#inputDif:focus{
+.inputDif:focus{
     width: 280px;
     border-color: #2ecc71;
+    background: none;
 }
 
-#textoInput{
+.inputDif:hover{
+    background: none;
+}
+
+.textoInput{
     margin-left: 30px;
     margin-bottom: -8px;
     margin-top: 10px;
 }
 
-#block1{
+.block1{
     margin-top: -300px;
     margin-left: 355px;
 }
 
-#block2{
+.block2{
     margin-top: -375px;
     margin-left: 355px;
 }
 
-#Button1{
+.Button1{
     float: right;
     margin-right: 25px;
     margin-top: 10px;
 }
 
-#Button2{
+.Button2{
     float: right;
     margin-right: 25px;
     margin-top: 15px;
 }
 
-#Button3{
+.Button3{
     float: right;
     margin-right: 37px;
     margin-top: 20px;
 }
 
-#Button4{
+.Button4{
     float: right;
     margin-right: 40px;
     margin-top: 20px;
 }
 
-#box1{
+.box1{
     width:380px;
     padding: 40px;
     height:210px;
@@ -105,56 +102,56 @@
     text-align: center;
 }
 
-#box2{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 170px;
-    position: relative;
+.box2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width:380px;
     height:170px;
 }
 
-#box3{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 70px;
-    position: relative;
+.box3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 385px;
     height: 450px;
 }
 
-#box4{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    position: relative;
+.box4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 390px;
     height: 555px;
 }
 
-#box5{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 80px;
-    position: relative;
+.box5{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 740px;
     height: 380px;
 }
 
-#box6{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 45px;
-    position: relative;
+.box6{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 740px;
     height: 480px;
 }
 
-#label1{
+.label1{
     height: 45px; 
 }
 
-#loginMsg{    
+.loginMsg{    
     margin-top: -10px;
     color: white;
     background: #191919;
@@ -163,7 +160,7 @@
     
 }
 
-#msg1{
+.msg1{
     line-height: 17px;
     margin-left: 30px;
     margin-top: 7px;
