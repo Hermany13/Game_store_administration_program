@@ -1,21 +1,22 @@
 <?php
 //checar quantos usuario tem no sistema:
 
-require ("/MODEL/PHP Files/DAOLogin.php");
+require ("MODEL/PHP Files/DAOLogin.php");
 
-$daoLogin = new DAOLogin();
 
-//existe usuario cadastrados?
-$BoolUser = $daoLogin->checkNBD();
-if($BoolUser == false)
-{
-    header("Location: VIEW/cadastroGerente.html");
-}
 
-//importa a classe gerente
-require ("/CONTROLLER/Classes/Gerente.php");
+//
+//$daoLogin = new DAOLogin();
+//
+////existe usuario cadastrados?
+//$BoolUser = $daoLogin->checkNBD();
+//if($BoolUser == false)
+//{
+//    echo "ta logado nao viado";
+//
+//    //header("Location: VIEW/cadastroGerente.html");
+//}
 
-//instancia ela;
 
 
 
