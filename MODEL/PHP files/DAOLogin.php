@@ -2,16 +2,12 @@
 
 require_once("conn.php");
 
-class DAOLogin extends Conn{
+class DAOLogin extends conn{
 //Faz a heranca da conexao...
 
-    private $Email;
-    private $Password;
-    private $Ni_user;
-
-    private $sql;
-    private $query;
-    private $result;
+    public $Email;
+    public $Password;
+    public $Ni_user;
 
     public $classe;
 
@@ -22,6 +18,8 @@ class DAOLogin extends Conn{
         $this->Email = $this->classe->Email;
         $this->Password = $this->classe->Password;
         $this->Ni_user = $this->classe->Niuser;
+
+        echo"carregar do daologin";
     }
 
     //não pertence a essa classe
@@ -29,16 +27,18 @@ class DAOLogin extends Conn{
     //adiciona um usuario no sistema
     public function addUser() {
 
-        $this->sql = sprintf("INSERT INTO `login` (user, password, ni_user) VALUES ('$this->Email', '$this->Password', '$this->Ni_user')");
+        $this->sql = sprintf("INSERT INTO `login` (email, password, ni_user) VALUES ('$this->Email', '$this->Password', '$this->Ni_user')");
+
         $this->result = $this->cono->query($this->sql);
+        echo"add user";
     }
 
     //consulta o nome do usuario se esta disponivel
     public function checkUserName(){
+        echo "<br>check user".$this->Email."rfefd<br>";
+        $this->sql = sprintf("SELECT `email` FROM `login` WHERE `email` = '$this->Email';");
 
-        $his->sql = sprintf("SELECT `user` FROM `login` WHERE `user` = '$this->Email';");
-
-        $result = $this->cono->query($this->sql);
+        $this->$result = $this->cono->query($this->sql);
 
         if($result->num_rows > 0) {
             return true;
@@ -51,11 +51,11 @@ class DAOLogin extends Conn{
 
     public function checkUserPass(){
 
-        $this->sql ="SELECT * FROM `login` WHERE `user`= '$this->Email' AND `password` = '$this->Password'";
+        $this->sql ="SELECT * FROM `login` WHERE `email`= '$this->Email' AND `password` = '$this->Password'";
 
-        $result = $this->cono->query($this->sql);
+        $this->$result = $this->cono->query($this->sql);
 
-        $count = $result->num_rows ;
+        $count = $this->$result->num_rows;
 
         // Se o $user e $password for compativel, o número de linhas será 1
         
@@ -72,9 +72,9 @@ class DAOLogin extends Conn{
 
         if ($this->checkUserPass()){
 
-            $this->sql = sprintf("SELECT * FROM `login` WHERE `user` = '$this->Email'");
+            $this->sql = sprintf("SELECT * FROM `login` WHERE `email` = '$this->Email'");
 
-            $result = $this->cono->query($this->sql);
+            $this->$result = $this->cono->query($this->sql);
 
             $row = $result->fetch_array(MYSQLI_ASSOC);
 
@@ -95,7 +95,7 @@ class DAOLogin extends Conn{
 
             $this->sql = "UPDATE `login` SET `password` ='$newpassword' WHERE `email` ='$this->Email'";
 
-                $result = $this->cono->query($this->sql);
+            $this->$result = $this->cono->query($this->sql);
 
             return true;
 
@@ -115,9 +115,9 @@ class DAOLogin extends Conn{
         if ($this->checkUserPass())
         {
 
-            $this->sql ="UPDATE `login` SET `user` ='$newuser' WHERE `email` ='$this->Email'";
+            $this->sql ="UPDATE `login` SET `email` ='$newuser' WHERE `email` ='$this->Email'";
 
-            $result = $this->cono->query($this->sql);
+            $this->$result = $this->cono->query($this->sql);
 
         }
         else
@@ -134,7 +134,7 @@ class DAOLogin extends Conn{
         {
             $this->sql = sprintf("DELETE FROM `login` WHERE `email` = $deleted_user;");
 
-            $result = $this->cono->query($this->sql);
+            $this->$result = $this->cono->query($this->sql);
         }
         else
         {
@@ -148,9 +148,9 @@ class DAOLogin extends Conn{
 
         $this->sql = sprintf("SELECT * FROM `login`");
 
-        $result = $this->cono->query($this->sql);
+        $this->$result = $this->cono->query($this->sql);
 
-        if ($result->num_rows != 0){
+        if ($this->$result->num_rows != 0){
             return true;
         }
             return false;

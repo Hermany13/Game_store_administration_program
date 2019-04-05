@@ -5,17 +5,10 @@ class DAOCadastroGeral extends DAOLogin{
     
     private $nomeCompleto;
     private $dataNascimento;
-    private $email;
     private $telefone;
     private $cpf;
     private $endereco;
     private $situacao;
-
-    private $sql;
-    private $query;
-    private $result;
-
-    public $classe;
 
     public function carregar()
     {
@@ -27,21 +20,24 @@ class DAOCadastroGeral extends DAOLogin{
         //pega os dados da classe Gerente/Funcionário/Cliente e instancia eles.
         $this->nomeCompleto = $this->classe->nomeCompleto;
         $this->dataNascimento = $this->classe->dataNascimento;
-        $this->email = $this->classe->email;
         $this->telefone = $this->classe->telefone;
         $this->cpf = $this->classe->cpf;
         $this->endereco = $this->classe->endereco;
         $this->situacao = $this->classe->situacao;
+
     }
 
-    public function createUser() {
-        $this->sql = sprintf("INSERT INTO `usuarios` (nome, data_nasc, email, telefone, cpf, endereco, situacao) VALUES ('$this->nomeCompleto', '$this->dataNascimento', '$this->email', '$this->telefone', '$this->cpf', '$this->endereco', '$this->situacao')");
+    public function createUser() { 
+        $this->addUser();
 
+        $this->sql = sprintf("INSERT INTO `usuarios` (nome, data_nasc, email, telefone, cpf, endereco, situacao) VALUES ('$this->nomeCompleto', '$this->dataNascimento', '$this->Email', '$this->telefone', '$this->cpf', '$this->endereco', '$this->situacao')");
+        echo "<br>sql".$this->sql;
         $this->result = $this->cono->query($this->sql);
+        echo "final do negocio";
     }
 
     public function deleteUser(){
-        $this->sql = sprintf("DELETE FROM `usuarios` WHERE `user` = $this->email;");
+        $this->sql = sprintf("DELETE FROM `usuarios` WHERE `user` = $this->Email;");
 
         if ($this->result = $this->cono->query($this->sql)){
             echo "Excluido com sucesso!";
@@ -52,7 +48,7 @@ class DAOCadastroGeral extends DAOLogin{
 
     public function updateUser(){
 
-        $this->sql = sprintf("UPDATE `usuarios` SET nome='$this->nome', data_nasc='$this->dataNascimento', telefone='$this->telefone', cpf='$this->cpf', endereco='$this->endereco', situacao='$this->situacao' WHERE email='$this->email'");
+        $this->sql = sprintf("UPDATE `usuarios` SET nome='$this->nome', data_nasc='$this->dataNascimento', telefone='$this->telefone', cpf='$this->cpf', endereco='$this->endereco', situacao='$this->situacao' WHERE email='$this->Email'");
 
         if ($this->result = $this->cono->query($this->sql)) {
             echo "Editado com sucesso!";
@@ -62,10 +58,10 @@ class DAOCadastroGeral extends DAOLogin{
     }
 
     public function readUser(){
-        $query = sprintf("SELECT * FROM `usuarios` WHERE `user` = '$this->email'");
+        $query = sprintf("SELECT * FROM `usuarios` WHERE `user` = '$this->Email'");
         $result = mysqli_query($this->cono, $query);
         
-        $row = mysqli_fetch_assoc($result);
+        $row = mysqli_fetch_assoc($this->$result);
 
         if (row == 0){
             return true;

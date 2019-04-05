@@ -9,6 +9,10 @@ class Conn
     private $SENHA = "";
     private $BD = "gamestore";
 
+    public $query;
+    public $result;
+    public $sql;
+
     public $cono;
 
     public function __construct() {
