@@ -1,10 +1,4 @@
 @charset "UTF-8";
-@font-face{
-    font-family: 'fontePrincipal';
-    src: url("._fonts/font16bit.ttf");
-}
-
-
 
 .box{
     background-color:#f4f4f4;
@@ -80,13 +74,154 @@ button:hover{
     cursor:pointer;
 }
 
+a{
+    color: white;
+}
+
 a:hover {
-    text-decoration: underline;
     cursor:pointer;
+    color: white;
+    text-decoration: none;
 }
 
 p{
     text-align: justify;
+}
+
+.header-site{
+    background-image: url(../_img/pubg2.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    padding-top: 255px;
+    padding-bottom: 200px;
+}
+
+.content-site{
+    padding-top: 400px;
+    padding-bottom: 400px;
+}
+
+.img-site{
+    background-image: url(../_img/pubg.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    color: white;
+}
+
+.footer-site{
+    background-color: #333333;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.menuNav{
+    position: absolute;
+    top: 469px;
+    width: 100%;
+}
+
+.menuNav ul{
+    list-style: none;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.menuNav li{
+    position: relative;
+    color: white;
+	display: inline;
+	background-color: #333333;
+	padding: 15px 30px 15px 40px;
+	margin: -3px;
+    transition: background-color 1s;
+}
+
+.menuNav l1 a {
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+.menuNav li:hover{
+    background-color: black;
+    cursor: pointer;
+}
+
+.menuNav li ul{
+    position:absolute; 
+    left:0;
+    background-color:#fff; 
+    display:none;
+    margin-top: 16px;
+}   
+
+.menuNav li:hover ul, .menuNav li.over ul{
+    display:block;
+    cursor: pointer;
+}
+
+.menuNav li ul li{ 
+    display:block; 
+    width: 300px;
+    left: -37px;
+    padding: 15px 30px 15px 40px;
+}
+
+.bg-modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.bg-modal-logout{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+
+.modal-content{
+    width: 300px;
+    height: 150px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.inputModal{
+    width: 50%;
+    display: block;
+    margin: 15px auto;
+}
+
+.close{
+    position: absolute;
+    top 0;
+    right: 14px;
+    font-size: 42px;
+    transform: rotate(45deg);
+    cursor: pointer;
 }
 
 
