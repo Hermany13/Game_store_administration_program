@@ -10,7 +10,7 @@
 
 ### Description:
     This project consists of an administration program for a game store with the possibility of movie rentle.
-  Our mission in this project is develop an functional tool with object orientation, following faithfully
+  Our mission in this project is develop a functional tool with object orientation, following faithfully
   the order of the client.
   
 ## Fatec Cruzeiro Prof. Waldomiro May - Projeto Terceiro Semestre em PHP, JavaScript, html5 e css3.
