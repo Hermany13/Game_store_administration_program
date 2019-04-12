@@ -9,6 +9,13 @@ class Conn
     private $USUARIO = "root";
     private $SENHA = "";
     private $BD = "gamestore";
+
+
+    public $query;
+    public $result;
+    public $sql;
+
+
     public $cono;
 
 

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 02-Abr-2019 às 13:37
+-- Generation Time: 05-Abr-2019 às 16:11
 -- Versão do servidor: 10.1.37-MariaDB
 -- versão do PHP: 7.2.12
 
@@ -33,7 +33,7 @@ CREATE TABLE `aluguel` (
   `dataPedido` date NOT NULL,
   `dataDevolucao` date NOT NULL,
   `cod_prod` varchar(25) NOT NULL,
-  `fun_email` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
   `situacao` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -63,7 +63,9 @@ CREATE TABLE `movimento_geral` (
   `valorP` float NOT NULL,
   `valorM` float NOT NULL,
   `cod_prod` varchar(16) NOT NULL,
-  `ps` varchar(200) NOT NULL
+  `ps` varchar(200) NOT NULL,
+  `fun_email` varchar(50) NOT NULL,
+  `cli_email` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------

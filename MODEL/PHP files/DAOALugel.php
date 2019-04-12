@@ -8,16 +8,10 @@ class DAOAluguel extends conn{
     private $dataPedido;
     private $dataDevolucao;
     private $cod_prod;
-    private $fun_email;
+    private $email;
     private $situacao;
-    
-
-    private $sql;
-    private $query;
-    private $result;
 
     public $classe;
-
     
     public function carregar()
     {
@@ -32,7 +26,7 @@ class DAOAluguel extends conn{
 
     //CRIA ALUGUEL
     public function create(){
-        $this->sql = sprintf("INSERT INTO `aluguel` (dataPedido, dataDevolucao, cod_prod, fun_email, situacao) VALUES ('$this->dataPedido', '$this->dataDevolucao', '$this->cod_prod', '$this->fun_email', '$this->situacao')");
+        $this->sql = sprintf("INSERT INTO `aluguel` (dataPedido, dataDevolucao, cod_prod, email, situacao) VALUES ('$this->dataPedido', '$this->dataDevolucao', '$this->cod_prod', '$this->email', '$this->situacao')");
         $this->result = $this->cono->query($this->sql);
     }
 
@@ -44,7 +38,7 @@ class DAOAluguel extends conn{
 
     //atualiza todos os dados
     public function update(){
-        $this->sql = sprintf("UPDATE `aluguel` SET `dataPedido` = '$this->dataPedido', `dataDevolucao` = '$this->dataDevolucao', `cod_prod` = '$this->cod_prod', `fun_email` = '$this->fun_email', `situacao` = '$this->situacao' WHERE `ID` = '$this->ID'");
+        $this->sql = sprintf("UPDATE `aluguel` SET `dataPedido` = '$this->dataPedido', `dataDevolucao` = '$this->dataDevolucao', `cod_prod` = '$this->cod_prod', `email` = '$this->email', `situacao` = '$this->situacao' WHERE `ID` = '$this->ID'");
         $this->result = $this->cono->query($this->sql);
     }
 
@@ -62,6 +56,11 @@ class DAOAluguel extends conn{
         $this->result = $this->cono->query($this->sql);
         $row = $this->result->fetch_array(MYSQLI_ASSOC);
         return $row;
+    }
+
+    public function devolver($id){
+        $this->sql = sprintf("UPDATE `aluguel` SET `situacao` = '1' WHERE `ID` = '$id'");
+        $this->result = $this->cono->query($this->sql);
     }
 }
 ?>
