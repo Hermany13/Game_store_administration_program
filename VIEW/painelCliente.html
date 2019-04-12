@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width-device-width, initial-scale=1">
-        <title>Efeito Parallax</title>
+        <title>Game Store</title>
         
         <link rel="stylesheet" href="_css/bootstrap.css">
         <link rel="stylesheet" href="_css/forms.css">
@@ -14,18 +14,19 @@
     <script src="https://ajax.googlepis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="_js/bootstrap.js"></script>
     <script src="_js/interativos.js"></script>
+        
+        
     
         <section class="header-site">
             
-        <div class="userDiv"><h1>Cliente Atual</h1>   
-        <p class="text-center">Bem Vindo!</p>
-        <p class="text-center"><a class="btn btn-dark" onclick="modalShowOut()">Log out</a></p>
-        </div>
         
+        <div class="linha linhaUser"><div class="contentLine">Cliente Atual<a class="logOutbtn" onclick="modalShowOut()">Log out</a></div>
+        </div>
         
         </section>
         
         <section class="content-site">
+            <div class="linha linhaPosition">
             <nav class="menuNav">
                 <ul>              
                         
@@ -42,6 +43,7 @@
                 </ul>
                 
             </nav>
+            </div>
             
             <div class="container">
                 <div class="row">
@@ -97,22 +99,7 @@
             </div>
         
         </section>
-        
-        <section class="img-site">
-        
-            <div class="container">
-                <div class="row">
-                    
-                    <div class="col-xs-12">
-                        <h1 class="text-center">The Cake is a Lie</h1>
-                        
-                        
-                    </div>
-                    
-                </div>
-            </div>
-        
-        </section>
+       
         
         <section class="footer-site">
         
@@ -132,7 +119,7 @@
             <form>
                 <p class="text-center">Deseja Sair de Sua Seção?</p>
                 <a href="" class="btn btn-danger">Sim</a>
-                <a href="" class="btn btn-dark">Cancelar</a>
+                <a href="" class="btn btn-dark" onclick="modalCloseOut()">Cancelar</a>
             </form>
         </div> 
     </div>
