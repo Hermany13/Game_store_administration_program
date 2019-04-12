@@ -1,36 +1,223 @@
 @charset "UTF-8";
 
-#Link_EsqueciSenha{
+@font-face{
+    font-family: 'Lora';
+    src: url("../_fonts/Lora-Regular.ttf");
+}
+
+.bodyDif{
+    background-image: url(../_img/batman.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Link_EsqueciSenha{
     font:bold 12px sans-serif;
     font-weight: 200;
-    margin-left: 25px;
-    text-decoration: none;
-    margin-left: 32px;
-    color: blue;
+    text-decoration: none;    
+    color: white;
 }
 
-#Link_Crie{
-    color: blue;
-}
 
-#Link_NaoTemConta{
-    margin-left: 32px;
-    margin-top: 30px;
-}
-
-#Button1{
-    float: right;
-    margin-right: 25px;
-    margin-top: 8px;
+.input1{    
+    margin: 10px auto -2px 30px;
+    padding-left:5px;
     
 }
 
-#box1{
-    margin: 160px auto auto 470px;
-    width:380px;
-    height:240px;
+.input2{    
+    margin: 10px auto -2px 3px;
+    padding-left:5px;
+
 }
 
-#label1{
+.inputDif{
+    margin: 20px auto 10px;
+    padding-left:5px;
+    width: 200px;
+    border: 0;
+    background: none;
+    display: block;
+    text-align: center;
+    border: 2px solid #800000;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.inputDif:focus{
+    width: 280px;
+    border-color: #ff0000;
+    background: none;
+}
+
+.inputDif:hover{
+    background: none;
+    border-color: #ff0000;
+}
+
+.textoInput{
+    margin-left: 30px;
+    margin-bottom: -8px;
+    margin-top: 10px;
+}
+
+.block1{
+    margin-top: -300px;
+    margin-left: 355px;
+}
+
+.block2{
+    margin-top: -375px;
+    margin-left: 355px;
+}
+
+.block3{
+    margin-top: -300px;
+    margin-left: 355px;
+}
+
+.Button1{
+    float: right;
+    margin-right: 25px;
+    margin-top: 10px;
+}
+
+.Button2{
+    float: right;
+    margin-right: 25px;
+    margin-top: 15px;
+}
+
+.Button3{
+    float: right;
+    margin-right: 37px;
+    margin-top: 20px;
+}
+
+.Button4{
+    float: right;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+.box1{
+    width:380px;
+    padding: 40px;
+    height:210px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 7px;
+    background: black;    
+    text-align: center;
+    opacity: 0.8;
+}
+
+.box2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:380px;
+    height:170px;
+}
+
+.box3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 385px;
+    height: 480px;
+}
+
+.box4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 750px;
+    height: 400px;
+}
+
+.box5{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 740px;
+    height: 400px;
+}
+
+.box6{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 740px;
+    height: 480px;
+}
+
+.label1{
     height: 45px; 
 }
+
+.loginMsg{    
+    margin-top: -10px;
+    color: white;
+    background: black;
+    text-transform: uppercase;
+    font-weight: 500;
+    
+}
+
+.msg1{
+    line-height: 17px;
+    margin-left: 30px;
+    margin-top: 7px;
+    padding-right: 100px;
+}
+
+.userDiv{
+    text-shadow: 0px 0px 5px white;
+    padding: 5px 10px 0px 10px;
+    top: 30px;
+    right: 150px;
+    position: absolute;
+    margin: 0;
+}
+
+.userDiv h1{
+    font-family: 'Lora', sans-serif;
+    margin: 0px;
+}
+
+.linhaPosition{
+    margin-bottom: 300px;
+    margin-top: -400px;
+    height: 44px;
+}
+
+.linhaUser{
+    top: 0px;
+    position: absolute;
+    padding: 13px;
+    width: 100%;
+    text-align: right;
+}
+
+.logOutbtn{
+    border-left: 1px solid white;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+
+
+
+
+
