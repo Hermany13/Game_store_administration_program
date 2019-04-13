@@ -27,6 +27,7 @@ class Produto{
         $this->dataLancamento = "";
         //disponivel ou indisponivel
         $this->estado = "";
+
         //aventura, ação, terror...
         $this->genero = "";
         //plataforma de console ou dvd;

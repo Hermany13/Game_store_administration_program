@@ -3,6 +3,7 @@
 require("User.php");
 
 class Gerente extends User{
+
     public $nomeCompleto;
     public $dataNascimento;
     public $email;

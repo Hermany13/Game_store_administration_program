@@ -50,5 +50,4 @@ class Cliente extends User{
     }
 
 }
-
 ?>

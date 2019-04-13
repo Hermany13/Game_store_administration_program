@@ -1,39 +1,38 @@
 @charset "UTF-8";
 
-#bodyDif{
-    background: #34495e;
+@font-face{
+    font-family: 'Lora';
+    src: url("../_fonts/Lora-Regular.ttf");
 }
 
-#Link_EsqueciSenha{
+.bodyDif{
+    background-image: url(../_img/batman.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Link_EsqueciSenha{
     font:bold 12px sans-serif;
     font-weight: 200;
-    text-decoration: none;
-    margin-left: 85px;
+    text-decoration: none;    
     color: white;
 }
 
-#Link_Crie{
-    color: blue;
-}
 
-#Link_NaoTemConta{
-    margin-left: 32px;
-    margin-top: 30px;
-}
-
-#input1{    
+.input1{    
     margin: 10px auto -2px 30px;
     padding-left:5px;
     
 }
 
-#input2{    
+.input2{    
     margin: 10px auto -2px 3px;
     padding-left:5px;
 
 }
 
-#inputDif{
+.inputDif{
     margin: 20px auto 10px;
     padding-left:5px;
     width: 200px;
@@ -41,59 +40,70 @@
     background: none;
     display: block;
     text-align: center;
-    border: 2px solid #3498db;
+    border: 2px solid #800000;
     outline: none;
     color: white;
     border-radius: 24px;
     transition: 0.25s;
 }
 
-#inputDif:focus{
+.inputDif:focus{
     width: 280px;
-    border-color: #2ecc71;
+    border-color: #ff0000;
+    background: none;
 }
 
-#textoInput{
+.inputDif:hover{
+    background: none;
+    border-color: #ff0000;
+}
+
+.textoInput{
     margin-left: 30px;
     margin-bottom: -8px;
     margin-top: 10px;
 }
 
-#block1{
+.block1{
     margin-top: -300px;
     margin-left: 355px;
 }
 
-#block2{
+.block2{
     margin-top: -375px;
     margin-left: 355px;
 }
 
-#Button1{
+.block3{
+    margin-top: -300px;
+    margin-left: 355px;
+}
+
+.Button1{
     float: right;
     margin-right: 25px;
     margin-top: 10px;
 }
 
-#Button2{
+.Button2{
     float: right;
     margin-right: 25px;
     margin-top: 15px;
 }
 
-#Button3{
+.Button3{
     float: right;
     margin-right: 37px;
     margin-top: 20px;
 }
 
-#Button4{
+.Button4{
     float: right;
     margin-right: 40px;
     margin-top: 20px;
 }
 
-#box1{
+.box1{
     width:380px;
     padding: 40px;
     height:210px;
@@ -101,71 +111,113 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #191919;    
+    border-radius: 7px;
+    background: black;    
     text-align: center;
+    opacity: 0.8;
 }
 
-#box2{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 170px;
-    position: relative;
+.box2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width:380px;
     height:170px;
 }
 
-#box3{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 70px;
-    position: relative;
+.box3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 385px;
-    height: 410px;
+    height: 480px;
 }
 
-#box4{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    position: relative;
-    width: 390px;
-    height: 555px;
+.box4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 750px;
+    height: 400px;
 }
 
-#box5{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 80px;
-    position: relative;
+.box5{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 740px;
-    height: 380px;
+    height: 400px;
 }
 
-#box6{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 45px;
-    position: relative;
+.box6{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 740px;
     height: 480px;
 }
 
-#label1{
+.label1{
     height: 45px; 
 }
 
-#loginMsg{    
+.loginMsg{    
     margin-top: -10px;
     color: white;
-    background: #191919;
+    background: black;
     text-transform: uppercase;
     font-weight: 500;
     
 }
 
-#msg1{
+.msg1{
     line-height: 17px;
     margin-left: 30px;
     margin-top: 7px;
     padding-right: 100px;
 }
+
+.userDiv{
+    text-shadow: 0px 0px 5px white;
+    padding: 5px 10px 0px 10px;
+    top: 30px;
+    right: 150px;
+    position: absolute;
+    margin: 0;
+}
+
+.userDiv h1{
+    font-family: 'Lora', sans-serif;
+    margin: 0px;
+}
+
+.linhaPosition{
+    margin-bottom: 300px;
+    margin-top: -400px;
+    height: 44px;
+}
+
+.linhaUser{
+    top: 0px;
+    position: absolute;
+    padding: 13px;
+    width: 100%;
+    text-align: right;
+}
+
+.logOutbtn{
+    border-left: 1px solid white;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+
+
+
+
+

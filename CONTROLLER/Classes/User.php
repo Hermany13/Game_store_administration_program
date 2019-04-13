@@ -3,7 +3,6 @@
 //Require(): Tenta incluir uma página. Caso de algum erro, o script retorna um fatal error e aborta a execução do script.
 //include_once() e require_once(): Idênticas as suas funções simples, porém se o arquivo referenciado 
 //já foi incluso na página anteriormente, a função retorna ‘false’ e o arquivo não é incluido.
-
 // classe usuario, dentro dela estão as variaveis privadas;
 
 class User

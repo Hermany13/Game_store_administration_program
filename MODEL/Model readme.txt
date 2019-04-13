@@ -1,1 +1,0 @@
-Pasta Contendo todos as conexões com o banco de dados.

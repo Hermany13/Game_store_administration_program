@@ -1,6 +1,5 @@
 <?php
 //Importa as conexao;
-require_once("../../MODEL/PHP files/DAOLogin.php");
 
 //Pegar as variaveis do html
 
