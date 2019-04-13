@@ -13,7 +13,7 @@ $cone = new DAOCadastroGeral();
 
 $nome = mysqli_real_escape_string($cone->cono, trim($_POST['nomeCompleto']));
 $email = mysqli_real_escape_string($cone->cono, trim($_POST['email']));
-$senha = "senha"; //mysqli_real_escape_string($log->cono, trim($_POST['senha']));
+$senha = mysqli_real_escape_string($cone->cono, trim($_POST['senha']));
 $nivel = 0;
 $telefone = mysqli_real_escape_string($cone->cono, trim($_POST['telefone']));
 $dataNascimento = mysqli_real_escape_string($cone->cono, trim($_POST['dataNascimento']));
@@ -50,15 +50,4 @@ else{
 	echo "se fodeu :/";
 }
 
-//redirecionamento para página de funcionário ou gerente através da checagem do nivel de acesso
-            //será implementado no futuro
-
-//if($ni == 1){
-    //header("");
-    //exit();
-//}
-//else if ($ni == 2){
-    //header("");
-    //exit();
-//}
 ?>

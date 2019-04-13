@@ -13,7 +13,7 @@ $cone = new DAOCadastroGeral();
 
 $nome = mysqli_real_escape_string($cone->cono, trim($_POST['nomeCompleto']));
 $email = mysqli_real_escape_string($cone->cono, trim($_POST['email']));
-$senha = "senhaGerente";
+$senha = mysqli_real_escape_string($cone->cono, trim($_POST['senha']));
 $nivel = 2;
 $telefone = mysqli_real_escape_string($cone->cono, trim($_POST['telefone']));
 $dataNascimento = mysqli_real_escape_string($cone->cono, trim($_POST['dataNascimento']));

@@ -3,11 +3,12 @@
 require("User.php");
 
 class Gerente extends User{
-    private $nomeCompleto;
-    private $dataNascimento;
-    private $email;
-    private $talefone;
-    private $foto;//Vamos tirar a foto
+
+    public $nomeCompleto;
+    public $dataNascimento;
+    public $email;
+    public $telefone;
+    public $foto;//Vamos tirar a foto
     //caminho da foto
 
     function __construct(){
