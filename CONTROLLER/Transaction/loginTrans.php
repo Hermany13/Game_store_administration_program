@@ -1,6 +1,6 @@
-<?php 
+<?php
 //Importa as conexao;
-require_once ("../../MODEL/PHP files/DAOLogin.php");
+require_once("../../MODEL/PHP files/DAOLogin.php");
 
 //Pegar as variaveis do html
 
@@ -65,5 +65,4 @@ function _instanciaSessao($dadosUsuario)
     $_session['ni_user'] = $dadosUsuario['ni_user'];
 
 }
-
 ?>
