@@ -6,14 +6,16 @@
         <title>Cadastro de Cliente</title>
         <link rel="stylesheet" href="_css/forms.css"/>
         <link rel="stylesheet" href="_css/variations.css"/>
+        
     </head>
     <body>
+        <script src="_js/interativos.js"></script>
         <div>
             <div class="box box5">
-                <div class="label label1">Cadastro de iCliente</div>                
-                <form>
+                <div class="label label1">Cadastro de Cliente</div>                
+               <form action="../CONTROLLER/Transaction/CadastrarClienteTrans.php" method="post">
                     <div><div class="textoInput">Nome Completo:</div>
-                    <input class="input1" type="text" placeholder="Ex: Fulano da Silva" name="nomeCompleto"/></div>
+                    <input class="input1" type="text" placeholder="Ex: Fulano da Silva" name="nomeCompleto" maxlength="100"/></div>
                     
                     <div><div class="textoInput">Data de Nascimento:</div>
                     <input class="input1" type="date" name="dataNascimento" placeholder="dd/mm/aaaa"/> </div>  
@@ -27,7 +29,7 @@
                     
                      <div>
                     <div class="textoInput">Cpf:</div>
-                    <input class="input1" type="text" name="cpf" placeholder="Ex: 999.999.999-99"/>
+                    <input oninput="mascara(this, 'cpf')" class="input1" type="text" name="cpf" placeholder="Ex.: 000.000.000-00"/>
                     </div>
                     
                     <div class="block1">
@@ -46,19 +48,17 @@
                     
                     <div>
                     <div class="textoInput">Endereço:</div>
-                    <input class="input1" type="text" name="endereco" placeholder="Situação"/>
+                    <input class="input1" type="text" name="endereco" placeholder="Endereço"/>
                     </div>
                     
-                    <div>
-                    <div class="textoInput">Situação:</div>
-                    <input class="input1" type="text" name="situacao" placeholder="Endereço"/>
-                    </div>
-                    </div>
+                    
                     
                     <div><button class="Button4" type="submit">Cadastrar</button>
                     </div>
+                </div>    
                 </form>        
-            </div>
+            
         </div>
+        </div>    
     </body>
 </html>

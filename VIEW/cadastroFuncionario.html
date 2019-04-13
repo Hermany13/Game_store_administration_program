@@ -6,12 +6,13 @@
         <title>Cadastro Funcionário</title>
         <link rel="stylesheet" href="_css/forms.css"/>
         <link rel="stylesheet" href="_css/variations.css"/>
+        <script src="_js/interativos.js"></script>
     </head>
     <body>
         <div>
             <div class="box box4">
                 <div class="label label1">Cadastro de Funcionário</div>                
-                <form>
+                <form action="../CONTROLLER/Transaction/CadastrarFuncionarioTrans.php" method="post">
                     <div><div class="textoInput">Nome Completo:</div>
                     <input class="input1" type="text" placeholder="Ex: Fulano da Silva" name="nomeCompleto"/></div>
                     
@@ -43,7 +44,7 @@
                     
                     <div>
                     <div class="textoInput">Cpf:</div>
-                    <input class="input1" type="text" name="cpf" placeholder="Ex: 999.999.999-99"/>
+                    <input oninput="mascara(this, 'cpf')" class="input1" type="text" name="cpf" placeholder="Ex: 999.999.999-99"/>
                     </div>
                     
                     
