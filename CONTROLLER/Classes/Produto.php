@@ -9,7 +9,7 @@ class Produto{
     //venda ou aluguel
     public $tipoComercio;
     public $dataLancamento;
-    public $situacao;
+    public $estado;
     public $genero;
     public $plataforma;
 
@@ -26,7 +26,7 @@ class Produto{
         //data de lançamento do produto, após um ano o produto recebe desconto.
         $this->dataLancamento = "";
         //disponivel ou indisponivel
-        $this->situacao = "";
+        $this->estado = "";
         //aventura, ação, terror...
         $this->genero = "";
         //plataforma de console ou dvd;
@@ -58,7 +58,7 @@ class Produto{
     }
 
     function getSituacao(){
-        return $this->situacao;
+        return $this->estado;
     }
 
     function getGenero(){
