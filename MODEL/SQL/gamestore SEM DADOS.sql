@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 05-Abr-2019 às 16:11
+-- Generation Time: 12-Abr-2019 às 16:25
 -- Versão do servidor: 10.1.37-MariaDB
 -- versão do PHP: 7.2.12
 
@@ -114,8 +114,8 @@ CREATE TABLE `usuarios` (
   `email` varchar(50) NOT NULL,
   `nome` varchar(200) NOT NULL,
   `data_nasc` date NOT NULL,
-  `telefone` varchar(11) NOT NULL,
-  `cpf` varchar(11) NOT NULL,
+  `telefone` varchar(20) NOT NULL,
+  `cpf` varchar(20) NOT NULL,
   `endereco` varchar(200) NOT NULL,
   `situacao` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -178,7 +178,7 @@ ALTER TABLE `aluguel`
 -- AUTO_INCREMENT for table `login`
 --
 ALTER TABLE `login`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT for table `movimento_geral`
@@ -202,7 +202,7 @@ ALTER TABLE `produtos`
 -- AUTO_INCREMENT for table `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
