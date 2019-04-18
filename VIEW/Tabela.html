@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Tabela</title>
+
+ <link href="_css/bootstrap.min.css" rel="stylesheet">
+ <link href="_css/style.css" rel="stylesheet">
+ <link href="_css/variations.css" rel="stylesheet">
+ <link href="_css/forms.css" rel="stylesheet">
+ <script src="_js/interativos.js"></script>    
+</head>
+<body> 
+
+ <script src="js/_jquery.min.js"></script>
+ <script src="js/_bootstrap.min.js"></script>
+    
+ <nav class="navbar navbar-inverse navbar-fixed-top">
+ <div class="container-fluid">
+  <div class="navbar-header">
+   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+   </button>
+   <a class="navbar-brand" href="#">Nome da Loja</a>
+  </div>
+  <div id="navbar" class="navbar-collapse collapse">
+   <ul class="nav navbar-nav navbar-right">
+    <li><a href="#">XXX</a></li>
+    <li><a href="#">XXX</a></li>
+    <li><a href="#">XXX</a></li>
+    <li><a href="#">XXX</a></li>
+   </ul>
+  </div>
+ </div>     
+</nav>
+    <div id="main" class="container-fluid">
+     <div id="top" class="row">
+ 
+     </div> 
+ 
+     <hr />
+     <div id="list" class="row">
+     
+     </div> 
+ 
+     <div id="bottom" class="row">
+     
+     </div> 
+ </div>     
+    <div id="top" class="row">
+    <div class="col-md-3">
+        <h2>Estoque</h2>
+    </div>
+ 
+    <div class="col-md-6">
+        <div class="input-group h2">
+            <input name="data[search]" class="form-control" id="search" type="text" placeholder="Pesquisar Itens no Estoque">
+            <span class="input-group-btn">
+                <button class="btn btn-primary" type="submit">
+                    <span class="glyphicon glyphicon-search"></span>
+                </button>
+            </span>
+        </div>
+    </div>
+ 
+    <div class="col-md-3">
+        <a href="add.html" class="btn btn-primary pull-right h2">Novo Item</a>
+    </div>
+</div> 
+  <div id="list" class="row">
+ 
+    <div class="table-responsive col-md-12">
+        <table class="table table-striped" cellspacing="0" cellpadding="0">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome do Produto</th>
+                    <th>Preço</th>
+                    <th>Quantidade</th>
+                    <th class="actions">Ações</th>
+                 </tr>
+            </thead>
+            <tbody>
+ 
+                <tr>
+                    <td>1001</td>
+                    <td>Batman Arkhan City</td>
+                    <td>R$ 69,90</td>
+                    <td>15</td>
+                    <td class="actions">
+                        <a class="btn btn-success btn-xs" href="view.html">Adicionar</a>
+                        <a class="btn btn-warning btn-xs" href="edit.html">Editar</a>
+                        <a onclick="modalShowOut()" class="btn btn-danger btn-xs"  href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
+                    </td>
+                </tr>
+                 <tr>
+                    <td>1002</td>
+                    <td>Batman Arkhan Origins</td>
+                    <td>R$ 89,90</td>
+                    <td>20</td>
+                    <td class="actions">
+                        <a class="btn btn-success btn-xs" href="view.html">Adicionar</a>
+                        <a class="btn btn-warning btn-xs" href="edit.html">Editar</a>
+                        <a  onclick="modalShowOut()"class="btn btn-danger btn-xs"  href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
+                    </td>
+                </tr>
+                 <tr>
+                    <td>1003</td>
+                    <td>Carros 1 (Bluray)</td>
+                    <td>R$ 30,90</td>
+                    <td>2</td>
+                    <td class="actions">
+                        <a class="btn btn-success btn-xs" href="view.html">Adicionar</a>
+                        <a class="btn btn-warning btn-xs" href="edit.html">Editar</a>
+                        <a  onclick="modalShowOut()"class="btn btn-danger btn-xs"  href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
+                    </td>
+                </tr>
+                 <tr>
+                    <td>1004</td>
+                    <td>A volta dos que não foram</td>
+                    <td>R$ 1209,90</td>
+                    <td>150</td>
+                    <td class="actions">
+                        <a class="btn btn-success btn-xs" href="view.html">Adicionar</a>
+                        <a class="btn btn-warning btn-xs" href="edit.html">Editar</a>
+                        <a  onclick="modalShowOut()"class="btn btn-danger btn-xs"  href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
+                    </td>
+                </tr>
+            </tbody>
+         </table>
+ 
+     </div>
+ </div> 
+    <div id="bottom" class="row">
+    <div class="col-md-12">
+         
+        <ul class="pagination">
+            <li class="disabled"><a>&lt; Anterior</a></li>
+            <li class="disabled"><a>1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li class="next"><a href="#" rel="next">Próximo &gt;</a></li>
+        </ul>
+ 
+    </div>
+</div> 
+   
+    
+    <div class="bg-modal-logout">
+        <div class="modal-content">
+            <div id="close" class="close" onclick="modalCloseOut()">+</div>
+            <form>
+                <p class="text-center">Deseja realmente excluir?</p>
+                <a href="" class="btn btn-danger">Sim</a>
+                <a href="" class="btn btn-danger" onclick="modalCloseOut()">Não</a>
+            </form>
+        </div> 
+    </div>
+</body>
+</html>
