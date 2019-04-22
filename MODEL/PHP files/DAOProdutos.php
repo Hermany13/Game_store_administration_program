@@ -59,16 +59,15 @@ class DAOProdutos extends conn{
         public function read(){
             $this->sql = sprintf("SELECT * FROM `produtos` WHERE `cod_prod` = '$this->cod_prod'");
             $this->result = $this->cono->query($this->sql);
-            $row = $this->result->fetch_array(MYSQLI_ASSOC);
-            return $row;
+            return $this->result;
     }
 
         //le dados da tabela toda
         public function readsProdutos(){
             $this->sql = sprintf("SELECT * FROM `produtos`");
             $this->result = $this->cono->query($this->sql);
-            $row = $this->result->fetch_array(MYSQLI_ASSOC);
-            return $row;
+            $this->result = $this->cono->query($this->sql);
+            return $this->result;
         }
 
         public function checkCod_prod($cod_prod){
@@ -86,29 +85,25 @@ class DAOProdutos extends conn{
         public function readsGenero($genero){
             $this->sql = sprintf("SELECT * FROM `produtos` WHERE `genero` = '$genero'");
             $this->result = $this->cono->query($this->sql);
-            $row = $this->result->fetch_array(MYSQLI_ASSOC);
-            return $row;
+            return $this->result;
         }
 
         public function readsPlataforma($plataforma){
             $this->sql = sprintf("SELECT * FROM `produtos` WHERE `plataforma` = '$plataforma'");
             $this->result = $this->cono->query($this->sql);
-            $row = $this->result->fetch_array(MYSQLI_ASSOC);
-            return $row;
+            return $this->result;
         }
 
         public function readsEstado($estado){
             $this->sql = sprintf("SELECT * FROM `produtos` WHERE `estado` = '$estado'");
             $this->result = $this->cono->query($this->sql);
-            $row = $this->result->fetch_array(MYSQLI_ASSOC);
-            return $row;
+            return $this->result;
         }
 
         public function readsDataLacamento($data_lancamento){
             $this->sql = sprintf("SELECT * FROM `produtos` WHERE `data_lancamento` = '$data_lancamento'");
             $this->result = $this->cono->query($this->sql);
-            $row = $this->result->fetch_array(MYSQLI_ASSOC);
-            return $row;
+            return $this->result;
         }
 }
 ?>

@@ -46,16 +46,14 @@ class DAOAluguel extends conn{
     public function read(){
         $this->sql = sprintf("SELECT * FROM `aluguel` WHERE `ID` = '$this->ID'");
         $this->result = $this->cono->query($this->sql);
-        $row = $this->result->fetch_array(MYSQLI_ASSOC);
-        return $row;
+        return $this->result;
     }
 
     //le dados da tabela toda
     public function reads(){
         $this->sql = sprintf("SELECT * FROM `aluguel`");
         $this->result = $this->cono->query($this->sql);
-        $row = $this->result->fetch_array(MYSQLI_ASSOC);
-        return $row;
+        return $this->result;
     }
 
     public function devolver($id){

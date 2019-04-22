@@ -27,9 +27,7 @@ class DAOLogin extends conn{
 
     //adiciona um usuario no sistema
     public function addUser() {
-
         $this->sql = sprintf("INSERT INTO `login` (email, password, ni_user) VALUES ('$this->Email', '$this->Password', '$this->Ni_user')");
-
         $this->result = $this->cono->query($this->sql);
         echo"add user";
     }
@@ -38,9 +36,7 @@ class DAOLogin extends conn{
     public function checkUserName(){
         echo "<br>check user".$this->Email."rfefd<br>";
         $this->sql = sprintf("SELECT `email` FROM `login` WHERE `email` = '$this->Email';");
-
         $this->$result = $this->cono->query($this->sql);
-
         if($result->num_rows > 0) {
             return true;
         }else{
@@ -51,15 +47,10 @@ class DAOLogin extends conn{
     //Consulta se a senha do usuario esta compativel com o login
 
     public function checkUserPass(){
-
         $this->sql ="SELECT * FROM `login` WHERE `email`= '$this->Email' AND `password` = '$this->Password'";
-
         $this->$result = $this->cono->query($this->sql);
-
         $count = $this->$result->num_rows;
-
         // Se o $user e $password for compativel, o número de linhas será 1
-        
         if($count==1){
             return true;
         } else {
@@ -72,14 +63,9 @@ class DAOLogin extends conn{
     public function readUser(){
 
         if ($this->checkUserPass()){
-
             $this->sql = sprintf("SELECT * FROM `login` WHERE `email` = '$this->Email'");
-
-            $this->$result = $this->cono->query($this->sql);
-
-            $row = $result->fetch_array(MYSQLI_ASSOC);
-
-            return $row;
+            $this->result = $this->cono->query($this->sql);
+            return $this->result;
         }
         else
             {
@@ -93,13 +79,9 @@ class DAOLogin extends conn{
 
         if($this->checkUserPass())
         {
-
             $this->sql = "UPDATE `login` SET `password` ='$newpassword' WHERE `email` ='$this->Email'";
-
             $this->$result = $this->cono->query($this->sql);
-
             return true;
-
         }
         else
         {
@@ -112,14 +94,10 @@ class DAOLogin extends conn{
 
     //não vai pode mais mudar, foi mal 2
     public function changeUser($newuser){
-
         if ($this->checkUserPass())
         {
-
             $this->sql ="UPDATE `login` SET `email` ='$newuser' WHERE `email` ='$this->Email'";
-
             $this->$result = $this->cono->query($this->sql);
-
         }
         else
         {
