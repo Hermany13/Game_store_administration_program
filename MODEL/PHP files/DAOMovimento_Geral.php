@@ -52,79 +52,68 @@ class DAOMovimento_Geral extends conn{
         public function read(){
             $this->sql = sprintf("SELECT * FROM `movimento_geral` WHERE `ID` = '$this->ID'");
             $this->result = $this->cono->query($this->sql);
-            $row = $this->result->fetch_array(MYSQLI_ASSOC);
-            return $row;
+            return $this->result;
     }
 
         //le dados da tabela toda
         public function reads(){
             $this->sql = sprintf("SELECT * FROM `movimento_geral`");
             $this->result = $this->cono->query($this->sql);
-            $row = $this->result->fetch_array(MYSQLI_ASSOC);
-            return $row;
+            return $this->result;
         }
 
         public function readsData($data){
             $this->sql = sprintf("SELECT * FROM `movimento_geral` WHERE `data` = '$data'");
             $this->result = $this->cono->query($this->sql);
-            $row = $this->result->fetch_array(MYSQLI_ASSOC);
-            return $row;
+            return $this->result;
         }
         
         public function readsCliente($cli_email){
             $this->sql = sprintf("SELECT * FROM `movimento_geral` WHERE `cli_email` = '$cli_email'");
             $this->result = $this->cono->query($this->sql);
-            $row = $this->result->fetch_array(MYSQLI_ASSOC);
-            return $row;
+            return $this->result;
         }
 
         public function readsClienteData($data, $cli_email){
             $this->sql = sprintf("SELECT * FROM `movimento_geral` WHERE `cli_email` = '$cli_email' AND `data` = '$data'");
             $this->result = $this->cono->query($this->sql);
-            $row = $this->result->fetch_array(MYSQLI_ASSOC);
-            return $row;
+            return $this->result;
         }
 
         public function readsProduto($cod_prod){
             $this->sql = sprintf("SELECT * FROM `movimento_geral` WHERE `cod_prod` = '$cod_prod'");
             $this->result = $this->cono->query($this->sql);
-            $row = $this->result->fetch_array(MYSQLI_ASSOC);
-            return $row;
+            return $this->result;
         }
 
         public function readsProdutoData($cod_prod, $data){
             $this->sql = sprintf("SELECT * FROM `movimento_geral` WHERE `cod_prod` = '$cod_prod' AND `data` = '$data'");
             $this->result = $this->cono->query($this->sql);
-            $row = $this->result->fetch_array(MYSQLI_ASSOC);
-            return $row;
+            return $this->result;
         }
 
         public function readsFuncionario($fun_email){
             $this->sql = sprintf("SELECT * FROM `movimento_geral` WHERE `fun_email` = '$fun_email'");
             $this->result = $this->cono->query($this->sql);
-            $row = $this->result->fetch_array(MYSQLI_ASSOC);
-            return $row;
+            return $this->result;
         }
 
         public function readsProdutoData($cod_prod, $data){
             $this->sql = sprintf("SELECT * FROM `movimento_geral` WHERE `cod_prod` = '$cod_prod' AND `data` = '$data'");
             $this->result = $this->cono->query($this->sql);
-            $row = $this->result->fetch_array(MYSQLI_ASSOC);
-            return $row;
+            return $this->result;
         }
 
         public function readsFuncionarioData($fun_email, $data){
             $this->sql = sprintf("SELECT * FROM `movimento_geral` WHERE `fun_email` = '$fun_email' AND `data` = '$data'");
             $this->result = $this->cono->query($this->sql);
-            $row = $this->result->fetch_array(MYSQLI_ASSOC);
-            return $row;
+            return $this->result;
         }
 
         public function readsDatas($dataI, $dataF){
             $this->sql = sprintf("SELECT * FROM `movimento_geral` WHERE `data` BETWEEN '$dataI' AND '$dataF");
             $this->result = $this->cono->query($this->sql);
-            $row = $this->result->fetch_array(MYSQLI_ASSOC);
-            return $row;
+            return $this->result;
         }
 }
 ?>

@@ -35,6 +35,4 @@ class Conn
 //        echo "fconexao l27 conn <br>";
     }
 }
-
-
 ?>

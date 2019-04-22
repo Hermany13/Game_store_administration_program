@@ -59,17 +59,8 @@ class DAOCadastroGeral extends DAOLogin{
 
     public function readUser(){
         $query = sprintf("SELECT * FROM `usuarios` WHERE `user` = '$this->Email'");
-        $result = mysqli_query($this->cono, $query);
-        
-        $row = mysqli_fetch_assoc($this->$result);
-
-        if (row == 0){
-            return true;
-        }
-        else{
-            return false;
-        }
-        
+        $this->result = $this->cono->query($this->sql);
+        return $this->result;
     }
 }
 ?>
