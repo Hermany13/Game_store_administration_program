@@ -1,55 +1,53 @@
 @charset "UTF-8";
 
-.box{
-    background-color:#f4f4f4;
-    border-radius:5px;
-    opacity:0.5; 
-    border-radius:5px;
+.box{   
+ 
+ 
     position: absolute;
-    box-shadow: 0px 0px 5px black;
+    
     overflow: hidden;
-    padding: -10px;
+
     
 }
 
 
-.label{
-    background: rgb(238,238,238); 
-    background: -moz-linear-gradient(top, rgba(238,238,238,1) 0%, rgba(238,238,238,1) 100%); 
-    background: -webkit-linear-gradient(top, rgba(238,238,238,1) 0%,rgba(238,238,238,1) 100%); 
-    background: linear-gradient(to bottom, rgba(238,238,238,1) 0%,rgba(238,238,238,1) 100%); 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#eeeeee',GradientType=0 );  
-    text-align: center;
+.label{   
+    margin-top: -280px;
+    color: rgba(0, 0, 0, 0.7);
     font:bold 14px/45px sans-serif;
-    border-bottom: 1px solid white;
-    box-shadow: 1px 0px 3px black;
-    text-shadow: 1px 0px 1px white;     
+    margin-left: 15px; 
+    border-bottom: 0.5px solid rgba(0, 0, 0, .7);
+    padding-right: 100px;
 }
      
 
 input{    
     font:normal 13px sans-serif;
     color:black;
-    border-radius:3px;
+    
     border: 1px solid #bfc4c6;
+    border-radius:6px;
     outline:none;
     align-content: center;
-    width:310px;
-    height:35px;
-    background-color:#f2f5f7;
-    border-radius:3px;    
-    padding:5px;
+    width:350px;
+    height:45px;
+   
+    padding:10px;   
+    
+    background-color: transparent;
+    
+    
+    
+}
+
+input:focus{
+    outline-offset: -2;
+   border: 1px solid #005eff; 
 }
 
 
-input:hover{
-    border-color:#7dc6dd;
-    background-color:#e0f1fc;
 
-}
-
-
-button{    
+/*button{    
     background-color:red;
     padding:5px 15px;
     font:bold 12px sans-serif;
@@ -63,7 +61,7 @@ button{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edf6f9', endColorstr='#cde5ee',GradientType=0 );
     color:#000000;
     box-shadow:0px 0px 10px #c9c9c9;    
-}
+}*/
 
 button:hover{
     background: rgb(205,229,238); 
@@ -89,7 +87,7 @@ p{
 }
 
 .header-site{
-    background-image: url(../_img/mirrorsedge.jpg);
+    background-image: url(../_img/batman.png);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;

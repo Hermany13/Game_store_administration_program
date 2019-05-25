@@ -6,7 +6,7 @@
 }
 
 .bodyDif{
-    background-image: url(../_img/batman.png);
+    background-image: url(../_img/mirrorsedge.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -45,6 +45,7 @@
     color: white;
     border-radius: 24px;
     transition: 0.25s;
+    height: 30px;
 }
 
 .inputDif:focus{
@@ -65,8 +66,8 @@
 }
 
 .block1{
-    margin-top: -300px;
-    margin-left: 355px;
+    margin-top: -395px;
+    margin-left: 380px;
 }
 
 .block2{
@@ -75,8 +76,8 @@
 }
 
 .block3{
-    margin-top: -300px;
-    margin-left: 355px;
+    margin-top: -315px;
+    margin-left: 380px;
 }
 
 .Button1{
@@ -99,14 +100,31 @@
 
 .Button4{
     float: right;
-    margin-right: 40px;
-    margin-top: 20px;
+    margin-right: 110px;
+    margin-top: 90px;
 }
+
+.loginButton{
+    margin: 20px auto 10px;
+    padding-left:5px;
+    width: 100px;
+    border: 0;
+    background: none;
+    display: block;
+    text-align: center;
+    border: 2px solid #800000;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    height: 35px;
+}
+
 
 .box1{
     width:380px;
     padding: 40px;
-    height:210px;
+    height:240px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -128,6 +146,7 @@
 
 .box3{
     position: absolute;
+    
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -137,20 +156,22 @@
 
 .box4{
     position: absolute;
-    top: 50%;
+    top: 700px;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 750px;
-    height: 400px;
+    width: 760px;
+    height: 900px;
+    padding-top: 400px;
 }
 
 .box5{
-    position: absolute;
-    top: 50%;
+    
+    top: 590px;
+    width: 900px;
+    height: 600px;
+    top: 900px;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 740px;
-    height: 400px;
 }
 
 .box6{
@@ -165,6 +186,8 @@
 .label1{
     height: 45px; 
 }
+
+
 
 .loginMsg{    
     margin-top: -10px;
@@ -216,8 +239,13 @@
     margin-left: 10px;
 }
 
+.inputContainer{
+    margin: 30px;
+}
 
-
+.indereco{
+    width: 730px;
+}
 
 
 
