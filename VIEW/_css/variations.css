@@ -65,6 +65,10 @@
     margin-top: 10px;
 }
 
+.inputNome{
+    width: 731px;
+}
+
 .block1{
     margin-top: -395px;
     margin-left: 380px;
@@ -81,8 +85,13 @@
 }
 
 .block4{
-    margin-top: -297px;
+    margin-top: -197px;
     margin-left: 380px;
+}
+
+.block5{
+    margin-top: -236px;
+    margin-left: 400px;
 }
 
 .Button1{
@@ -99,14 +108,20 @@
 
 .Button3{
     float: right;
-    margin-right: 110px;
+    margin-right: 40px;
     margin-top: 20px;
 }
 
 .Button4{
     float: right;
-    margin-right: 110px;
+    margin-right: 30px;
     margin-top: 90px;
+}
+
+.Button5{
+    float: right;
+    margin-right: 20px;
+    margin-top: 30px;
 }
 
 .loginButton{
@@ -164,7 +179,7 @@
     top: 700px;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 760px;
+    width: 780px;
     height: 900px;
     padding-top: 400px;
 }
@@ -172,7 +187,7 @@
 .box5{
     
     top: 590px;
-    width: 900px;
+    width: 800px;
     height: 600px;
     top: 900px;
     left: 50%;

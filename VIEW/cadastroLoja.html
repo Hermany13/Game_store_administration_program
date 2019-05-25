@@ -1,16 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
     <head>
-        <meta charset="utf-8"/>
-        <title>Site</title>
-        <link rel="stylesheet" href="_css/forms.css"/>
-        <link rel="stylesheet" href="_css/variations.css"/>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+        <title>Game Store</title>
+        
+        <link rel="stylesheet" href="_css/bootstrap.css">
+        <link rel="stylesheet" href="_css/variations.css">
+        <link rel="stylesheet" href="_css/forms.css">
     </head>
     <body>
-        <div>
+    <script src="https://ajax.googlepis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="_js/bootstrap.js"></script>
+    <script src="_js/interativos.js"></script>
+        <section class="header-site">
+            
+    
+        <div class="linha linhaUser"><div class="contentLine">Usuário Atual
+        <a class="logOutbtn" onclick="modalShowOut()">Log out</a></div>
+        </div>
+        
+        </section>
+        
+        <section class="content-site">
+            <div class="linha linhaPosition">
+            <nav class="menuNav">
+                <ul>                    
+                    <li><a>Test 0001</a></li>
+                    <li><a>Test 0002</a></li>
+                    <li><a>Test 0003</a></li>
+                    <li><a>Test 0004</a></li>
+                    <li><a>Test 0005</a></li>
+                    <li><a>Test 0006</a></li>
+                </ul>
+                
+            </nav>
+            </div>
+             <div class="label label1"><h2>Cadastro da Loja</h2></div>   
+           <div>
             <div class="box box4">
-                <div class="label label1">Cadastro da Loja</div>                
+                            
                 <form method="post" action="../CONTROLLER/Teste/configTras.php">
                     <div><div class="textoInput">Nome da Loja:</div>
                     <input class="input1" type="text"  name="inpNomeLoja"/></div>
@@ -23,6 +53,8 @@
                     Logo da Loja:</div>
                     <input class="input1" type="text" name="logo" />
                     </div>
+                    
+                    <div class="block5">
                     
                     <div>
                     <div class="textoInput">cnpj:</div>
@@ -39,10 +71,53 @@
                     <input class="input1" type="text" name="inpTaxaDescontoA"/>
                     </div>
                     
-                    <div><button class="Button3" type="submit">Cadastrar</button>
+                     <div><button class="Button5 btn btn-primary pull-right h2" type="submit">Cadastrar</button>
                     </div>
-                </form>        
+                        </div>
+                </form> 
+                     
             </div>
+               
         </div>
+              
+        </section>
+        
+        
+        
+        <section class="footer-site">
+        
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p class="text-center">Copyright &copy; 2019 - by CatStorm</p>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+    
+    <div class="bg-modal-logout">
+        <div class="modal-content">
+            <div id="close" class="close" onclick="modalCloseOut()">+</div>
+            <form>
+                <p class="text-center">Deseja Sair de Sua Seção?</p>
+                <a href="" class="btn btn-danger">Sim</a>
+                <a href="" class="btn btn-dark" onclick="modalCloseOut()">Cancelar</a>
+            </form>
+        </div> 
+    </div>
+    
     </body>
+
+
+
+
+
+
+
+
+
+
+
+
 </html>
