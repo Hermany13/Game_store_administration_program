@@ -75,8 +75,8 @@
 }
 
 .block2{
-    margin-top: -375px;
-    margin-left: 355px;
+    margin-top: -394px;
+    margin-left: 385px;
 }
 
 .block3{
@@ -119,6 +119,12 @@
 }
 
 .Button5{
+    float: right;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+.Button6{
     float: right;
     margin-right: 20px;
     margin-top: 30px;
@@ -196,12 +202,14 @@
 
 .box6{
     position: absolute;
-    top: 50%;
+    top: 850px;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 740px;
+    width: 770px;
     height: 480px;
 }
+
+
 
 .label1{
     height: 45px; 
