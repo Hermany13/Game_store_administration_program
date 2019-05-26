@@ -1,16 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
     <head>
-        <meta charset="utf-8"/>
-        <title>Site</title>
-        <link rel="stylesheet" href="_css/forms.css"/>
-        <link rel="stylesheet" href="_css/variations.css"/>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+        <title>Game Store</title>
+      
+        <link rel="stylesheet" href="_css/bootstrap.css">
+        <link rel="stylesheet" href="_css/variations.css">
+        <link rel="stylesheet" href="_css/forms.css">
     </head>
     <body>
-        <div>
+    <script src="https://ajax.googlepis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="_js/bootstrap.js"></script>
+    
+        <section class="header-site">
+            
+    
+        <div class="linha linhaUser"><a href="login.html">Log In</a></div>
+        
+        
+        </section>
+        
+        <section class="content-site">
+            <div class="linha linhaPosition">
+            <nav class="menuNav">
+                <ul>                    
+                    <li><a>Test 0001</a></li>
+                    <li><a>Test 0002</a></li>
+                    <li><a>Test 0003</a></li>
+                    <li><a>Test 0004</a></li>
+                    <li><a>Test 0005</a></li>
+                    <li><a>Test 0006</a></li>
+                </ul>
+                
+            </nav>
+                
+                
+                
+            </div>
+            <div class="label label1"><h2>Cadastro de Produtos</h2></div>
             <div class="box box6">
-                <div class="label label1">Cadastro de Produtos</div>                
+                             
                <form action="../CONTROLLER/Transaction/CadastrarProdutoTrans.php" method="post">
                     <div><div class="textoInput">Nome do Produto:</div>
                     <input class="input1" type="text" name="nome"/></div>
@@ -49,10 +80,40 @@
                     <input class="input1" type="text" name="plataforma"/></div>
                     </div>
                     
-                    <div><button class="Button3" type="submit">Cadastrar</button>
+                    <div><button class="Button6 btn btn-primary pull-right h2" type="submit">Cadastrar</button>
                     </div>
                 </form>        
             </div>
-        </div>
+           
+        </section>
+        
+        
+        
+        <section class="footer-site">
+        
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p class="text-center">Copyright &copy; 2019 - by CatStorm</p>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+    
+    
+    
     </body>
+
+
+
+
+
+
+
+
+
+
+
+
 </html>
