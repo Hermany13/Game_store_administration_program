@@ -1,76 +1,36 @@
 @charset "UTF-8";
 
-.box{   
- 
- 
-    position: absolute;
-    
-    overflow: hidden;
-
-    
+.box{
+    position: absolute;    
+    overflow: hidden;    
 }
 
 
-.label{   
-    margin-top: -280px;
+.label{       
     color: rgba(0, 0, 0, 0.7);
-    font:bold 14px/45px sans-serif;
-    margin-left: 15px; 
-    border-bottom: 0.5px solid rgba(0, 0, 0, .7);
-    padding-right: 100px;
+    font:bold 14px/45px sans-serif;   
+    border-bottom: 0.5px solid rgba(0, 0, 0, .7);    
 }
      
 
 input{    
     font:normal 13px sans-serif;
-    color:black;
-    
+    color:black;    
     border: 1px solid #bfc4c6;
     border-radius:6px;
     outline:none;
     align-content: center;
     width:350px;
-    height:45px;
-   
-    padding:10px;   
-    
-    background-color: transparent;
-    
-    
-    
+    height:45px;   
+    padding:10px;      
+    background-color: transparent;    
 }
 
 input:focus{
     outline-offset: -2;
-   border: 1px solid #005eff; 
+    border: 1px solid #005eff; 
 }
 
-
-
-/*button{    
-    background-color:red;
-    padding:5px 15px;
-    font:bold 12px sans-serif;
-    border-radius: 20px;
-    text-shadow: 0px 1px 0px white;
-    border: 1px solid #9eb9c3;
-    background: rgb(237,246,249); 
-    background: -moz-linear-gradient(top, rgba(237,246,249,1) 0%, rgba(205,229,238,1) 100%);
-    background: -webkit-linear-gradient(top, rgba(237,246,249,1) 0%,rgba(205,229,238,1) 100%); 
-    background: linear-gradient(to bottom, rgba(237,246,249,1) 0%,rgba(205,229,238,1) 100%); 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edf6f9', endColorstr='#cde5ee',GradientType=0 );
-    color:#000000;
-    box-shadow:0px 0px 10px #c9c9c9;    
-}*/
-
-button:hover{
-    background: rgb(205,229,238); 
-    background: -moz-linear-gradient(top, rgba(205,229,238,1) 0%, rgba(237,246,249,1) 100%);
-    background: -webkit-linear-gradient(top, rgba(205,229,238,1) 0%,rgba(237,246,249,1) 100%); 
-    background: linear-gradient(to bottom, rgba(205,229,238,1) 0%,rgba(237,246,249,1) 100%); 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cde5ee', endColorstr='#edf6f9',GradientType=0 );
-    cursor:pointer;
-}
 
 a{
     color: white;
@@ -107,11 +67,23 @@ p{
     padding-bottom: 30px;
 }
 
+.content-site3{
+    padding-top: 673px;
+    padding-bottom: 30px;
+}
+
 .footer-site{
     background-color: #333333;
     color: white;
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+.footer-site2{
+    background-color: #333333;
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 21px;
 }
 
 .menuNav{    
