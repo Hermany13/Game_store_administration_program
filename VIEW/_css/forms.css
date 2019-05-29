@@ -255,3 +255,10 @@ p{
 .blocoPainel{
     border-bottom: 5px solid rgba(0, 0, 0, .7);
 }
+
+.fitinha{
+    height: 30px;
+    width: 50px;
+    float: left;
+    margin-bottom: 0px;
+}
