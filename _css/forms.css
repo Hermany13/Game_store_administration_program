@@ -1,0 +1,264 @@
+@charset "UTF-8";
+
+.box{
+    position: absolute;    
+    overflow: hidden;    
+}
+
+.painel{
+    padding: 36px 45px 27px 31px;
+    background-color: #e9e9e9;
+    margin-top: -631px;
+    margin-right: 589px;
+}
+
+.painel1{
+    padding: 150px 38px 128px 292px;
+    float: right;
+    margin-top: -380px;
+    background-color: #c5c5c5;
+}
+
+.painelSubT{
+    border-bottom: 0.5px solid rgba(0, 0, 0, .7);    
+}
+
+.painelDescI{
+    margin-top: 15px;
+    border-bottom: 0.5px solid rgba(0, 0, 0, .7);
+}
+
+.painelDescG{
+    margin-top: 15px;
+    border-bottom: 0.5px solid rgba(0, 0, 0, .7);
+}
+
+.painelAcre{
+    margin-top: 15px;
+}
+
+.painelTotal{
+    float: right;
+}
+
+.label{       
+    color: rgba(0, 0, 0, 0.7);
+    font:bold 14px/45px sans-serif;   
+    border-bottom: 0.5px solid rgba(0, 0, 0, .7);   
+    margin-inline-end: 16px;
+}
+     
+
+input{    
+    font:normal 13px sans-serif;
+    color:black;    
+    border: 1px solid #bfc4c6;
+    border-radius:6px;
+    outline:none;
+    align-content: center;
+    width:350px;
+    height:45px;   
+    padding:10px;      
+    background-color: transparent;    
+}
+
+input:focus{
+    outline-offset: -2;
+    border: 1px solid #005eff; 
+}
+
+
+a{
+    color: white;
+}
+
+a:hover {
+    cursor:pointer;
+    color: white;
+    text-decoration: none;
+}
+
+p{
+    text-align: justify;
+}
+
+.header-site{
+    background-image: url(../_img/batman.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    padding-top: 255px;
+    padding-bottom: 200px;
+}
+
+.content-site{
+    padding-top: 400px;
+    padding-bottom: 300px;
+}
+
+.content-site2{
+     padding-top: 400px;
+    padding-bottom: 30px;
+}
+
+.content-site3{
+    padding-top: 673px;
+    padding-bottom: 30px;
+}
+
+.content-site4{
+    padding-top: 400px;
+    padding-bottom: 251px;
+}
+
+.content-site5{
+    padding-top: 400px;
+    padding-bottom: 206px;
+}
+
+.content-site6{
+    padding-top: 400px;
+    padding-bottom: 257px;
+}
+
+.footer-site{
+    background-color: #333333;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer-site2{
+    background-color: #333333;
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 21px;
+}
+
+.footer-site3{
+    background-color: #333333;
+    color: white;
+    padding-top: 64px;
+    padding-bottom: 96px;
+}
+
+.menuNav{    
+    top: 470px;
+    padding: 10px;
+    padding-top: 6px;
+}
+
+.menuNav ul{
+    list-style: none;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0px;
+}
+
+.menuNav li{
+    position: relative;
+    color: white;
+	display: inline;
+	background-color: #333333;
+	padding: 6px 30px 15px 40px;
+	margin: -3px;
+    transition: background-color 0.5s;
+}
+
+.menuNav l1 a {
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+.menuNav li:hover{
+    background-color: black;
+    cursor: pointer;
+}
+
+.menuNav li ul{
+    position:absolute; 
+    left:0;
+    background-color:#fff; 
+    display:none;
+    margin-top: 16px;
+}   
+
+.menuNav li:hover ul, .menuNav li.over ul{
+    display:block;
+    cursor: pointer;
+}
+
+.menuNav li ul li{ 
+    display:block; 
+    width: 300px;
+    left: -37px;
+    padding: 15px 30px 15px 40px;
+}
+
+.bg-modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.bg-modal-logout{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+
+.modal-content{
+    width: 300px;
+    height: 140px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.inputModal{
+    width: 50%;
+    display: block;
+    margin: 15px auto;
+}
+
+.close{
+    position: absolute;
+    margin-top: -20px;
+    margin-right: -5px;
+    right: 14px;
+    font-size: 42px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.linha{
+    background-color:#333333;
+}
+
+.blocoPainel{
+    border-bottom: 5px solid rgba(0, 0, 0, .7);
+}
+
+.fitinha{
+    height: 30px;
+    width: 50px;
+    float: left;
+    margin-bottom: 0px;
+}
