@@ -12,6 +12,13 @@
     margin-right: 589px;
 }
 
+.painel1{
+    padding: 150px 38px 128px 292px;
+    float: right;
+    margin-top: -380px;
+    background-color: #c5c5c5;
+}
+
 .painelSubT{
     border-bottom: 0.5px solid rgba(0, 0, 0, .7);    
 }
@@ -28,6 +35,10 @@
 
 .painelAcre{
     margin-top: 15px;
+}
+
+.painelTotal{
+    float: right;
 }
 
 .label{       
@@ -239,4 +250,8 @@ p{
 
 .linha{
     background-color:#333333;
+}
+
+.blocoPainel{
+    border-bottom: 5px solid rgba(0, 0, 0, .7);
 }
