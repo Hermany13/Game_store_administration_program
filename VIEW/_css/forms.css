@@ -5,6 +5,30 @@
     overflow: hidden;    
 }
 
+.painel{
+    padding: 36px 45px 27px 31px;
+    background-color: #e9e9e9;
+    margin-top: -631px;
+    margin-right: 589px;
+}
+
+.painelSubT{
+    border-bottom: 0.5px solid rgba(0, 0, 0, .7);    
+}
+
+.painelDescI{
+    margin-top: 15px;
+    border-bottom: 0.5px solid rgba(0, 0, 0, .7);
+}
+
+.painelDescG{
+    margin-top: 15px;
+    border-bottom: 0.5px solid rgba(0, 0, 0, .7);
+}
+
+.painelAcre{
+    margin-top: 15px;
+}
 
 .label{       
     color: rgba(0, 0, 0, 0.7);
