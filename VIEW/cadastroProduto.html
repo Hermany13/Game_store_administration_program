@@ -4,41 +4,25 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width-device-width, initial-scale=1">
-        <title>Game Store</title>
-      
+        <title>Game Store</title>      
         <link rel="stylesheet" href="_css/bootstrap.css">
         <link rel="stylesheet" href="_css/variations.css">
         <link rel="stylesheet" href="_css/forms.css">
+        <script src="https://ajax.googlepis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="_js/bootstrap.js"></script>
+        <script src="_js/interativos.js"></script>
     </head>
     <body>
-    <script src="https://ajax.googlepis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="_js/bootstrap.js"></script>
+   
     
-        <section class="header-site">
+        
+         <div class="linha linhaUser"><div class="contentLine">Usuário Atual
+        <a class="logOutbtn" onclick="modalShowOut()">Log out</a></div>
+        </div>
+       
+        
+        <section class="content-site6">
             
-    
-        <div class="linha linhaUser"><a href="login.html">Log In</a></div>
-        
-        
-        </section>
-        
-        <section class="content-site">
-            <div class="linha linhaPosition">
-            <nav class="menuNav">
-                <ul>                    
-                    <li><a>Test 0001</a></li>
-                    <li><a>Test 0002</a></li>
-                    <li><a>Test 0003</a></li>
-                    <li><a>Test 0004</a></li>
-                    <li><a>Test 0005</a></li>
-                    <li><a>Test 0006</a></li>
-                </ul>
-                
-            </nav>
-                
-                
-                
-            </div>
             <div class="label label1"><h2>Cadastro de Produtos</h2></div>
             <div class="box box6">
                              
@@ -102,7 +86,18 @@
         </section>
     
     
-    
+    <div class="bg-modal-logout">
+        <div class="modal-content">
+            <div id="close" class="close" onclick="modalCloseOut()">+</div>
+            <form>
+                <p class="text-center">Deseja Sair de Sua Seção?</p>
+                <a href="" class="btn btn-danger">Sim</a>
+                <a class="btn btn-dark" onclick="modalCloseOut()">Cancelar</a>
+            </form>
+        </div> 
+    </div>
+        
+        
     </body>
 
 
