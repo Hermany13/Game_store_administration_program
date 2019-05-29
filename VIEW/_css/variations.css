@@ -181,7 +181,7 @@
 
 .box4{
     position: absolute;
-    top: 700px;
+    top: 199px;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 780px;
@@ -189,12 +189,10 @@
     padding-top: 400px;
 }
 
-.box5{
-    
-    top: 590px;
+.box5{   
     width: 800px;
     height: 600px;
-    top: 900px;
+    top: 430px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -208,14 +206,38 @@
     height: 480px;
 }
 
+.box7{   
+    width: 800px;
+    height: 600px;
+    top: 414px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box8{   
+    width: 800px;
+    height: 600px;
+    top: 407px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box9{   
+    width: 800px;
+    height: 600px;
+    top: 398px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 
 .label1{
     height: 45px;
-    margin-top: -280px;    
+    margin-top: -339px;    
     margin-left: 15px;     
     padding-right: 100px;
-    margin-inline-end: 16px;
+    
 }
 
 .label2{
@@ -223,7 +245,15 @@
     margin-top: -610px;    
     margin-left: 15px;     
     padding-right: 100px;
-    margin-inline-end: 16px;
+    
+}
+
+.label3{
+    height: 45px;
+    margin-top: -340px;    
+    margin-left: 15px;     
+    padding-right: 100px;
+   
 }
 
 .loginMsg{    
@@ -268,6 +298,7 @@
     padding: 13px;
     width: 100%;
     text-align: right;
+    color: white;
 }
 
 .linhaUser2{

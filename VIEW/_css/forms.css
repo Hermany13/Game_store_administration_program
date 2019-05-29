@@ -9,7 +9,8 @@
 .label{       
     color: rgba(0, 0, 0, 0.7);
     font:bold 14px/45px sans-serif;   
-    border-bottom: 0.5px solid rgba(0, 0, 0, .7);    
+    border-bottom: 0.5px solid rgba(0, 0, 0, .7);   
+    margin-inline-end: 16px;
 }
      
 
@@ -72,6 +73,18 @@ p{
     padding-bottom: 30px;
 }
 
+.content-site4{
+    padding-top: 400px;
+    padding-bottom: 189px;
+}
+
+.content-site5{
+    padding-top: 400px;
+    padding-bottom: 173px;
+}
+
+
+
 .footer-site{
     background-color: #333333;
     color: white;
@@ -84,6 +97,13 @@ p{
     color: white;
     padding-top: 25px;
     padding-bottom: 21px;
+}
+
+.footer-site3{
+    background-color: #333333;
+    color: white;
+    padding-top: 64px;
+    padding-bottom: 96px;
 }
 
 .menuNav{    
