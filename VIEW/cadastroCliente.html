@@ -29,21 +29,21 @@
                                
                <form action="../CONTROLLER/Transaction/CadastrarClienteTrans.php" method="post">
                     <div class="inputContainer"><div class="textoInput">Nome Completo:</div>
-                    <input class="input1" type="text" placeholder="Ex: Fulano da Silva" name="nomeCompleto" maxlength="100"/></div>
+                    <input class="input1" type="text" placeholder="Ex: Fulano da Silva" name="nomeCompleto" required maxlength="100"/></div>
                     
                     <div class="inputContainer"><div class="textoInput">Data de Nascimento:</div>
-                    <input class="input1" type="date" name="dataNascimento" placeholder="dd/mm/aaaa"/> </div>  
+                    <input class="input1" type="date" name="dataNascimento" required placeholder="dd/mm/aaaa"/> </div>  
                 
                     
                     
                     <div class="inputContainer">
                     <div class="textoInput">Telefone:</div>
-                    <input class="input1" type="text" name="telefone" placeholder="Ex: (99)9999-9999"/>
+                    <input class="input1" type="text" name="telefone" required placeholder="Ex: (99)9999-9999"/>
                     </div>
                     
                      <div class="inputContainer">
                     <div class="textoInput">Endereço:</div>
-                    <input class="input1 indereco" type="text" name="endereco" placeholder="Endereço"/>
+                    <input class="input1 indereco" type="text" name="endereco" required placeholder="Endereço"/>
                     </div>
                     
                     
@@ -52,18 +52,18 @@
                     <div class="inputContainer">
                     <div class="textoInput">
                     Email:</div>
-                    <input class="input1" type="email" name="email" placeholder="Email"/>
+                    <input class="input1" type="email" name="email" required placeholder="Email"/>
                     </div>    
                         
                     <div class="inputContainer">
                     <div class="textoInput">
                     Senha:</div>
-                    <input class="input1" type="text" name="senha" placeholder="Senha"/>
+                    <input class="input1" type="text" name="senha" required placeholder="Senha"/>
                     </div>  
                     
                   <div class="inputContainer">
                     <div class="textoInput">Cpf:</div>
-                    <input oninput="mascara(this, 'cpf')" class="input1" type="text" name="cpf" placeholder="Ex.: 000.000.000-00"/>
+                    <input oninput="mascara(this, 'cpf')" class="input1" type="text" name="cpf" required placeholder="Ex.: 000.000.000-00"/>
                     </div>
                     
                     
