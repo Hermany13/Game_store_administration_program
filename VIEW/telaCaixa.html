@@ -5,11 +5,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width-device-width, initial-scale=1">
         <title>Game Store</title>
+         <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.quicksearch/2.3.1/jquery.quicksearch.js"></script>
         <script src="https://ajax.googlepis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="_js/bootstrap.js"></script>      
+        <script src="_js/interativos.js"></script>      
         <link rel="stylesheet" href="_css/bootstrap.css">
         <link rel="stylesheet" href="_css/variations.css">
         <link rel="stylesheet" href="_css/forms.css">
+        
     </head>
     <body>   
         <div class="linha linhaUser2"><img class="fitinha" src="_img/fitinha.png"/><div class="contentLine">Funcionario Atual
@@ -34,17 +39,15 @@
             
     <div class="tabelinha"> 
         <div class="pesquisai">
-        <div class="col-md-6">
-        <div class="input-group h2">
-            <input name="data[search]" class="form-control" id="search" type="text" placeholder="Pesquisar Itens no Estoque">
-            
-        </div>
-    </div>
+        <div class="form-group input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+  <input name="consulta" id="txt_consulta" placeholder="Consultar" type="text" class="form-control">
+ </div>
     </div>
         
     <div id="list" class="row"> 
     <div class="table-responsive col-md-12">
-        <table class="table table-striped" cellspacing="0" cellpadding="0">
+        <table id="tabela" class="table table-hover">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -109,7 +112,9 @@
     </div>
         </section>
         
-        
+        <script>
+        $('input#txt_consulta').quicksearch('table#tabela tbody tr');
+        </script>
         
         
     </body>
