@@ -260,3 +260,45 @@ p{
     float: left;
     margin-bottom: 0px;
 }
+
+.pagar{
+    width: 291px;
+    height: 100px;
+    display: block;
+    float: right;
+    margin-right: 1px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.caixa{
+    border: 0.5px solid rgba(0, 0, 0, .3);
+    padding: 30px;
+}
+
+.tx1{
+    color: rgba(0, 0, 0, .5);
+}
+
+.tr1{
+    color: rgba(220, 20 ,60, .8);
+}
+
+.tpp{
+    color: rgba(30,144,255, .8)
+}
+
+.vpp{
+    color: rgba(50,205,50, .8);
+}
+
+.spp{
+    color: rgba(128,128,0, .8);
+}
+
+.blocosb{
+    margin-right: 280px;
+    margin-left: -316px;
+    margin-top: -306px;
+    width: 317px;
+}

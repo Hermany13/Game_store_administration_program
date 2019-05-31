@@ -44,7 +44,7 @@
   <input name="consulta" id="txt_consulta" placeholder="Consultar" type="text" class="form-control">
  </div>
     </div>
-        
+    <div class="parteBaixa">    
     <div id="list" class="row"> 
     <div class="table-responsive col-md-12">
         <table id="tabela" class="table table-hover">
@@ -66,7 +66,7 @@
                     <td>R$ 89,90</td>
                     <td>20</td>
                     <td class="actions">
-                        <a class="btn btn-dark btn-xs">Adicionar</a>
+                        <a class="btn btn-success btn-xs">Adicionar</a>
                         
                     </td>
                 </tr>
@@ -76,7 +76,7 @@
                     <td>R$ 30,90</td>
                     <td>2</td>
                     <td class="actions">
-                        <a class="btn btn-dark btn-xs">Adicionar</a>
+                        <a class="btn btn-success btn-xs">Adicionar</a>
                         
                     </td>
                 </tr>
@@ -86,7 +86,7 @@
                     <td>R$ 1209,90</td>
                     <td>150</td>
                     <td class="actions">
-                        <a class="btn btn-dark btn-xs">Adicionar</a>
+                        <a class="btn btn-success btn-xs">Adicionar</a>
                         
                     </td>
                 </tr>
@@ -96,19 +96,40 @@
                     <td>R$ 140,71</td>
                     <td>12</td>
                     <td class="actions">
-                        <a class="btn btn-dark btn-xs">Adicionar</a>
+                        <a class="btn btn-success btn-xs">Adicionar</a>
                         
                     </td>
-                </tr>
-         
-         
-          
-        
+                </tr>       
             </tbody>
          </table>
  
      </div>
     </div>
+    
+   
+    
+    
+    </div>
+     
+    </div>
+       <div  class="pagar">
+        <div class="caixa caixa1">
+            <h4 class="tx1 tp">R$ TOTAL A PAGAR</h4>
+            <h1 class="tpp">00,00</h1></div>
+        <div class="caixa caixa2">
+            <h4 class="tx1 vp">R$ VALOR PAGO</h4>
+            <h1 class="vpp">00,00</h1>
+        </div>
+        <div class="blocosb">
+        <div class="caixa caixa3">
+            <h4 class="tx1 sp">R$ SALDO A PAGAR</h4>
+            <h1 class="spp">00,00</h1>
+        </div>
+        <div class="caixa caixa4">
+            <h4 class="tx1 t">R$ TROCO</h4>
+            <h1 class="tr1">00,00</h1>
+        </div>
+        </div>
     </div>
         </section>
         
@@ -116,6 +137,15 @@
         $('input#txt_consulta').quicksearch('table#tabela tbody tr');
         </script>
         
-        
+        <div class="bg-modal-logout">
+        <div class="modal-content">
+            <div id="close" class="close" onclick="modalCloseOut()">+</div>
+            <form>
+                <p class="text-center">Deseja Sair de Sua Seção?</p>
+                <a href="" class="btn btn-danger">Sim</a>
+                <a onclick="modalCloseOut()" class="btn btn-dark">Cancelar</a>
+            </form>
+        </div> 
+    </div>
     </body>
 </html>
