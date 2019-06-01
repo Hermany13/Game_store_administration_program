@@ -17,34 +17,129 @@
         
     </head>
     <body>   
-        <div class="linha linhaUser2"><img class="fitinha" src="_img/fitinha.png"/><div class="contentLine">Funcionario Atual
+        <div class="linha linhaUser2"><div class="contentLine">Funcionario Atual
         <a class="logOutbtn" onclick="modalShowOut()">Log out</a></div>
         </div>       
         <section class="content-site3">
             
             <div class="blocoPainel">
             <div class="painel">
-                <div class="painelSubT"><h3>R$ SUB TOTAL<div class="ValorSubT">00,00</div></h3></div>
+                <div class="painelSubT"><h3>R$ SUB TOTAL<div class="ValorSubT">1.440,51</div></h3></div>
                 
                 <div class="painelDescI"><h3>R$ DESCONTO NOS ITENS<div class="ValorDescI">-00,00</div></h3></div>
                 
-                <div class="painelDescG"><h3>R$ DESCONTO GERAL<div class="ValorDescG">-00,00</div></h3></div>
+                <div class="painelDescG"><h3>R$ DESCONTO GERAL<div class="ValorDescG">-65,90</div></h3></div>
                 
                  <div class="painelAcre"><h3>R$ ACRÉSCIMO<div class="ValorAcre">+00,00</div></h3></div>
             </div>
             <div class="painel1">
-                <div class="painelTotal"><h2>R$ TOTAL A PAGAR</h2><div class="ValorTotal"><h1>00,00</h1></div></div>
+                <div class="painelTotal"><h2>R$ TOTAL A PAGAR</h2><div class="ValorTotal"><h1>1.374,61</h1></div></div>
             </div>
             </div>
             
-    <div class="tabelinha"> 
-        <div class="pesquisai">
-        <div class="form-group input-group">
+    <div class="tabelinha">         
+    <div class="parteBaixa">    
+    <div id="list" class="row"> 
+    <div class="table-responsive col-md-12">
+        <table id="tabela" class="table table-hover">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome do Produto</th>
+                    <th>Preço</th>
+                    <th>Quantidade</th>
+                    
+                 </tr>
+            </thead>
+            
+            <tbody>
+                
+               
+                 <tr>
+                    <td>1002</td>
+                    <td>Batman Arkhan Origins</td>
+                    <td>R$ 89,90</td>
+                    <td>1</td>
+                    
+                </tr>
+                
+                 <tr>
+                    <td>1004</td>
+                    <td>A volta dos que não foram</td>
+                    <td>R$ 1209,90</td>
+                    <td>1</td>
+                    
+                </tr>
+                <tr>
+                    <td>1005</td>
+                    <td>Kingdom Hearts III</td>
+                    <td>R$ 140,71</td>
+                    <td>1</td>
+                    
+                </tr> 
+             
+            </tbody>
+           
+         </table>
+ 
+     </div>
+    </div>
+    
+   
+    
+    
+    </div>
+     
+    </div>
+       <div  class="pagar">
+        <div class="caixa caixa1">
+            <h4 class="tx1 tp">R$ TOTAL A PAGAR</h4>
+            <h1 class="tpp">1.374,61</h1></div>
+        <div class="caixa caixa2">
+            <h4 class="tx1 vp">R$ VALOR PAGO</h4>
+            <h1 class="vpp">1.400,00</h1>
+        </div>
+        <div class="blocosb">
+        <div class="caixa caixa3">
+            <h4 class="tx1 sp">R$ SALDO A PAGAR</h4>
+            <h1 class="spp">00,00</h1>
+        </div>
+        <div class="caixa caixa4">
+            <h4 class="tx1 t">R$ TROCO</h4>
+            <h1 class="tr1">25,39</h1>
+        </div>
+        </div>
+    </div>
+            <button type="button" class="btn btn-primary add" onclick="modalShowTabela()">Adicionar</button>
+        </section>
+        
+        <script>
+        $('input#txt_consulta').quicksearch('table#tabela tbody tr');
+        </script>
+        
+        <div class="bg-modal-logout">
+        <div class="modal-content">
+            <div id="close" class="close" onclick="modalCloseOut()">+</div>
+            <form>
+                <p class="text-center">Deseja Sair de Sua Seção?</p>
+                <a href="" class="btn btn-danger">Sim</a>
+                <a onclick="modalCloseOut()" class="btn btn-dark">Cancelar</a>
+            </form>
+        </div> 
+    </div>
+        
+        <div class="bg-modal-tabela">
+        <div class="modal-content2">
+            <h4>Estoque</h4>
+            <div id="close" class="close1" onclick="modalCloseTabela()">+</div>
+            <div class="form-group input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
   <input name="consulta" id="txt_consulta" placeholder="Consultar" type="text" class="form-control">
  </div>
-    </div>
-    <div class="parteBaixa">    
+        <div class="tabelaModalLoka">
+        
+  
+    
     <div id="list" class="row"> 
     <div class="table-responsive col-md-12">
         <table id="tabela" class="table table-hover">
@@ -61,6 +156,26 @@
  
                
                  <tr>
+                    <td>1002</td>
+                    <td>Batman Arkhan Origins</td>
+                    <td>R$ 89,90</td>
+                    <td>20</td>
+                    <td class="actions">
+                        <a class="btn btn-success btn-xs">Adicionar</a>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>1002</td>
+                    <td>Batman Arkhan Origins</td>
+                    <td>R$ 89,90</td>
+                    <td>20</td>
+                    <td class="actions">
+                        <a class="btn btn-success btn-xs">Adicionar</a>
+                        
+                    </td>
+                </tr>
+                <tr>
                     <td>1002</td>
                     <td>Batman Arkhan Origins</td>
                     <td>R$ 89,90</td>
@@ -102,50 +217,17 @@
                 </tr>       
             </tbody>
          </table>
- 
+        <script>
+        $('input#txt_consulta').quicksearch('table#tabela tbody tr');
+        </script>
      </div>
     </div>
     
    
     
-    
+    </div>
     </div>
      
-    </div>
-       <div  class="pagar">
-        <div class="caixa caixa1">
-            <h4 class="tx1 tp">R$ TOTAL A PAGAR</h4>
-            <h1 class="tpp">00,00</h1></div>
-        <div class="caixa caixa2">
-            <h4 class="tx1 vp">R$ VALOR PAGO</h4>
-            <h1 class="vpp">00,00</h1>
-        </div>
-        <div class="blocosb">
-        <div class="caixa caixa3">
-            <h4 class="tx1 sp">R$ SALDO A PAGAR</h4>
-            <h1 class="spp">00,00</h1>
-        </div>
-        <div class="caixa caixa4">
-            <h4 class="tx1 t">R$ TROCO</h4>
-            <h1 class="tr1">00,00</h1>
-        </div>
-        </div>
-    </div>
-        </section>
-        
-        <script>
-        $('input#txt_consulta').quicksearch('table#tabela tbody tr');
-        </script>
-        
-        <div class="bg-modal-logout">
-        <div class="modal-content">
-            <div id="close" class="close" onclick="modalCloseOut()">+</div>
-            <form>
-                <p class="text-center">Deseja Sair de Sua Seção?</p>
-                <a href="" class="btn btn-danger">Sim</a>
-                <a onclick="modalCloseOut()" class="btn btn-dark">Cancelar</a>
-            </form>
-        </div> 
     </div>
     </body>
 </html>

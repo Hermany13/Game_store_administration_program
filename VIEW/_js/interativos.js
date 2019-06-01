@@ -18,6 +18,19 @@ function modalCloseOut()
             document.querySelector(".bg-modal-logout").style.display = "none";
         }
 
+
+function modalShowTabela()
+        {
+           document.querySelector(".bg-modal-tabela").style.display = "flex";             
+        }
+
+function modalCloseTabela()
+        {
+            document.querySelector(".bg-modal-tabela").style.display = "none";
+        }
+
+
+
 function mascara(i, t){
     var v = i.value;
     
