@@ -127,7 +127,7 @@
 .Button6{
     float: right;
     margin-right: 20px;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .loginButton{
@@ -368,5 +368,17 @@
     width: 650px;
 }
 
+.inputNew{
+    font: normal 13px sans-serif;
+    color: black;
+    border: 1px solid #bfc4c6;
+    border-radius: 6px;
+    outline: none;
+    align-content: center;
+    width: 350px;
+    height: 45px;
+    padding: 10px;
+    background-color: transparent;
+}
 
 
