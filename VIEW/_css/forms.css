@@ -129,6 +129,7 @@ p{
     color: white;
     padding-top: 50px;
     padding-bottom: 50px;
+    margin-top: -52px;
 }
 
 .footer-site2{
@@ -306,7 +307,7 @@ p{
 
 .caixa{
     border: 0.5px solid rgba(0, 0, 0, .3);
-    padding: 30px;
+    padding: 30px 30px 45px 30px;
 }
 
 .tx1{
@@ -332,7 +333,7 @@ p{
 .blocosb{
     margin-right: 280px;
     margin-left: -316px;
-    margin-top: -306px;
+    margin-top: -336px;
     width: 317px;
 }
 
@@ -350,6 +351,6 @@ p{
 }
 
 .add{
-    margin-top: 261px;
+    margin-top: 288px;
     margin-left: -104px;
 }
