@@ -1,7 +1,6 @@
 <?php
 require_once("../CONTROLLER/Outros/cons_quant_prod.php");
 ?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -19,33 +18,27 @@ require_once("../CONTROLLER/Outros/cons_quant_prod.php");
     <link rel="stylesheet" href="_css/bootstrap.css">
     <link rel="stylesheet" href="_css/variations.css">
     <link rel="stylesheet" href="_css/forms.css">
-
 </head>
 
 <body>
     <div class="linha linhaUser2">
-        <div class="contentLine">Funcionario Atual
-            <a class="logOutbtn" onclick="modalShowOut()">Log out</a></div>
+        <div class="contentLine">Funcionario Atual <a class="logOutbtn" onclick="modalShowOut()">Log out</a></div>
     </div>
     <section class="content-site3">
-
         <div class="blocoPainel">
             <div class="painel">
                 <div class="painelSubT">
                     <h3>R$ SUB TOTAL<div class="ValorSubT">1.440,51</div>
                     </h3>
                 </div>
-
                 <div class="painelDescI">
                     <h3>R$ DESCONTO NOS ITENS<div class="ValorDescI">-00,00</div>
                     </h3>
                 </div>
-
                 <div class="painelDescG">
                     <h3>R$ DESCONTO GERAL<div class="ValorDescG">-65,90</div>
                     </h3>
                 </div>
-
                 <div class="painelAcre">
                     <h3>R$ ACRÉSCIMO<div class="ValorAcre">+00,00</div>
                     </h3>
@@ -60,7 +53,6 @@ require_once("../CONTROLLER/Outros/cons_quant_prod.php");
                 </div>
             </div>
         </div>
-
         <div class="tabelinha">
             <div class="parteBaixa">
                 <div id="list" class="row">
@@ -72,63 +64,32 @@ require_once("../CONTROLLER/Outros/cons_quant_prod.php");
                                     <th>Nome do Produto</th>
                                     <th>Preço</th>
                                     <th>Quantidade</th>
-
                                 </tr>
                             </thead>
-
                             <tbody>
-
-
                                 <tr>
                                     <td>1002</td>
                                     <td>Batman Arkhan Origins</td>
                                     <td>R$ 89,90</td>
-                                    <td>1
-
-
-                                    </td>
-
+                                    <td>1</td>
                                 </tr>
-
                                 <tr>
                                     <td>1004</td>
                                     <td>A volta dos que não foram</td>
-                                    <td>R$ 1209,90
-
-
-
-
-                                    </td>
+                                    <td>R$ 1209,90</td>
                                     <td>1</td>
-
                                 </tr>
                                 <tr>
-
-
-
-
-
-
-
                                     <td>1005</td>
                                     <td>Kingdom Hearts III</td>
                                     <td>R$ 140,71</td>
                                     <td>1</td>
-
                                 </tr>
-
                             </tbody>
-
                         </table>
-
                     </div>
                 </div>
-
-
-
-
             </div>
-
         </div>
         <div class="pagar">
             <div class="caixa caixa1">
@@ -149,11 +110,9 @@ require_once("../CONTROLLER/Outros/cons_quant_prod.php");
                     <h1 class="tr1">25,39</h1>
                 </div>
             </div>
-        </div>
-        <button type="button" class="btn btn-primary add" onclick="modalShowTabela()">Adicionar</button>
+        </div> <button type="button" class="btn btn-primary add" onclick="modalShowTabela()">Adicionar</button>
     </section>
     <section class="footer-site">
-
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
@@ -161,35 +120,25 @@ require_once("../CONTROLLER/Outros/cons_quant_prod.php");
                 </div>
             </div>
         </div>
-
     </section>
     <script>
         $('input#txt_consulta').quicksearch('table#tabela tbody tr');
-    </script>
 
+    </script>
     <div class="bg-modal-logout">
         <div class="modal-content">
             <div id="close" class="close" onclick="modalCloseOut()">+</div>
             <form>
-                <p class="text-center">Deseja Sair de Sua Seção?</p>
-                <a href="" class="btn btn-danger">Sim</a>
-                <a onclick="modalCloseOut()" class="btn btn-dark">Cancelar</a>
+                <p class="text-center">Deseja Sair de Sua Seção?</p> <a href="" class="btn btn-danger">Sim</a> <a onclick="modalCloseOut()" class="btn btn-dark">Cancelar</a>
             </form>
         </div>
     </div>
-
     <div class="bg-modal-tabela">
         <div class="modal-content2">
             <h4>Estoque</h4>
             <div id="close" class="close1" onclick="modalCloseTabela()">+</div>
-            <div class="form-group input-group">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
-                <input name="consulta" id="txt_consulta" placeholder="Consultar" type="text" class="form-control">
-            </div>
+            <div class="form-group input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span> <input name="consulta" id="txt_consulta" placeholder="Consultar" type="text" class="form-control"> </div>
             <div class="tabelaModalLoka">
-
-
-
                 <div id="list" class="row">
                     <div class="table-responsive col-md-12">
                         <table id="tabela" class="table table-hover">
@@ -202,28 +151,17 @@ require_once("../CONTROLLER/Outros/cons_quant_prod.php");
                                     <th class="actions">Ações</th>
                                 </tr>
                             </thead>
-                            <tbody>
-
-                                <?php
-                impListaProdutos("../MODEL/PHP Files/DAOProdutos.php");
-            ?>
-
-                            </tbody>
+                            <tbody> <?php impListaProdutos("../MODEL/PHP Files/DAOProdutos.php"); ?> </tbody>
                         </table>
                         <script>
                             $('input#txt_consulta').quicksearch('table#tabela tbody tr');
+
                         </script>
                     </div>
                 </div>
-
-
-
             </div>
         </div>
-
     </div>
-
-
 </body>
 
 </html>

@@ -1,91 +1,122 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width-device-width, initial-scale=1">
-        <title>Game Store</title>      
-        <link rel="stylesheet" href="_css/bootstrap.css">
-        <link rel="stylesheet" href="_css/variations.css">
-        <link rel="stylesheet" href="_css/forms.css">
-        <script src="https://ajax.googlepis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="_js/bootstrap.js"></script>
-        <script src="_js/interativos.js"></script>
-    </head>
-    <body>
-   
-    
-        
-         <div class="linha linhaUser"><div class="contentLine">Usuário Atual
-        <a class="logOutbtn" onclick="modalShowOut()">Log out</a></div>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <title>Game Store</title>
+    <link rel="stylesheet" href="_css/bootstrap.css">
+    <link rel="stylesheet" href="_css/variations.css">
+    <link rel="stylesheet" href="_css/forms.css">
+    <script src="https://ajax.googlepis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="_js/bootstrap.js"></script>
+    <script src="_js/interativos.js"></script>
+</head>
+
+<body>
+
+
+
+    <div class="linha linhaUser">
+        <div class="contentLine">Usuário Atual
+            <a class="logOutbtn" onclick="modalShowOut()">Log out</a></div>
+    </div>
+
+
+    <section class="content-site6">
+
+        <div class="label label1">
+            <h2>Cadastro de Produtos</h2>
         </div>
-       
-        
-        <section class="content-site6">
-            
-            <div class="label label1"><h2>Cadastro de Produtos</h2></div>
-            <div class="box box6">
-                             
-               <form action="../CONTROLLER/Transaction/CadastrarProdutoTrans.php" method="post">
-                    <div><div class="textoInput">Nome do Produto:</div>
-                    <input class="input1" type="text" name="nome" required/></div>
-                    
-                    <div><div class="textoInput">Código do Produto:</div>
-                    <input class="input1" type="text" name="cod_prod" required/></div>
-                    
-                    <div><div class="textoInput">Valor de Custo do Produto:</div>
-                    <input class="input1" type="text" name="valorCusto" required/></div>
-                    
-                    <div><div class="textoInput">Tipo Comércio:</div>
-                    <input class="input1" type="text" name="tipoComercio" required/></div>
-                    
-                    <div><div class="textoInput">Gênero:</div>
-                    <input class="input1" type="text" name="genero" required/>
+        <div class="box box6">
+
+            <form action="../CONTROLLER/Transaction/CadastrarProdutoTrans.php" method="post">
+                <div>
+                    <div class="textoInput">Nome do Produto:</div>
+                    <input class="input1" type="text" name="nome" required />
+                </div>
+
+                <div>
+                    <div class="textoInput">Código do Produto:</div>
+                    <input class="input1" type="text" name="cod_prod" required />
+                </div>
+
+                <div>
+                    <div class="textoInput">Valor de Custo do Produto:</div>
+                    <input class="input1" type="text" name="valorCusto" required />
+                </div>
+
+                <div>
+                    <div class="textoInput">Tipo Comércio:</div>
+                    <input class="input1" type="text" name="tipoComercio" required />
+                </div>
+
+                <div>
+                    <div class="textoInput">Gênero:</div>
+                    <input class="input1" type="text" name="genero" required />
+                </div>
+
+                <div class="block2">
+                    <div>
+                        <div class="textoInput">Plataforma:</div>
+                        <input class="input1" type="text" name="plataforma" required />
                     </div>
-                    
-                    <div class="block2">
-                    <div><div class="textoInput">Estado do Produto:</div>
-                    <input class="input1" type="text" name="estado" required/></div>
-                    
-                    
-                    <div><div class="textoInput">Código de Barras:</div>
-                    <input class="input1" type="text" name="codigoBarra" required/></div>                   
-                    
-                    
-                    <div><div class="textoInput">Valor de Venda do Produto:</div>
-                    <input class="input1" type="text" name="valorVenda" required/></div>
-                                     
-                    
-                    <div><div class="textoInput">Data de Lançamento do Produto:</div>
-                    <input class="input1" type="text" name="dataLancamento" required/></div>
-                                        
-                    
-                    <div><div class="textoInput">Plataforma:</div>
-                    <input class="input1" type="text" name="plataforma" required/></div>
+
+
+
+                    <div>
+                        <div class="textoInput">Código de Barras:</div>
+                        <input class="input1" type="text" name="codigoBarra" required />
                     </div>
-                    
-                    <div><button class="Button6 btn btn-primary pull-right h2" type="submit">Cadastrar</button>
+
+
+                    <div>
+                        <div class="textoInput">Valor de Venda do Produto:</div>
+                        <input class="input1" type="text" name="valorVenda" required />
                     </div>
-                </form>        
-            </div>
-           
-        </section>
-        
-        
-        
-        <section class="footer-site">
-        
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <p class="text-center">Copyright &copy; 2019 - by CatStorm</p>
+
+
+                    <div>
+                        <div class="textoInput">Data de Lançamento do Produto:</div>
+                        <input class="input1" type="text" name="dataLancamento" required />
+                    </div>
+
+
+
+
+                    <div>
+                        <div class="textoInput">Estado do Produto:</div>
+                        <select class="input1 inputNew" name="estado">
+                            <option>Selecione o Estado</option>
+                            <option>Novo</option>
+                            <option>Usado</option>
+                        </select>
                     </div>
                 </div>
+
+                <div><button class="Button6 btn btn-primary pull-right h2" type="submit">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+
+
+    <section class="footer-site">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <p class="text-center">Copyright &copy; 2019 - by KatStorm</p>
+                </div>
             </div>
-        
-        </section>
-    
-    
+        </div>
+
+    </section>
+
+
     <div class="bg-modal-logout">
         <div class="modal-content">
             <div id="close" class="close" onclick="modalCloseOut()">+</div>
@@ -94,13 +125,11 @@
                 <a href="" class="btn btn-danger">Sim</a>
                 <a class="btn btn-dark" onclick="modalCloseOut()">Cancelar</a>
             </form>
-        </div> 
+        </div>
     </div>
-        
-        
-    </body>
 
 
+</body>
 
 
 
