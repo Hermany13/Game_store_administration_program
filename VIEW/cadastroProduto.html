@@ -5,7 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width-device-width, initial-scale=1">
-    <title>Game Store</title>
+
+    <title>GameStore - Cadastro de Produto</title>
+
     <link rel="stylesheet" href="_css/bootstrap.css">
     <link rel="stylesheet" href="_css/variations.css">
     <link rel="stylesheet" href="_css/forms.css">
@@ -48,9 +50,12 @@
                 </div>
 
                 <div>
-                    <div class="textoInput">Tipo Comércio:</div>
-                    <input class="input1" type="text" name="tipoComercio" required />
-                </div>
+                        <div class="textoInput">Tipo de Comércio</div>
+                        <select class="input1 inputNew" name="estado">
+                            <option value="1">Aluguel</option>
+                            <option value="0">Venda</option>
+                        </select>
+                    </div>
 
                 <div>
                     <div class="textoInput">Gênero:</div>
@@ -62,8 +67,6 @@
                         <div class="textoInput">Plataforma:</div>
                         <input class="input1" type="text" name="plataforma" required />
                     </div>
-
-
 
                     <div>
                         <div class="textoInput">Código de Barras:</div>
@@ -79,20 +82,18 @@
 
                     <div>
                         <div class="textoInput">Data de Lançamento do Produto:</div>
-                        <input class="input1" type="text" name="dataLancamento" required />
+                        <input class="input1" type="date" name="dataLancamento" required />
                     </div>
-
-
-
 
                     <div>
                         <div class="textoInput">Estado do Produto:</div>
                         <select class="input1 inputNew" name="estado">
-                            <option>Selecione o Estado</option>
-                            <option>Novo</option>
-                            <option>Usado</option>
+                            <option value="0">Novo</option>
+                            <option value="1">Usado</option>
                         </select>
                     </div>
+                    
+                    
                 </div>
 
                 <div><button class="Button6 btn btn-primary pull-right h2" type="submit">Cadastrar</button>
@@ -122,7 +123,7 @@
             <div id="close" class="close" onclick="modalCloseOut()">+</div>
             <form>
                 <p class="text-center">Deseja Sair de Sua Seção?</p>
-                <a href="" class="btn btn-danger">Sim</a>
+                <a href="../CONTROLLER/Outros/Logout.php" class="btn btn-danger">Sim</a>
                 <a class="btn btn-dark" onclick="modalCloseOut()">Cancelar</a>
             </form>
         </div>

@@ -127,7 +127,7 @@
 .Button6{
     float: right;
     margin-right: 20px;
-    margin-top: 15px;
+    margin-top: 30px;
 }
 
 .loginButton{
@@ -354,11 +354,11 @@
 }
 
 .tabelinha{
-    width: 812px;
+    width: 969px;
     float: left;
     padding: 0px 0px 0px 6px;
-    margin-top: 10px;
-    height: 264px;
+    margin-top: -277px;
+    height: 591px;
     overflow-y: scroll;
     overflow-x: hidden;
     
@@ -368,17 +368,8 @@
     width: 650px;
 }
 
-.inputNew{
-    font: normal 13px sans-serif;
-    color: black;
-    border: 1px solid #bfc4c6;
-    border-radius: 6px;
-    outline: none;
-    align-content: center;
-    width: 350px;
-    height: 45px;
-    padding: 10px;
-    background-color: transparent;
+.isDisabled {
+    cursor: not-allowed;
+    opacity: 0.5;
 }
-
 

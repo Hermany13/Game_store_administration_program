@@ -8,6 +8,28 @@ function modalClose()
             document.querySelector(".bg-modal").style.display = "none";
         }
 
+
+function modalShowAbrirC()
+        {
+           document.querySelector(".bg-modal-abrirC").style.display = "flex";             
+        }
+
+function modalCloseAbrirC()
+        {
+            document.querySelector(".bg-modal-abrirC").style.display = "none";
+        }
+
+
+function modalShowFecharC()
+        {
+           document.querySelector(".bg-modal-fecharC").style.display = "flex";             
+        }
+
+function modalCloseFecharC()
+        {
+            document.querySelector(".bg-modal-fecharC").style.display = "none";
+        }
+
 function modalShowOut()
         {
            document.querySelector(".bg-modal-logout").style.display = "flex";             

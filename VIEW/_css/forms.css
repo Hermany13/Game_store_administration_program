@@ -16,7 +16,7 @@
 .painel1{
     padding: 150px 38px 128px 292px;
     float: right;
-    margin-top: -380px;
+    margin-top: -404px;
     background-color: #c5c5c5;
 }
 
@@ -105,7 +105,7 @@ p{
 }
 
 .content-site3{
-    padding-top: 673px;
+    padding-top: 330px;
     padding-bottom: 30px;
 }
 
@@ -129,7 +129,6 @@ p{
     color: white;
     padding-top: 50px;
     padding-bottom: 50px;
-    margin-top: -52px;
 }
 
 .footer-site2{
@@ -223,6 +222,30 @@ p{
     display: none;
 }
 
+.bg-modal-abrirC{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.bg-modal-fecharC{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
 .bg-modal-tabela{
     width: 100%;
     height: 100%;
@@ -303,11 +326,13 @@ p{
     margin-right: 1px;
     margin-top: 0px;
     text-align: center;
+    display: inline;
 }
 
 .caixa{
     border: 0.5px solid rgba(0, 0, 0, .3);
-    padding: 30px 30px 45px 30px;
+    padding: 22px;
+    margin-top: -1px;
 }
 
 .tx1{
@@ -333,7 +358,7 @@ p{
 .blocosb{
     margin-right: 280px;
     margin-left: -316px;
-    margin-top: -336px;
+    margin-top: -306px;
     width: 317px;
 }
 
@@ -351,6 +376,10 @@ p{
 }
 
 .add{
-    margin-top: 288px;
-    margin-left: -104px;
+    margin-top: 261px;
+    margin-left: 9px;
+}
+
+.caixa1{
+    padding: 24px;
 }
