@@ -10,7 +10,6 @@ class User
 
     private $userName;
     private $userPassword;
-    private $userCod_user;//vai Tirado depois
     private $userNiuser;
 
 //function é função (obvio), sendo um função ela tem um corpo, 
@@ -24,7 +23,6 @@ class User
 
         $this->userName = $_SESSION['user'];
         $this->userPassword = $_SESSION['password'];
-        $this->userCod_user = $_SESSION['cod_user'];
         $this->userNiuser = $_SESSION['ni_user'];
     }
 
@@ -36,11 +34,6 @@ class User
     function getPassword()
     {
         return $this->userPassword;
-    }
-
-    function getCod_user()
-    {
-        return $this->userCod_user;//vai ser tirado depois foi mal/:
     }
 
     function getN_user()
