@@ -19,7 +19,7 @@ $telefone = mysqli_real_escape_string($cone->cono, trim($_POST['telefone']));
 $dataNascimento = mysqli_real_escape_string($cone->cono, trim($_POST['dataNascimento']));
 $CPF = mysqli_real_escape_string($cone->cono, trim($_POST['cpf']));
 $endereco = mysqli_real_escape_string($cone->cono, trim($_POST['endereco']));
-$situacao = mysqli_real_escape_string($cone->cono, trim($_POST['situacao']));
+$situacao = mysqli_real_escape_string($cone->cono, "1");
 
 //instacia a classe
 
@@ -45,6 +45,7 @@ if ($cone->checkUserName() == false){
    $cone->classe = $cadastroCliente;
    $cone->carregar();
    $cone->createUser();
+   //header("Location: ../../VIEW/painelFuncionario.php");
 }
 else{
 	echo "se fodeu :/";

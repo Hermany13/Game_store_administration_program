@@ -45,6 +45,8 @@ if ($cone->checkUserName() == false){
    $cone->classe = $cadastroFuncionario;
    $cone->carregar();
    $cone->createUser();
+
+   header("Location: ../../VIEW/painelGerente.php");
 }
 else{
 	echo "o usuário já existe!";

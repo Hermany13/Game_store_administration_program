@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 //importa a conexão e a validação do cadastro
 
 include_once("../../MODEL/PHP files/DAOLogin.php");
@@ -22,7 +24,7 @@ $dataLancamento = mysqli_real_escape_string($cone->cono, trim($_POST['dataLancam
 $estado = mysqli_real_escape_string($cone->cono, trim ($_POST['estado']));
 $genero = mysqli_real_escape_string($cone->cono, trim($_POST['genero']));
 $plataforma = mysqli_real_escape_string($cone->cono, trim($_POST['plataforma'])); 
-$email = "email@gerente";
+$email = "".$_SESSION['email'];
 
 //instacia a classe
 
@@ -53,4 +55,5 @@ $cone->classe = $cadastroProduto;
 $cone->carregar();
 $cone->create();
 
+header("Location: ../../VIEW/painelGerente.php");
 ?>
