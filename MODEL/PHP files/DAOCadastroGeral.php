@@ -3,12 +3,13 @@ require_once("DAOLogin.php");
 
 class DAOCadastroGeral extends DAOLogin{
     
-    private $nomeCompleto;
-    private $dataNascimento;
-    private $telefone;
-    private $cpf;
-    private $endereco;
-    private $situacao;
+    public $nomeCompleto;
+    public $dataNascimento;
+    public $telefone;
+    public $cpf;
+    public $endereco;
+    public $situacao;
+
 
     public function carregar()
     {
@@ -36,8 +37,8 @@ class DAOCadastroGeral extends DAOLogin{
         echo "final do negocio";
     }
 
-    public function deleteUser(){
-        $this->sql = sprintf("DELETE FROM `usuarios` WHERE `user` = $this->Email;");
+    public function deleteUserGeral(){
+        $this->sql = sprintf("DELETE FROM `usuarios` WHERE `user` = $this->Email");
 
         if ($this->result = $this->cono->query($this->sql)){
             echo "Excluido com sucesso!";
@@ -58,9 +59,46 @@ class DAOCadastroGeral extends DAOLogin{
     }
 
     public function readUser(){
-        $query = sprintf("SELECT * FROM `usuarios` WHERE `user` = '$this->Email'");
+        
+        $this->sql = sprintf("SELECT * FROM `usuarios` WHERE `email` = '$this->Email'");
         $this->result = $this->cono->query($this->sql);
+        
+
+        while ($i = $this->result->fetch_assoc()) {
+
+            echo "Nome: " .$i['nome'];
+
+        }
         return $this->result;
+    }
+
+    
+    public function readName(){
+        
+        $this->sql = sprintf("SELECT * FROM `usuarios` WHERE `email` = '$this->Email'");
+        $this->result = $this->cono->query($this->sql);
+        
+
+        while ($i = $this->result->fetch_assoc()) {
+
+            return $i['nome'];
+
+        }
+        return $this->result;
+    }
+
+
+    function catporid(){
+        global $aCon;
+        $stmt = "SELECT * FROM `usuarios` WHERE `user` = '{$this->Email}'";
+    
+        if($query = $aCon->query($stmt)){
+            if($query->num_rows > 0){
+                $r = $query->fetch_array();
+                return $r['id'];
+            }
+        }
+        return false;
     }
 }
 ?>

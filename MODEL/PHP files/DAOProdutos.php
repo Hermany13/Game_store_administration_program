@@ -4,17 +4,17 @@ require_once("conn.php");
 
 class DAOProdutos extends conn{
 
-    private $cod_prod;
-    private $codigoBarra;
-    private $nome;
-    private $valorCusto;
-    private $valorVenda;
-    private $tipoComercio;
-    private $Email;
-    private $dataLancamento;
-    private $estado;
-    private $genero;
-    private $plataforma;
+    public $cod_prod;
+    public $codigoBarra;
+    public $nome;
+    public $valorCusto;
+    public $valorVenda;
+    public $tipoComercio;
+    public $Email;
+    public $dataLancamento;
+    public $estado;
+    public $genero;
+    public $plataforma;
 
     public $classe;
 
@@ -60,22 +60,38 @@ class DAOProdutos extends conn{
             $this->sql = sprintf("SELECT * FROM `produtos` WHERE `cod_prod` = '$this->cod_prod'");
             $this->result = $this->cono->query($this->sql);
             return $this->result;
+            
     }
 
         //le dados da tabela toda
         public function readsProdutos(){
             $this->sql = sprintf("SELECT * FROM `produtos`");
             $this->result = $this->cono->query($this->sql);
-            $this->result = $this->cono->query($this->sql);
+            
+//            while ($i = $this->result->fetch_assoc()) {
+//
+//                echo "<tr>";
+//
+//                echo "<td>" .$i["cod_prod"]. "</td>";
+//                echo "<td>" .$i["nome"]. "</td>";
+//                echo "<td>" .$i["valor_venda"]. "</td>";
+//                echo "<td>" ."quant</td>";
+//                echo "<td class='actions'>
+//                <a class='btn btn-success btn-xs'>Adicionar</a>
+//                </td>";
+//
+//                echo "</tr>";
+//            }
+
             return $this->result;
         }
 
         public function checkCod_prod($cod_prod){
             $this->sql = sprintf("SELECT `cod_prod` FROM `produtos` WHERE `cod_prod` = '$cod_prod';");
     
-            $this->$result = $this->cono->query($this->sql);
+            $this->result = $this->cono->query($this->sql);
     
-            if($result->num_rows > 0) {
+            if($this->result->num_rows > 0) {
                 return true;
             }else{
                 return false;
