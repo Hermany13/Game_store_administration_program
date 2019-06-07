@@ -6,16 +6,19 @@ $email;
 
 $email = $_GET["email"];
 
-$c = new Cliente();
 $cg = new DAOCadastroGeral();
 
-$c->Email = $email;
-$cg->classe = $c;
+$cg->Email = $email;
 
 $cg->carregar();
 
 $cg->readUser();
 
 echo "FIM :/";
+
+function impdados()
+{
+
+}
 
 ?>
