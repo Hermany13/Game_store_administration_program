@@ -2,7 +2,7 @@
 
 session_start();
 session_destroy();
-header("Location: ../../index.php");
+header("Location: ../../VIEW/login.html");
 
 // destroi a sessão e redireciona para tela de Principal
 ?>
