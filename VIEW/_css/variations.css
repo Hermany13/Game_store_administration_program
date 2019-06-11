@@ -6,7 +6,7 @@
 }
 
 .bodyDif{
-    background-image: url(../_img/mirrorsedge.jpg);
+    background-image: url(../_img/Wallpaper.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -384,7 +384,7 @@
 .cancelaCompra{
     position: absolute;
     top: 95.4%;
-    left: 78%;
+    left: 79%;
 }
 
 .footer-site10 {
@@ -400,11 +400,11 @@
 .Comprador{
     position: absolute;
     top: 95.4%;
-    left: 63.1%;
+    left: 64.1%;
 }
 
 .finaliza{
     position: absolute;
     top: 95.4%;
-    left: 56.1%;
+    left: 92.1%;
 }

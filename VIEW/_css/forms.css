@@ -86,7 +86,7 @@ p {
 }
 
 .header-site {
-    background-image: url(../_img/batman.png);
+    background-image: url(../_img/Wallpaper.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -294,6 +294,27 @@ p {
     position: relative;
 }
 
+.modal-contentAbrirC{
+    width: 300px;
+    height: 159px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.modal-contentFecharC{
+    width: 300px;
+    height: 159px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+
 .modal-content2 {
     width: 621px;
     height: 446px;
@@ -307,7 +328,7 @@ p {
 .inputModal {
     width: 50%;
     display: block;
-    margin: 15px auto;
+    margin: -3px auto 8px auto;
 }
 
 .close {
@@ -396,10 +417,20 @@ p {
     width: 586px;
 }
 
+.footer-site11{
+	background-color: #333333;
+    color: white;
+    position: absolute;
+    top: 229%;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 .add {
     position: absolute;
     top: 95.4%;
-    left: 91%;
+    left: 56%;
 }
 
 .caixa1 {
@@ -412,4 +443,11 @@ p {
     overflow-y: scroll;
     overflow-x: hidden;
     width: 867px;
+}
+
+.tabelaToque{
+    position: absolute;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }

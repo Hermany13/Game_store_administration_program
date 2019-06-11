@@ -50,12 +50,14 @@ require_once("../CONTROLLER/Outros/CheckPagina.php"); session_start();
                 <div class="col-md-6">
                     <div class="input-group h2"> <input name="consulta" id="txt_consulta" placeholder="Consultar" type="text" class="form-control"> </div>
                 </div>
-                <div class="col-md-3"> <a <?php if($_SESSION['ni_user'] != 2 ){ echo " style=\"color:black; cursor: not-allowed; opacity: 0.5; ";} else {echo "href=\"cadastroProduto.html\"";}?> class="btn btn-primary pull-right h2">Novo Item</a> </div>
+                
+                <!--<div class="col-md-3"> <a <?php if($_SESSION['ni_user'] != 2 ){ echo " style=\"color:black; cursor: not-allowed; opacity: 0.5; ";} else {echo "href=\"cadastroProduto.html\"";}?> class="btn btn-primary pull-right h2">Novo Item</a> </div>-->
+                
             </div>
             <div id="list" class="row">
                 <div class="tabelaToque">
                     <div class="table-responsive col-md-12">
-                        <table id="tabela" class="table table-hover">
+                        <table id="tabela" class="table table-hover tabelaEstoque">
                             <thead>
                                 <tr>
                                     <th>ID</th>
@@ -83,7 +85,7 @@ require_once("../CONTROLLER/Outros/CheckPagina.php"); session_start();
             </div>
         </div>
     </section>
-    <section class="footer-site">
+    <section class="footer-site11">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">

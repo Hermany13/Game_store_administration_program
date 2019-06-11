@@ -24,8 +24,10 @@ require_once("../CONTROLLER/Outros/CheckPagina.php"); session_start(); CheckPagi
     <script src="_js/interativos.js"></script>
     <section class="header-site">
         <div class="linha linhaUser">
+           
             <div class="contentLine"> <a style="text-align: left">Painel de <strong>Funcionario!</strong></a> <?php $nome = new DAOCadastroGeral(); $nome->Email = $_SESSION['email']; echo "Bem-Vindo ".$nome->readName(); ?> <a class="logOutbtn" onclick="modalShowOut()">Log out</a></div>
         </div>
+        
     </section>
     <section class="content-site">
         <div class="linha linhaPosition">
@@ -51,6 +53,7 @@ require_once("../CONTROLLER/Outros/CheckPagina.php"); session_start(); CheckPagi
                 </ul>
             </nav>
         </div>
+        
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
@@ -78,22 +81,18 @@ require_once("../CONTROLLER/Outros/CheckPagina.php"); session_start(); CheckPagi
                 </div>
             </div>
         </div>
-    </section> <!-- Um Model para cada!-->
-    <div class="bg-modal">
-        <div class="modal-content">
-            <div id="close" class="close" onclick="modalClose()">+</div>
-            <form> <input class="inputModal" type="text" name="valor" placeholder="Entre um Valor" /> <a href="" class="btn btn-dark">Registrar</a> </form>
-        </div>
-    </div>
+    </section> 
+    
     <div class="bg-modal-abrirC">
-        <div class="modal-content">
+        <div class="modal-contentAbrirC">
             <div id="close" class="close" onclick="modalCloseAbrirC()">+</div>
+            <p>Digite um valor para abrir o caixa:</p>
             <form> <input class="inputModal" type="text" name="valorAbrir" placeholder="Digite um Valor" /> <a href="telaCaixa.php" class="btn btn-dark">Continuar</a> </form>
         </div>
     </div>
     <div class="bg-modal-fecharC">
-        <div class="modal-content">
-            <div id="close" class="close" onclick="modalCloseFecharC()">+</div>
+        <div class="modal-contentFecharC">
+            <div id="close" class="close" onclick="modalCloseFecharC()">+</div><p>Digite um valor para fechar o caixa:</p>
             <form> <input class="inputModal" type="text" name="valorFechar" placeholder="Digite um Valor" /> <a href="telaCaixa.php" class="btn btn-dark">Continuar</a> </form>
         </div>
     </div>
