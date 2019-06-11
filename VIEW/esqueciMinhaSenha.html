@@ -2,24 +2,21 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="utf-8" />
-    <title>GameStore - Esqueci minha senha</title>
+    <meta charset="utf-8"/>
+    <title>GameStore - Login</title>
     <link rel="stylesheet" href="_css/forms.css" />
     <link rel="stylesheet" href="_css/variations.css" />
     <link rel="icon" href="_img/65343.png" type="image/x-icon">
     <link rel="shortcut icon" href="_img/65343.png" type="image/x-icon">
 </head>
 
-<body>
+<body class="bodyDif">
     <div>
-        <div class="box box2">
-            <div class="label label1">
-                <div>Digite seu E-mail</div>
-                <form> <input class="input2" type="email" placeholder="Email" />
-                    <div><button type="submit" class="Button2">Enviar</button></div>
-                    <p class="msg1">Enviaremos uma mansagem para seu E-mail pedindo a confirmação através das perguntas de segurança.</p>
-                </form>
-            </div>
+        <div class="box boxExqueci">
+            <form action="../CONTROLLER/Transaction/loginTrans.php" method="POST">
+                <h3 class="loginMsg">Digite seu Email e enviaremos um Email de segurança. Recebendo a confimação enviaremos a nova senha para o mesmo.</h3> <input name="user_email" class="inputDif" type="email" required autofocus="" placeholder="Usuário ou Email" />
+                <div><button class="loginButton" type="submit">Enviar</button> </div>
+            </form>
         </div>
     </div>
 </body>

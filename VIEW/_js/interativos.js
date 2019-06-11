@@ -61,7 +61,25 @@ function modalCloseTabelaCliente()
             document.querySelector(".bg-modal-tabela-cliente").style.display = "none";
         }
 
+function modalShowCancelar()
+        {
+           document.querySelector(".bg-modal-cancelar").style.display = "flex";             
+        }
 
+function modalCloseCancelar()
+        {
+            document.querySelector(".bg-modal-cancelar").style.display = "none";
+        }
+
+function modalShowConfirmar()
+        {
+           document.querySelector(".bg-modal-confirmar").style.display = "flex";             
+        }
+
+function modalCloseConfirmar()
+        {
+            document.querySelector(".bg-modal-confirmar").style.display = "none";
+        }
 
 
 function mascara(i, t){

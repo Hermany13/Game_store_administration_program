@@ -35,7 +35,7 @@ require_once("../CONTROLLER/Outros/CheckPagina.php"); session_start();
                 <div class="painelTotal">
                     <h2>R$ TOTAL A PAGAR</h2>
                     <div class="ValorTotal">
-                        <h1>1.374,61</h1>
+                        <h1><label id="totalaPagar1">00,00</label></h1>
                     </div>
                 </div>
             </div>
@@ -82,7 +82,7 @@ require_once("../CONTROLLER/Outros/CheckPagina.php"); session_start();
                     <h1 class="tr1"><label>00,00</label></h1>
                 </div>
             </div>
-        </div> <button type="button" class="btn btn-primary add" onclick="modalShowTabela()">Adicionar</button> <button type="button" class="btn btn-danger cancelaCompra" onclick="modalShowCancelar()">Cancelar Operação</button> <button type="button" class="btn btn-dark Comprador" onclick="modalShowTabelaCliente()">Selecionar Comprador</button> <button type="button" class="btn btn-success finaliza" onclick="modalShowFinalizar()">Finalizar</button>
+        </div> <button type="button" class="btn btn-primary add" onclick="modalShowTabela()">Adicionar</button> <button type="button" class="btn btn-danger cancelaCompra" onclick="modalShowCancelar()">Cancelar Operação</button> <button type="button" class="btn btn-dark Comprador" onclick="modalShowTabelaCliente()">Selecionar Comprador</button> <button type="button" class="btn btn-success finaliza" onclick="modalShowConfirmar()">Finalizar</button>
     </section>
     <section class="footer-site10">
         <div class="container">
@@ -104,6 +104,25 @@ require_once("../CONTROLLER/Outros/CheckPagina.php"); session_start();
             </form>
         </div>
     </div>
+    
+     <div class="bg-modal-cancelar">
+        <div class="modal-content-cancelar">
+            <div id="close" class="close" onclick="modalCloseCancelar()">+</div>
+            <form>
+                <p class="text-center">Deseja cancelar a operação?</p> <a class="btn btn-danger">Sim</a> <a onclick="modalCloseCancelar()" class="btn btn-primary">Cancelar</a>
+            </form>
+        </div>
+    </div>
+    
+    <div class="bg-modal-confirmar">
+        <div class="modal-content-confirmar">
+            <div id="close" class="close" onclick="modalCloseConfirmar()">+</div>
+            <form>
+                <p class="text-center">Deseja finalizar a operação?</p> <a class="btn btn-danger">Sim</a> <a onclick="modalCloseConfirmar()" class="btn btn-primary">Cancelar</a>
+            </form>
+        </div>
+    </div>
+    
     <div class="bg-modal-tabela">
         <div class="modal-content2">
             <h4>Estoque</h4>

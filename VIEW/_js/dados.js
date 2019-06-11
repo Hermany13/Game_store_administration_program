@@ -13,7 +13,7 @@ function addList(idtbody,cod,nome,valor) {
     modalCloseTabela();
 
     document.getElementById('totalaPagar').innerHTML = ""+Total;
-
+   
     addTable(idtbody,cod,nome,valor);
 }
 
