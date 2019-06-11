@@ -5,108 +5,70 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width-device-width, initial-scale=1">
-
     <title>GameStore - Cadastro de Produto</title>
-
     <link rel="stylesheet" href="_css/bootstrap.css">
     <link rel="stylesheet" href="_css/variations.css">
     <link rel="stylesheet" href="_css/forms.css">
     <script src="https://ajax.googlepis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="_js/bootstrap.js"></script>
     <script src="_js/interativos.js"></script>
+    <link rel="icon" href="_img/65343.png" type="image/x-icon">
+    <link rel="shortcut icon" href="_img/65343.png" type="image/x-icon">
 </head>
 
 <body>
-
-
-
     <div class="linha linhaUser">
-        <div class="contentLine">Usuário Atual
-            <a class="logOutbtn" onclick="modalShowOut()">Log out</a></div>
+        <div class="contentLine">Usuário Atual <a class="logOutbtn" onclick="modalShowOut()">Log out</a></div>
     </div>
-
-
     <section class="content-site6">
-
         <div class="label label1">
             <h2>Cadastro de Produtos</h2>
         </div>
         <div class="box box6">
-
             <form action="../CONTROLLER/Transaction/CadastrarProdutoTrans.php" method="post">
                 <div>
-                    <div class="textoInput">Nome do Produto:</div>
-                    <input class="input1" type="text" name="nome" required />
+                    <div class="textoInput">Nome do Produto:</div> <input class="input1" type="text" name="nome" required />
                 </div>
-
                 <div>
-                    <div class="textoInput">Código do Produto:</div>
-                    <input class="input1" type="text" name="cod_prod" required />
+                    <div class="textoInput">Código do Produto:</div> <input class="input1" type="text" name="cod_prod" required />
                 </div>
-
                 <div>
-                    <div class="textoInput">Valor de Custo do Produto:</div>
-                    <input class="input1" type="text" name="valorCusto" required />
+                    <div class="textoInput">Valor de Custo do Produto:</div> <input class="input1" type="text" name="valorCusto" required />
                 </div>
-
                 <div>
-                        <div class="textoInput">Tipo de Comércio</div>
-                        <select class="input1 inputNew" name="estado">
-                            <option value="1">Aluguel</option>
-                            <option value="0">Venda</option>
-                        </select>
-                    </div>
-
-                <div>
-                    <div class="textoInput">Gênero:</div>
-                    <input class="input1" type="text" name="genero" required />
+                    <div class="textoInput">Tipo de Comércio</div> <select class="input1 inputNew" name="estado">
+                        <option value="1">Aluguel</option>
+                        <option value="0">Venda</option>
+                    </select>
                 </div>
-
+                <div>
+                    <div class="textoInput">Gênero:</div> <input class="input1" type="text" name="genero" required />
+                </div>
                 <div class="block2">
                     <div>
-                        <div class="textoInput">Plataforma:</div>
-                        <input class="input1" type="text" name="plataforma" required />
+                        <div class="textoInput">Plataforma:</div> <input class="input1" type="text" name="plataforma" required />
                     </div>
-
                     <div>
-                        <div class="textoInput">Código de Barras:</div>
-                        <input class="input1" type="text" name="codigoBarra" required />
+                        <div class="textoInput">Código de Barras:</div> <input class="input1" type="text" name="codigoBarra" required />
                     </div>
-
-
                     <div>
-                        <div class="textoInput">Valor de Venda do Produto:</div>
-                        <input class="input1" type="text" name="valorVenda" required />
+                        <div class="textoInput">Valor de Venda do Produto:</div> <input class="input1" type="text" name="valorVenda" required />
                     </div>
-
-
                     <div>
-                        <div class="textoInput">Data de Lançamento do Produto:</div>
-                        <input class="input1" type="date" name="dataLancamento" required />
+                        <div class="textoInput">Data de Lançamento do Produto:</div> <input class="input1" type="date" name="dataLancamento" required />
                     </div>
-
                     <div>
-                        <div class="textoInput">Estado do Produto:</div>
-                        <select class="input1 inputNew" name="estado">
+                        <div class="textoInput">Estado do Produto:</div> <select class="input1 inputNew" name="estado">
                             <option value="0">Novo</option>
                             <option value="1">Usado</option>
                         </select>
                     </div>
-                    
-                    
                 </div>
-
-                <div><button class="Button6 btn btn-primary pull-right h2" type="submit">Cadastrar</button>
-                </div>
+                <div><button class="Button6 btn btn-primary pull-right h2" type="submit">Cadastrar</button> </div>
             </form>
         </div>
-
     </section>
-
-
-
     <section class="footer-site10">
-
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
@@ -114,31 +76,15 @@
                 </div>
             </div>
         </div>
-
     </section>
-
-
     <div class="bg-modal-logout">
         <div class="modal-content">
             <div id="close" class="close" onclick="modalCloseOut()">+</div>
             <form>
-                <p class="text-center">Deseja Sair de Sua Seção?</p>
-                <a href="../CONTROLLER/Outros/Logout.php" class="btn btn-danger">Sim</a>
-                <a class="btn btn-dark" onclick="modalCloseOut()">Cancelar</a>
+                <p class="text-center">Deseja Sair de Sua Seção?</p> <a href="../CONTROLLER/Outros/Logout.php" class="btn btn-danger">Sim</a> <a class="btn btn-dark" onclick="modalCloseOut()">Cancelar</a>
             </form>
         </div>
     </div>
-
-
 </body>
-
-
-
-
-
-
-
-
-
 
 </html>

@@ -21,6 +21,8 @@ require_once("../CONTROLLER/Outros/CheckPagina.php"); session_start();
     <link rel="stylesheet" href="_css/bootstrap.css">
     <link rel="stylesheet" href="_css/variations.css">
     <link rel="stylesheet" href="_css/forms.css">
+    <link rel="icon" href="_img/65343.png" type="image/x-icon">
+    <link rel="shortcut icon" href="_img/65343.png" type="image/x-icon">
 </head>
 
 <body>
@@ -52,24 +54,7 @@ require_once("../CONTROLLER/Outros/CheckPagina.php"); session_start();
                                 </tr>
                             </thead>
                             <tbody id="listProd">
-                                <!-- <tr>-->
-                                <!-- <td>1002</td>-->
-                                <!-- <td>Batman Arkhan Origins</td>-->
-                                <!-- <td>R$ 89,90</td>-->
-                                <!-- <td>1</td>-->
-                                <!-- </tr>-->
-                                <!-- <tr>-->
-                                <!-- <td>1004</td>-->
-                                <!-- <td>A volta dos que não foram</td>-->
-                                <!-- <td>R$ 1209,90</td>-->
-                                <!-- <td>1</td>-->
-                                <!-- </tr>-->
-                                <!-- <tr>-->
-                                <!-- <td>1005</td>-->
-                                <!-- <td>Kingdom Hearts III</td>-->
-                                <!-- <td>R$ 140,71</td>-->
-                                <!-- <td>1</td>-->
-                                <!-- </tr>-->
+                               
                             </tbody>
                         </table>
                     </div>
@@ -77,17 +62,17 @@ require_once("../CONTROLLER/Outros/CheckPagina.php"); session_start();
             </div>
         </div>
         <div class="pagar">
-           <div class="blocosa">
-            <div class="caixa">
-                <h4 class="tx1 tp">R$ TOTAL A PAGAR</h4>
-                <h1 class="tpp"><label id="totalaPagar">00,00</label></h1>
+            <div class="blocosa">
+                <div class="caixa">
+                    <h4 class="tx1 tp">R$ TOTAL A PAGAR</h4>
+                    <h1 class="tpp"><label id="totalaPagar">00,00</label></h1>
+                </div>
+                <div class="caixa">
+                    <h4 class="tx1 vp">R$ VALOR PAGO</h4>
+                    <h1 class="vpp"><label>00,00</label></h1>
+                </div>
             </div>
-            <div class="caixa">
-                <h4 class="tx1 vp">R$ VALOR PAGO</h4>
-                <h1 class="vpp"><label>00,00</label></h1>
-            </div>
-              </div>
-               <div class="blocosb">           
+            <div class="blocosb">
                 <div class="caixa">
                     <h4 class="tx1 sp">R$ SALDO A PAGAR</h4>
                     <h1 class="spp"><label>00,00</label></h1>
@@ -96,15 +81,8 @@ require_once("../CONTROLLER/Outros/CheckPagina.php"); session_start();
                     <h4 class="tx1 t">R$ TROCO</h4>
                     <h1 class="tr1"><label>00,00</label></h1>
                 </div>
-                </div>
-            
-        </div> <button type="button" class="btn btn-primary add" onclick="modalShowTabela()">Adicionar</button>
-        
-        <button type="button" class="btn btn-danger cancelaCompra" onclick="modalShowCancelar()">Cancelar Operação</button>
-        
-        <button type="button" class="btn btn-dark Comprador" onclick="modalShowTabelaCliente()">Selecionar Comprador</button>
-        
-        <button type="button" class="btn btn-success finaliza" onclick="modalShowFinalizar()">Finalizar</button>
+            </div>
+        </div> <button type="button" class="btn btn-primary add" onclick="modalShowTabela()">Adicionar</button> <button type="button" class="btn btn-danger cancelaCompra" onclick="modalShowCancelar()">Cancelar Operação</button> <button type="button" class="btn btn-dark Comprador" onclick="modalShowTabelaCliente()">Selecionar Comprador</button> <button type="button" class="btn btn-success finaliza" onclick="modalShowFinalizar()">Finalizar</button>
     </section>
     <section class="footer-site10">
         <div class="container">
@@ -131,8 +109,7 @@ require_once("../CONTROLLER/Outros/CheckPagina.php"); session_start();
             <h4>Estoque</h4>
             <div id="close" class="close1" onclick="modalCloseTabela()">+</div>
             <div class="form-group input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span> <input name="consulta" id="txt_consulta" placeholder="Consultar" type="text" class="form-control"> </div>
-            
-               <div class="tabelaModalLoka">
+            <div class="tabelaModalLoka">
                 <div id="list" class="row">
                     <div class="table-responsive col-md-12">
                         <table id="tabela" class="table table-hover">
@@ -155,7 +132,6 @@ require_once("../CONTROLLER/Outros/CheckPagina.php"); session_start();
             </div>
         </div>
     </div>
-    
     <div class="bg-modal-tabela-cliente">
         <div class="modal-contentCliente">
             <h4>Clientes</h4>
@@ -196,16 +172,17 @@ require_once("../CONTROLLER/Outros/CheckPagina.php"); session_start();
                                     <td>(61) 2539-3838</td>
                                     <td class="actions"> <a class="btn btn-success btn-xs">Adicionar</a> </td>
                                 </tr>
-                                
                                 <tr>
                                     <td>953.602.297-48</td>
-                                    <td>Nathan Victor Yuri Barbosa</td>           <td>nnathanvictoryuribarbosa@embraer.com</td>
+                                    <td>Nathan Victor Yuri Barbosa</td>
+                                    <td>nnathanvictoryuribarbosa@embraer.com</td>
                                     <td>(53) 3543-3412</td>
                                     <td class="actions"> <a class="btn btn-success btn-xs">Adicionar</a> </td>
                                 </tr>
                                 <tr>
                                     <td>287.272.888-03</td>
-                                    <td>Enzo Edson Rezende</td>             <td>enzoedsonrezende..enzoedsonrezende@carubelli.com.b</td>
+                                    <td>Enzo Edson Rezende</td>
+                                    <td>enzoedsonrezende..enzoedsonrezende@carubelli.com.b</td>
                                     <td>(98) 3974-9463</td>
                                     <td class="actions"> <a class="btn btn-success btn-xs">Adicionar</a> </td>
                                 </tr>
@@ -219,7 +196,6 @@ require_once("../CONTROLLER/Outros/CheckPagina.php"); session_start();
             </div>
         </div>
     </div>
-    
 </body>
 
 </html>
