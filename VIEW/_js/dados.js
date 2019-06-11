@@ -1,18 +1,24 @@
-lista = "\n";
+var VARS_AMBIENTE = new Array();
 
+VARS_AMBIENTE['lista'] = "\n";
 
-Total = 0;
+VARS_AMBIENTE['Total'] = 0;
+
+VARS_AMBIENTE['Nprodutos'] = 0;
+VARS_AMBIENTE['Cli_email'] = "";
 
 function addList(idtbody,cod,nome,valor) {
-    entrada = "codigo: " + cod + " Nome: " + nome + " Valor: " + valor + "\n";
+    entrada = cod + "!x!" + valor + ";";
 
-    Total = Number(Total) + Number(valor);
-    lista = lista+entrada;
+    VARS_AMBIENTE['Total'] = Number(VARS_AMBIENTE['Total']) + Number(valor);
+    VARS_AMBIENTE['Nprodutos'] = VARS_AMBIENTE['Nprodutos'] + 1;
+
+    VARS_AMBIENTE['lista'] = VARS_AMBIENTE['lista']+entrada;
 
     //alert(lista);
     modalCloseTabela();
 
-    document.getElementById('totalaPagar').innerHTML = ""+Total;
+    document.getElementById('totalaPagar').innerHTML = ""+VARS_AMBIENTE['Total'];
    
     addTable(idtbody,cod,nome,valor);
 }
@@ -30,4 +36,15 @@ function addTable(idtbody,cod,nome,valor) {
     d.getElementById(idtbody).appendChild(newRow);
 
     return false;
+}
+
+function addCliente(email) {
+    VARS_AMBIENTE['Cli_email'] = email;
+}
+
+function closeVenda() {
+
+    var objetoDados = document.getElementById('pdados');
+    objetoDados.value = VARS_AMBIENTE['lista'];
+    alert("Aqui era para aparecer a lista:" +VARS_AMBIENTE['lista']);
 }

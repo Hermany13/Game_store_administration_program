@@ -10,7 +10,9 @@ require_once("../CONTROLLER/Outros/CheckPagina.php"); session_start();
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width-device-width, initial-scale=1">
+
     <title>GameStore - Caixa</title>
+
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.quicksearch/2.3.1/jquery.quicksearch.js"></script>
@@ -44,6 +46,7 @@ require_once("../CONTROLLER/Outros/CheckPagina.php"); session_start();
             <div class="parteBaixa">
                 <div id="list" class="row">
                     <div class="table-responsive col-md-12">
+
                         <table id="tabela" class="table table-hover">
                             <thead>
                                 <tr>
@@ -82,7 +85,10 @@ require_once("../CONTROLLER/Outros/CheckPagina.php"); session_start();
                     <h1 class="tr1"><label>00,00</label></h1>
                 </div>
             </div>
-        </div> <button type="button" class="btn btn-primary add" onclick="modalShowTabela()">Adicionar</button> <button type="button" class="btn btn-danger cancelaCompra" onclick="modalShowCancelar()">Cancelar Operação</button> <button type="button" class="btn btn-dark Comprador" onclick="modalShowTabelaCliente()">Selecionar Comprador</button> <button type="button" class="btn btn-success finaliza" onclick="modalShowConfirmar()">Finalizar</button>
+        </div> <button type="button" class="btn btn-primary add" onclick="modalShowTabela()">Adicionar</button>
+        <button type="button" class="btn btn-danger cancelaCompra" onclick="modalShowCancelar()">Cancelar Operação</button>
+        <button type="button" class="btn btn-dark Comprador" onclick="modalShowTabelaCliente()">Selecionar Comprador</button>
+        <button type="button" class="btn btn-success finaliza" onclick="modalShowConfirmar(); closeVenda();">Finalizar</button>
     </section>
     <section class="footer-site10">
         <div class="container">
@@ -117,8 +123,15 @@ require_once("../CONTROLLER/Outros/CheckPagina.php"); session_start();
     <div class="bg-modal-confirmar">
         <div class="modal-content-confirmar">
             <div id="close" class="close" onclick="modalCloseConfirmar()">+</div>
-            <form>
-                <p class="text-center">Deseja finalizar a operação?</p> <a class="btn btn-danger">Sim</a> <a onclick="modalCloseConfirmar()" class="btn btn-primary">Cancelar</a>
+            <form method="post" action="../MODEL/PHP%20files/teste.php">
+                <p class="text-center">Deseja finalizar a operação?</p>
+
+                <input type="hidden" id="cdados" name="cliente_enviar" value="" />
+                <input type="hidden" id="pdados" name="produtos_enviar" value="" />
+
+                <a onclick="modalCloseConfirmar()" class="btn btn-primary">Cancelar</a>
+                <input type="submit" class="btn btn-danger" value="Sim">
+
             </form>
         </div>
     </div>
