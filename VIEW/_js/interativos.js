@@ -51,6 +51,17 @@ function modalCloseTabela()
             document.querySelector(".bg-modal-tabela").style.display = "none";
         }
 
+function modalShowTabelaCliente()
+        {
+           document.querySelector(".bg-modal-tabela-cliente").style.display = "flex";             
+        }
+
+function modalCloseTabelaCliente()
+        {
+            document.querySelector(".bg-modal-tabela-cliente").style.display = "none";
+        }
+
+
 
 
 function mascara(i, t){

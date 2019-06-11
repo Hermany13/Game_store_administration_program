@@ -1,11 +1,11 @@
 @charset "UTF-8";
 
-.box{
-    position: absolute;    
-    overflow: hidden;    
+.box {
+    position: absolute;
+    overflow: hidden;
 }
 
-.painel{
+.painel {
     padding: 36px 45px 27px 31px;
     background-color: #e9e9e9;
     margin-top: -631px;
@@ -13,77 +13,79 @@
     color: rgba(0, 0, 0, .6);
 }
 
-.painel1{
-    padding: 150px 38px 128px 292px;
-    float: right;
-    margin-top: -404px;
+.painel1 {
+    position: absolute;
+    padding-right: 28px;
+    padding-top: 32px;
+    width: 45%;
+    height: 40%;
+    top: 8%;
+    left: 55%;
     background-color: #c5c5c5;
 }
 
-.painelSubT{
-    border-bottom: 0.5px solid rgba(0, 0, 0, .7);    
+.painelSubT {
+    border-bottom: 0.5px solid rgba(0, 0, 0, .7);
 }
 
-.painelDescI{
+.painelDescI {
     margin-top: 15px;
     border-bottom: 0.5px solid rgba(0, 0, 0, .7);
 }
 
-.painelDescG{
+.painelDescG {
     margin-top: 15px;
     border-bottom: 0.5px solid rgba(0, 0, 0, .7);
 }
 
-.painelAcre{
+.painelAcre {
     margin-top: 15px;
 }
 
-.painelTotal{
+.painelTotal {
     float: right;
 }
 
-.label{       
+.label {
     color: rgba(0, 0, 0, 0.7);
-    font:bold 14px/45px sans-serif;   
-    border-bottom: 0.5px solid rgba(0, 0, 0, .7);   
+    font: bold 14px/45px sans-serif;
+    border-bottom: 0.5px solid rgba(0, 0, 0, .7);
     margin-inline-end: 16px;
 }
-     
 
-input{    
-    font:normal 13px sans-serif;
-    color:black;    
+input {
+    font: normal 13px sans-serif;
+    color: black;
     border: 1px solid #bfc4c6;
-    border-radius:6px;
-    outline:none;
+    border-radius: 6px;
+    outline: none;
     align-content: center;
-    width:350px;
-    height:45px;   
-    padding:10px;      
-    background-color: transparent;    
+    width: 350px;
+    height: 45px;
+    padding: 10px;
+    background-color: transparent;
 }
 
-input:focus{
+input:focus {
     outline-offset: -2;
-    border: 1px solid #005eff; 
+    border: 1px solid #005eff;
 }
 
-
-a{
+a {
     color: white;
 }
 
 a:hover {
-    cursor:pointer;
+    cursor: pointer;
     color: white;
     text-decoration: none;
 }
 
-p{
+p {
     text-align: justify;
 }
 
-.header-site{
+.header-site {
     background-image: url(../_img/batman.png);
     background-position: center top;
     background-repeat: no-repeat;
@@ -94,77 +96,78 @@ p{
     padding-bottom: 200px;
 }
 
-.content-site{
+.content-site {
     padding-top: 400px;
     padding-bottom: 300px;
 }
 
-.content-site2{
-     padding-top: 400px;
+.content-site2 {
+    padding-top: 400px;
     padding-bottom: 30px;
 }
 
-.content-site3{
-    padding-top: 330px;
-    padding-bottom: 30px;
+.content-site3 {
+    padding-top: 40%;
+    padding-bottom: 9%;
+    position: static;
 }
 
-.content-site4{
+.content-site4 {
     padding-top: 400px;
     padding-bottom: 251px;
 }
 
-.content-site5{
+.content-site5 {
     padding-top: 400px;
     padding-bottom: 206px;
 }
 
-.content-site6{
+.content-site6 {
     padding-top: 400px;
     padding-bottom: 257px;
 }
 
-.footer-site{
+.footer-site {
     background-color: #333333;
     color: white;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
-.footer-site2{
+.footer-site2 {
     background-color: #333333;
     color: white;
     padding-top: 25px;
     padding-bottom: 21px;
 }
 
-.footer-site3{
+.footer-site3 {
     background-color: #333333;
     color: white;
     padding-top: 64px;
     padding-bottom: 96px;
 }
 
-.menuNav{    
+.menuNav {
     top: 470px;
     padding: 10px;
     padding-top: 6px;
 }
 
-.menuNav ul{
+.menuNav ul {
     list-style: none;
     text-align: center;
     text-transform: uppercase;
     padding-bottom: 0px;
 }
 
-.menuNav li{
+.menuNav li {
     position: relative;
     color: white;
-	display: inline;
-	background-color: #333333;
-	padding: 6px 30px 15px 40px;
-	margin: -3px;
+    display: inline;
+    background-color: #333333;
+    padding: 6px 30px 15px 40px;
+    margin: -3px;
     transition: background-color 0.5s;
 }
 
@@ -173,32 +176,33 @@ p{
     margin: 0 auto;
 }
 
-.menuNav li:hover{
+.menuNav li:hover {
     background-color: black;
     cursor: pointer;
 }
 
-.menuNav li ul{
-    position:absolute; 
-    left:0;
-    background-color:#fff; 
-    display:none;
+.menuNav li ul {
+    position: absolute;
+    left: 0;
+    background-color: #fff;
+    display: none;
     margin-top: 16px;
-}   
+}
 
-.menuNav li:hover ul, .menuNav li.over ul{
-    display:block;
+.menuNav li:hover ul,
+.menuNav li.over ul {
+    display: block;
     cursor: pointer;
 }
 
-.menuNav li ul li{ 
-    display:block; 
+.menuNav li ul li {
+    display: block;
     width: 300px;
     left: -37px;
     padding: 15px 30px 15px 40px;
 }
 
-.bg-modal{
+.bg-modal {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
@@ -210,7 +214,7 @@ p{
     display: none;
 }
 
-.bg-modal-logout{
+.bg-modal-logout {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
@@ -222,7 +226,7 @@ p{
     display: none;
 }
 
-.bg-modal-abrirC{
+.bg-modal-abrirC {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
@@ -234,7 +238,7 @@ p{
     display: none;
 }
 
-.bg-modal-fecharC{
+.bg-modal-fecharC {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
@@ -246,7 +250,7 @@ p{
     display: none;
 }
 
-.bg-modal-tabela{
+.bg-modal-tabela {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
@@ -258,8 +262,29 @@ p{
     display: none;
 }
 
+.bg-modal-tabela-cliente{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
 
-.modal-content{
+.modal-contentCliente{
+    width: 900px;
+    height: 446px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.modal-content {
     width: 300px;
     height: 140px;
     background-color: white;
@@ -269,7 +294,7 @@ p{
     position: relative;
 }
 
-.modal-content2{
+.modal-content2 {
     width: 621px;
     height: 446px;
     background-color: white;
@@ -279,13 +304,13 @@ p{
     position: relative;
 }
 
-.inputModal{
+.inputModal {
     width: 50%;
     display: block;
     margin: 15px auto;
 }
 
-.close{
+.close {
     position: absolute;
     margin-top: -20px;
     margin-right: -5px;
@@ -295,7 +320,7 @@ p{
     cursor: pointer;
 }
 
-.close1{
+.close1 {
     position: absolute;
     margin-top: -64px;
     margin-right: -6px;
@@ -305,69 +330,65 @@ p{
     cursor: pointer
 }
 
-.linha{
-    background-color:#333333;
+.linha {
+    background-color: #333333;
 }
 
-
-
-.fitinha{
+.fitinha {
     height: 30px;
     width: 50px;
     float: left;
     margin-bottom: 0px;
 }
 
-.pagar{
-    width: 291px;
-    height: 100px;
-    display: block;
-    float: right;
-    margin-right: 1px;
-    margin-top: 0px;
-    text-align: center;
-    display: inline;
+.pagar {
+    width: 21%;
+    left: 78.7%;
+    position: absolute;
+    top: 49%;
+    text-align: center    
 }
 
-.caixa{
+.caixa {
     border: 0.5px solid rgba(0, 0, 0, .3);
-    padding: 22px;
-    margin-top: -1px;
+    padding: 15px;
+    
 }
 
-.tx1{
+.tx1 {
     color: rgba(0, 0, 0, .5);
 }
 
-.tr1{
-    color: rgba(220, 20 ,60, .8);
+.tr1 {
+    color: rgba(220, 20, 60, .8);
 }
 
-.tpp{
-    color: rgba(30,144,255, .8)
+.tpp {
+    color: rgba(30, 144, 255, .8)
 }
 
-.vpp{
-    color: rgba(50,205,50, .8);
+.vpp {
+    color: rgba(50, 205, 50, .8);
 }
 
-.spp{
-    color: rgba(128,128,0, .8);
+.spp {
+    color: rgba(128, 128, 0, .8);
 }
 
-.blocosb{
-    margin-right: 280px;
-    margin-left: -316px;
-    margin-top: -306px;
-    width: 317px;
+.blocosb {
+    width: 111%;
+    left: -113%;
+    position: absolute;
+    top: 0%;
+    text-align: center;
 }
 
-.botaoModal{
+.botaoModal {
     margin-left: 10px;
     margin-top: -66px;
 }
 
-.tabelaModalLoka{
+.tabelaModalLoka {
     margin-top: 10px;
     height: 315px;
     overflow-y: scroll;
@@ -375,11 +396,20 @@ p{
     width: 586px;
 }
 
-.add{
-    margin-top: 261px;
-    margin-left: 9px;
+.add {
+    position: absolute;
+    top: 95.4%;
+    left: 91%;
 }
 
-.caixa1{
+.caixa1 {
     padding: 24px;
+}
+
+.tabelaModalLokaCliente{
+    margin-top: 10px;
+    height: 315px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 867px;
 }

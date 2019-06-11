@@ -307,6 +307,7 @@
     padding: 13px;
     width: 100%;
     text-align: right;
+    z-index: 3;
     color: white;
 }
 
@@ -354,11 +355,12 @@
 }
 
 .tabelinha{
-    width: 969px;
+    position: absolute;
+    width: 54.5%;
+    height: 92%;
+    top: 9%;
     float: left;
     padding: 0px 0px 0px 6px;
-    margin-top: -277px;
-    height: 591px;
     overflow-y: scroll;
     overflow-x: hidden;
     
@@ -373,3 +375,36 @@
     opacity: 0.5;
 }
 
+.blocosa{
+    left: -2%;
+    width: 102%;
+    position: absolute;
+}
+
+.cancelaCompra{
+    position: absolute;
+    top: 95.4%;
+    left: 78%;
+}
+
+.footer-site10 {
+	background-color: #333333;
+    color: white;
+    top: 103%;
+    width: 100%;
+    position: absolute;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.Comprador{
+    position: absolute;
+    top: 95.4%;
+    left: 63.1%;
+}
+
+.finaliza{
+    position: absolute;
+    top: 95.4%;
+    left: 56.1%;
+}
