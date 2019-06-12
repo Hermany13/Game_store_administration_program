@@ -72,6 +72,17 @@ class DAOCadastroGeral extends DAOLogin{
         return $this->result;
     }
 
+    public function readClientes()
+    {
+
+        $this->sql = sprintf("SELECT * FROM `usuarios` WHERE `situacao` = 0;");
+        $this->result = $this->cono->query($this->sql);
+
+//        while ($i = $this->result->fetch_assoc()) {
+//            echo "Nome: " .$i['nome'];
+//        }
+        return $this->result;
+    }
     
     public function readName(){
         
@@ -80,9 +91,19 @@ class DAOCadastroGeral extends DAOLogin{
         
 
         while ($i = $this->result->fetch_assoc()) {
-
             return $i['nome'];
+        }
+        return $this->result;
+    }
 
+    public function readCPF(){
+
+        $this->sql = sprintf("SELECT * FROM `usuarios` WHERE `email` = '$this->Email'");
+        $this->result = $this->cono->query($this->sql);
+
+
+        while ($i = $this->result->fetch_assoc()) {
+            return $i['cpf'];
         }
         return $this->result;
     }

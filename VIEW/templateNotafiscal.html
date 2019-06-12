@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+
+    <title>GameStore - Nota Fiscal</title>
+
+    <link rel="icon" href="_img/65343.png" type="image/x-icon">
+    <link rel="shortcut icon" href="_img/65343.png" type="image/x-icon">
+    <link rel="stylesheet" href="_css/fiscal.css">
+</head>
+
+<body>
+    <div class="posi">
+        <table class="printer-ticket" border="1">
+            <thead>
+
+                <tr>
+                    <th class="title" colspan="4">Game Store</th>
+                </tr>
+                <tr>
+                    <th colspan="4">{data}</th>
+                </tr>
+                <tr>
+                    <th colspan="4">{nomedocliente}<br />{cpfdolciente}</th>
+                </tr>
+                <tr>
+                    <th class="ttu" colspan="4"> <b>Cupom não fiscal</b> </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="sup ttu p--0">
+                    <td colspan="4" align="center"> <b>Produtos</b> </td>
+                </tr>
+                <tr class="top">
+                    <td>Código do produto</td>
+                    <td>Descrição do produto</td>
+                    <td>Quantidade</td>
+                    <td>Valor</td>
+                </tr>
+
+                <tr>
+                    {Tabeladeprodutos}
+                </tr>
+
+            </tbody>
+
+
+            <tfoot>
+                <tr class="sup ttu p--0">
+                    <td colspan="4" align="center"> <b>Totais</b> </td>
+                </tr>
+                <tr class="ttu">
+                    <td>Sub-total</td>
+                    <td>R${subtotal}</td>
+                    <td>Desconto</td>
+                    <td>R${desconto}</td>
+                </tr>
+                <tr class="ttu">
+
+                </tr>
+                <tr class="ttu">
+                    <td colspan="3">Total</td>
+                    <td align="right">R${TotalTotal}</td>
+                </tr>
+                <tr></tr>
+                <tr class="sup ttu p--0">
+                    <td colspan="4" align="center"> <b>Pagamentos</b> </td>
+                </tr>
+
+                <tr class="ttu">
+                    <td>Total pago</td>
+                    <td>R${TotalPago}</td>
+                    <td> Troco</td>
+                    <td>R${Troco}</td>
+                </tr>
+                <tr class="ttu">
+                <tr class="sup">
+                    <td colspan="4" align="center">GameStore</td>
+                </tr>
+
+                </tr>
+                <tr class="sup">
+                    <td align="center">Voltar</td>
+                    <td align="center">Imprimir</td>
+                    <td colspan="2" align="center">Finalizar</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+
+</html>

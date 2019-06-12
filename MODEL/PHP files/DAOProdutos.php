@@ -61,7 +61,21 @@ class DAOProdutos extends conn{
             $this->result = $this->cono->query($this->sql);
             return $this->result;
             
-    }
+        }
+
+        //le dados Nome do produto
+        public function readnome(){
+            $this->sql = sprintf("SELECT * FROM `produtos` WHERE `cod_prod` = '$this->cod_prod'");
+            $this->result = $this->cono->query($this->sql);
+
+            while ($i = $this->result->fetch_assoc()) {
+                return $i['nome'];
+            }
+
+            return $this->result;
+
+        }
+
 
         //le dados da tabela toda
         public function readsProdutos(){

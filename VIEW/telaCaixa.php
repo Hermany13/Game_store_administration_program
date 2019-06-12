@@ -1,7 +1,9 @@
 <?php
 require_once("../CONTROLLER/Outros/cons_quant_prod.php");
 require_once("../MODEL/PHP files/DAOCadastroGeral.php");
-require_once("../CONTROLLER/Outros/CheckPagina.php"); session_start();
+require_once("../CONTROLLER/Outros/CheckPagina.php");
+require_once("../CONTROLLER/Outros/cons_cliente.php");
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -19,7 +21,9 @@ require_once("../CONTROLLER/Outros/CheckPagina.php"); session_start();
     <script src="https://ajax.googlepis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="_js/bootstrap.js"></script>
     <script src="_js/interativos.js"></script>
+
     <script src="_js/dados.js"></script>
+
     <link rel="stylesheet" href="_css/bootstrap.css">
     <link rel="stylesheet" href="_css/variations.css">
     <link rel="stylesheet" href="_css/forms.css">
@@ -65,30 +69,39 @@ require_once("../CONTROLLER/Outros/CheckPagina.php"); session_start();
             </div>
         </div>
         <div class="pagar">
-            <div class="blocosa">
+            <div class="blocosb">
                 <div class="caixa">
                     <h4 class="tx1 tp">R$ TOTAL A PAGAR</h4>
                     <h1 class="tpp"><label id="totalaPagar">00,00</label></h1>
                 </div>
-                <div class="caixa">
-                    <h4 class="tx1 vp">R$ VALOR PAGO</h4>
-                    <h1 class="vpp"><label>00,00</label></h1>
+<!--                <div class="caixa">-->
+<!--                    <h4 class="tx1 sp">R$ SALDO A PAGAR</h4>-->
+<!--                    <h1 class="spp"><label>00,00</label></h1>-->
+<!--                </div>-->
+                <div class="caixa" style="height: 100px; width: 603px;">
+                    <h4 class="tx1 t">Cliente:</h4>
+                    <label id="cli_nome">Nome</label>
                 </div>
             </div>
-            <div class="blocosb">
+            <div class="blocosa">
+<!--                <div class="caixa">-->
+<!--                    <h4 class="tx1 tp">R$ TOTAL A PAGAR</h4>-->
+<!--                    <h1 class="tpp"><label id="totalaPagar">00,00</label></h1>-->
+<!--                </div>-->
                 <div class="caixa">
                     <h4 class="tx1 sp">R$ SALDO A PAGAR</h4>
                     <h1 class="spp"><label>00,00</label></h1>
                 </div>
-                <div class="caixa">
-                    <h4 class="tx1 t">R$ TROCO</h4>
-                    <h1 class="tr1"><label>00,00</label></h1>
-                </div>
+<!--                <div class="caixa">-->
+<!--                    <h4 class="tx1 vp">R$ VALOR PAGO</h4>-->
+<!--                    <h1 class="vpp"><label>00,00</label></h1>-->
+<!--                </div>-->
             </div>
+
         </div> <button type="button" class="btn btn-primary add" onclick="modalShowTabela()">Adicionar</button>
         <button type="button" class="btn btn-danger cancelaCompra" onclick="modalShowCancelar()">Cancelar Operação</button>
         <button type="button" class="btn btn-dark Comprador" onclick="modalShowTabelaCliente()">Selecionar Comprador</button>
-        <button type="button" class="btn btn-success finaliza" onclick="modalShowConfirmar(); closeVenda();">Finalizar</button>
+        <button type="button" class="btn btn-success finaliza" onclick="closeVenda();">Finalizar</button>
     </section>
     <section class="footer-site10">
         <div class="container">
@@ -115,7 +128,8 @@ require_once("../CONTROLLER/Outros/CheckPagina.php"); session_start();
         <div class="modal-content-cancelar">
             <div id="close" class="close" onclick="modalCloseCancelar()">+</div>
             <form>
-                <p class="text-center">Deseja cancelar a operação?</p> <a class="btn btn-danger">Sim</a> <a onclick="modalCloseCancelar()" class="btn btn-primary">Cancelar</a>
+                <p class="text-center">Deseja cancelar a operação?</p> <a onclick="location.reload();" class="btn btn-danger">Sim</a>
+                <a onclick="modalCloseCancelar()" class="btn btn-primary">Cancelar</a>
             </form>
         </div>
     </div>
@@ -123,7 +137,7 @@ require_once("../CONTROLLER/Outros/CheckPagina.php"); session_start();
     <div class="bg-modal-confirmar">
         <div class="modal-content-confirmar">
             <div id="close" class="close" onclick="modalCloseConfirmar()">+</div>
-            <form method="post" action="../MODEL/PHP%20files/teste.php">
+            <form method="post" action="../VIEW/templateNotafiscal.php">
                 <p class="text-center">Deseja finalizar a operação?</p>
 
                 <input type="hidden" id="cdados" name="cliente_enviar" value="" />
@@ -166,7 +180,7 @@ require_once("../CONTROLLER/Outros/CheckPagina.php"); session_start();
     </div>
     <div class="bg-modal-tabela-cliente">
         <div class="modal-contentCliente">
-            <h4>Clientes</h4>
+            <h4>Clientes <a href="cadastroCliente.html" class="btn btn-primary">Novo</a></h4>
             <div id="close" class="close1" onclick="modalCloseTabelaCliente()">+</div>
             <div class="form-group input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span> <input name="consulta" id="txt_consulta_cliente" placeholder="Consultar" type="text" class="form-control"> </div>
             <div class="tabelaModalLokaCliente">
@@ -183,41 +197,8 @@ require_once("../CONTROLLER/Outros/CheckPagina.php"); session_start();
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>798.898.669-43</td>
-                                    <td>Emanuel Lucca da Paz</td>
-                                    <td>emanuelluccadapaz_@vcp.com.br</td>
-                                    <td>(82) 2558-3867</td>
-                                    <td class="actions"> <a class="btn btn-success btn-xs">Adicionar</a> </td>
-                                </tr>
-                                <tr>
-                                    <td>686.963.233-27</td>
-                                    <td>Igor Ruan Cavalcanti</td>
-                                    <td>iigorruancavalcanti@sociedadeweb.com.br</td>
-                                    <td>(82) 2558-3867</td>
-                                    <td class="actions"> <a class="btn btn-success btn-xs">Adicionar</a> </td>
-                                </tr>
-                                <tr>
-                                    <td>686.963.233-27</td>
-                                    <td>Luiz Kaique Almada</td>
-                                    <td>lluizkaiquealmada@tecvap.com.br</td>
-                                    <td>(61) 2539-3838</td>
-                                    <td class="actions"> <a class="btn btn-success btn-xs">Adicionar</a> </td>
-                                </tr>
-                                <tr>
-                                    <td>953.602.297-48</td>
-                                    <td>Nathan Victor Yuri Barbosa</td>
-                                    <td>nnathanvictoryuribarbosa@embraer.com</td>
-                                    <td>(53) 3543-3412</td>
-                                    <td class="actions"> <a class="btn btn-success btn-xs">Adicionar</a> </td>
-                                </tr>
-                                <tr>
-                                    <td>287.272.888-03</td>
-                                    <td>Enzo Edson Rezende</td>
-                                    <td>enzoedsonrezende..enzoedsonrezende@carubelli.com.b</td>
-                                    <td>(98) 3974-9463</td>
-                                    <td class="actions"> <a class="btn btn-success btn-xs">Adicionar</a> </td>
-                                </tr>
+<!--                                Lista de clientes aqui!-->
+                            <?php impListCliente("../MODEL/PHP files/DAOCadastroGeral.php")?>
                             </tbody>
                         </table>
                         <script>

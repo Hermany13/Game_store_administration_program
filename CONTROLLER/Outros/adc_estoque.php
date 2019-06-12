@@ -1,11 +1,11 @@
 <?php
 
-include_once("../../MODEL/PHP Files/DAOMovimento_Geral.php");
+//include_once("gamestore/MODEL/PHP files/DAOMovimento_Geral.php");
 
 // op 1
-function AdcEstoque($quantidade, $thiscod_prod, $thisfun_email, $thisdata){
+function AdcEstoque($daomovimento_geral,$quantidade, $thiscod_prod, $thisfun_email, $thisdata){
 
-    $daomov = new DAOMovimento_Geral();
+    $daomov = $daomovimento_geral;
 
     for ($i=0; $i < $quantidade; $i++) { 
         
@@ -19,9 +19,9 @@ function AdcEstoque($quantidade, $thiscod_prod, $thisfun_email, $thisdata){
 }
 
 //op 2
-function RevEstoque($quantidade, $thiscod_prod, $thisfun_email, $thisdata, $preco, $desconto, $thiscli_email)
+function RevEstoque($daomovimento_geral,$quantidade, $thiscod_prod, $thisfun_email, $thisdata, $preco, $desconto, $thiscli_email)
 {
-    $daomov = new DAOMovimento_Geral();
+    $daomov = $daomovimento_geral;
 
     for ($i=0; $i < $quantidade; $i++) { 
         
@@ -65,7 +65,7 @@ function FecharCaixa($thisvalorR, $thisfun_email,$thisdata)
     $daomov->create();
 }
 
-//op 5
+//op 5 não vai usar
 function EntradaFundos($thisvalorA, $thisfun_email,$thisdata)
 {
     $daomov = new DAOMovimento_Geral();
@@ -79,7 +79,7 @@ function EntradaFundos($thisvalorA, $thisfun_email,$thisdata)
     $daomov->create();
 }
 
-//op 6
+//op 6 nao vai usar
 function SaidaFundos($thisvalorR,$thisfun_email,$thisdata)
 {
     $daomov = new DAOMovimento_Geral();
