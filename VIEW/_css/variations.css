@@ -395,7 +395,7 @@
 .tabelinha{
     position: absolute;
     width: 54.5%;
-    height: 92%;
+    height: 82%;
     top: 9%;
     float: left;
     padding: 0px 0px 0px 6px;
@@ -421,14 +421,14 @@
 
 .cancelaCompra{
     position: absolute;
-    top: 95.4%;
+    top: 84.4%;
     left: 79%;
 }
 
 .footer-site10 {
 	background-color: #333333;
     color: white;
-    top: 103%;
+    top: 93%;
     width: 100%;
     position: absolute;
     padding-top: 50px;
@@ -437,12 +437,12 @@
 
 .Comprador{
     position: absolute;
-    top: 95.4%;
-    left: 64.1%;
+    top: 84.4%;
+    left: 63.8%;
 }
 
 .finaliza{
     position: absolute;
-    top: 95.4%;
-    left: 92.1%;
+    top: 84.4%;
+    left: 92.3%;
 }

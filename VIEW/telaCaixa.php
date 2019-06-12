@@ -41,7 +41,7 @@ session_start();
                 <div class="painelTotal">
                     <h2>R$ TOTAL A PAGAR</h2>
                     <div class="ValorTotal">
-                        <h1><label id="totalaPagar1">00,00</label></h1>
+                        <h1 class="tpp"><label id="totalaPagar">00,00</label></h1>
                     </div>
                 </div>
             </div>
@@ -70,17 +70,14 @@ session_start();
         </div>
         <div class="pagar">
             <div class="blocosb">
-                <div class="caixa">
-                    <h4 class="tx1 tp">R$ TOTAL A PAGAR</h4>
-                    <h1 class="tpp"><label id="totalaPagar">00,00</label></h1>
-                </div>
+                
 <!--                <div class="caixa">-->
 <!--                    <h4 class="tx1 sp">R$ SALDO A PAGAR</h4>-->
 <!--                    <h1 class="spp"><label>00,00</label></h1>-->
 <!--                </div>-->
-                <div class="caixa" style="height: 100px; width: 603px;">
-                    <h4 class="tx1 t">Cliente:</h4>
-                    <label id="cli_nome">Nome</label>
+                <div class="caixa">
+                    <h3 class="tx1 t">Cliente:</h3>
+                    <h4><label id="cli_nome">Nome</label></h4>
                 </div>
             </div>
             <div class="blocosa">
@@ -88,20 +85,18 @@ session_start();
 <!--                    <h4 class="tx1 tp">R$ TOTAL A PAGAR</h4>-->
 <!--                    <h1 class="tpp"><label id="totalaPagar">00,00</label></h1>-->
 <!--                </div>-->
-                <div class="caixa">
-                    <h4 class="tx1 sp">R$ SALDO A PAGAR</h4>
-                    <h1 class="spp"><label>00,00</label></h1>
-                </div>
+             
 <!--                <div class="caixa">-->
 <!--                    <h4 class="tx1 vp">R$ VALOR PAGO</h4>-->
 <!--                    <h1 class="vpp"><label>00,00</label></h1>-->
 <!--                </div>-->
             </div>
-
+        
         </div> <button type="button" class="btn btn-primary add" onclick="modalShowTabela()">Adicionar</button>
         <button type="button" class="btn btn-danger cancelaCompra" onclick="modalShowCancelar()">Cancelar Operação</button>
         <button type="button" class="btn btn-dark Comprador" onclick="modalShowTabelaCliente()">Selecionar Comprador</button>
         <button type="button" class="btn btn-success finaliza" onclick="closeVenda();">Finalizar</button>
+
     </section>
     <section class="footer-site10">
         <div class="container">

@@ -15,8 +15,8 @@
 
 .painel1 {
     position: absolute;
-    padding-right: 28px;
-    padding-top: 32px;
+    padding-right: 3%;
+    padding-top: 2%;
     width: 45%;
     height: 40%;
     top: 8%;
@@ -414,9 +414,10 @@ p {
     text-align: center    
 }
 
-.caixa {
+.caixa {    
     border: 0.5px solid rgba(0, 0, 0, .3);
-    padding: 15px;
+    padding: 19%;
+    width: 193%;
     
 }
 
@@ -429,7 +430,7 @@ p {
 }
 
 .tpp {
-    color: rgba(30, 144, 255, .8)
+ 
 }
 
 .vpp {
@@ -473,8 +474,10 @@ p {
 
 .add {
     position: absolute;
-    top: 95.4%;
+    top: 84.4%;
     left: 56%;
+    width: 7%;
+    
 }
 
 .caixa1 {
