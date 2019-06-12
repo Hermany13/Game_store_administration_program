@@ -7,13 +7,13 @@
 .printer-ticket {
 	display: table !important;
 	width: 100%;
-	max-width: 400px;
-	font-weight: light;
+	max-width: 500px;
+	font-weight: lighter;
 	line-height: 1.3em;
 	@printer-padding-base: 10px;
-	&, & * { 
-		font-family: Tahoma, Geneva, sans-serif; 
-		font-size: 10px; 
+	&, & * {
+		font-family: Tahoma, Geneva, sans-serif;
+		font-size: 10px;
 	}
 
 	th:nth-child(2),
@@ -43,7 +43,7 @@
 		.sup.p--0 td { padding-bottom: 0; }
 	}
 	
-	.title { font-size: 1.5em; padding: @printer-padding-base*1.5 0; }
+	.title { font-size: 1.5em; padding: @printer-padding-base * 1.5 0; }
 	.top {
 		td { padding-top: @printer-padding-base; }
 	}
