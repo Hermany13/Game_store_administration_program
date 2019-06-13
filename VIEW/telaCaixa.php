@@ -35,6 +35,7 @@ session_start();
     <div class="linha linhaUser2">
         <div class="contentLine"> <a style="text-align: Left"><strong>Voltar</strong></a> <a style="text-align: center"><strong>Caixa!</strong></a> <?php if(isset($_SESSION['email'])){ $nome = new DAOCadastroGeral(); $nome->Email = $_SESSION['email']; echo "Bem-Vindo ".$nome->readName(); } else { echo "Funcionario Atual"; } ?> <a class="logOutbtn" onclick="modalShowOut()">Log out</a> </div>
     </div>
+    
     <section class="content-site3">
         <div class="blocoPainel">
             <div class="painel1">
@@ -92,11 +93,12 @@ session_start();
 <!--                </div>-->
             </div>
         
-        </div> <button type="button" class="btn btn-primary add" onclick="modalShowTabela()">Adicionar</button>
+        <button type="button" class="btn btn-primary add" onclick="modalShowTabela()">Adicionar</button>
         <button type="button" class="btn btn-danger cancelaCompra" onclick="modalShowCancelar()">Cancelar Operação</button>
         <button type="button" class="btn btn-dark Comprador" onclick="modalShowTabelaCliente()">Selecionar Comprador</button>
-        <button type="button" class="btn btn-success finaliza" onclick="closeVenda();">Finalizar</button>
-
+        <button type="button" class="btn btn-success finaliza" onclick="closeVenda();">Finalizar</button>  
+        
+        </div>
     </section>
     <section class="footer-site10">
         <div class="container">
@@ -137,9 +139,10 @@ session_start();
 
                 <input type="hidden" id="cdados" name="cliente_enviar" value="" />
                 <input type="hidden" id="pdados" name="produtos_enviar" value="" />
+                <input class="inputM" id="valorDeEntrada" name="valor" value="" />
 
                 <a onclick="modalCloseConfirmar()" class="btn btn-primary">Cancelar</a>
-                <input type="submit" class="btn btn-danger" value="Sim">
+                <input type="submit" class="btn btn-danger conf" value="Sim">
 
             </form>
         </div>

@@ -446,3 +446,13 @@
     top: 84.4%;
     left: 92.3%;
 }
+
+.conf{
+    width: 32%;
+    height: 0%;
+}
+
+.inputM{
+    width: 87%;   
+    margin-bottom: 10px;
+}
